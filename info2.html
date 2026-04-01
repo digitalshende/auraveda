@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Learn the ancient art of dowsing with pendulum & rods — detect energy blockages, gain intuitive clarity, and transform decision-making. Online or in-person session with charts & support.">
+  <meta name="keywords" content="Dowsing, Pendulum Dowsing, Energy Healing, Intuitive Development, Dowsing Rods, Auraveda, Spiritual Tools, Energy Blockages">
+  <meta name="author" content="Auraveda">
+  <meta property="og:title" content="Dowsing Session | Auraveda — Discover Energy Wisdom">
+  <meta property="og:description" content="Intensive 3-hour dowsing workshop: pendulum, rods, charts, energy detection. ₹5,999. Includes post-session support.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1603398938378-e54eab446d5b?w=1200&auto=format">
+  <meta name="robots" content="index, follow">
+  <title>Dowsing Session | Auraveda — Pendulum & Energy Divination</title>
+  <!-- Google Fonts + Font Awesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #fefaf7;
+      color: #1f1b16;
+      line-height: 1.5;
+      scroll-behavior: smooth;
+    }
+
+    h1, h2, h3, .price-badge, .logo-text {
+      font-family: 'Playfair Display', serif;
+    }
+
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 28px;
+    }
+
+    /* header (matching auraveda style) */
+    .site-header {
+      background: rgba(255, 252, 245, 0.96);
+      backdrop-filter: blur(8px);
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.02);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      border-bottom: 1px solid #ede3d6;
+    }
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 14px 0;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .logo-icon {
+      font-size: 2rem;
+      color: #6a4e3a;
+    }
+    .logo-text {
+      font-size: 1.7rem;
+      font-weight: 600;
+      background: linear-gradient(135deg, #7e4a2a, #b85c2c);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      letter-spacing: -0.3px;
+    }
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+    }
+    .nav-links a {
+      text-decoration: none;
+      font-weight: 500;
+      color: #4f3b2c;
+      transition: 0.2s;
+    }
+    .nav-links a:hover {
+      color: #c17b4a;
+    }
+    .btn-nav {
+      border: 1px solid #e2cdb8;
+      padding: 6px 20px;
+      border-radius: 40px;
+      background: transparent;
+    }
+    /* hero */
+    .hero {
+      background: linear-gradient(125deg, #f9f3ea, #fbe9da);
+      padding: 40px 0 48px;
+      text-align: center;
+      border-bottom: 1px solid #f4e5d8;
+    }
+    .hero h1 {
+      font-size: 3.4rem;
+      font-weight: 600;
+      color: #3d2a1c;
+      margin-bottom: 12px;
+    }
+    .hero p {
+      max-width: 680px;
+      margin: 0 auto;
+      font-size: 1.2rem;
+      color: #7b5a3e;
+    }
+    .hero-badge {
+      display: inline-block;
+      background: #dccbb6;
+      padding: 6px 20px;
+      border-radius: 60px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: #5a3a22;
+      margin-bottom: 20px;
+    }
+    .hero-img-grid {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      flex-wrap: wrap;
+      margin-top: 40px;
+    }
+    .hero-img-grid img {
+      width: 260px;
+      height: 190px;
+      object-fit: cover;
+      border-radius: 36px;
+      box-shadow: 0 18px 30px -8px rgba(0,0,0,0.12);
+      transition: transform 0.3s ease;
+    }
+    .hero-img-grid img:hover {
+      transform: scale(1.02);
+    }
+
+    /* main content */
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 40px;
+      margin: 70px 0 60px;
+    }
+    .info-card {
+      background: white;
+      border-radius: 40px;
+      padding: 32px 28px;
+      box-shadow: 0 15px 35px -12px rgba(0,0,0,0.05);
+      border: 1px solid #f3e7dc;
+      transition: all 0.25s;
+    }
+    .info-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 25px 40px -14px rgba(99, 57, 34, 0.12);
+    }
+    .card-icon {
+      font-size: 2.3rem;
+      color: #6f4e36;
+      margin-bottom: 18px;
+    }
+    .info-card h3 {
+      font-size: 1.8rem;
+      font-weight: 600;
+      margin-bottom: 20px;
+      border-left: 4px solid #b27a55;
+      padding-left: 16px;
+    }
+    .info-list {
+      list-style: none;
+    }
+    .info-list li {
+      margin-bottom: 16px;
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+    }
+    .info-list li i {
+      color: #b27a55;
+      font-size: 1.2rem;
+      margin-top: 2px;
+    }
+    .ideal-list li i {
+      color: #6c8b6e;
+    }
+
+    /* session details panel */
+    .session-panel {
+      background: linear-gradient(115deg, #2b2a27 0%, #3d352e 100%);
+      border-radius: 48px;
+      padding: 40px 44px;
+      margin: 20px 0 64px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 30px;
+      color: #fef2e6;
+    }
+    .details-text h3 {
+      font-size: 2rem;
+      font-weight: 500;
+      margin-bottom: 12px;
+      color: #ffedd5;
+    }
+    .details-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+      margin-top: 20px;
+    }
+    .detail-item {
+      background: rgba(255,245,235,0.12);
+      backdrop-filter: blur(2px);
+      border-radius: 60px;
+      padding: 8px 20px;
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 500;
+    }
+    .bonus-badge {
+      background: #dbaa73;
+      color: #2c1c12;
+      border-radius: 40px;
+      padding: 8px 22px;
+      font-weight: 700;
+    }
+    .cta-large {
+      background: #f0cdab;
+      border: none;
+      padding: 14px 32px;
+      border-radius: 60px;
+      font-weight: 700;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: 0.2s;
+      font-family: inherit;
+      color: #2c1c12;
+      box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .cta-large:hover {
+      background: #ffdfb5;
+      transform: scale(1.02);
+    }
+
+    /* booking banner */
+    .booking-banner {
+      text-align: center;
+      margin: 30px 0 70px;
+      background: #fef3e9;
+      border-radius: 56px;
+      padding: 48px 24px;
+    }
+    .booking-banner h3 {
+      font-size: 2rem;
+      font-weight: 500;
+    }
+    .btn-book-primary {
+      background: #9f6a45;
+      color: white;
+      border: none;
+      padding: 14px 42px;
+      border-radius: 60px;
+      font-weight: 700;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: all 0.2s;
+      margin-top: 20px;
+      display: inline-flex;
+      gap: 12px;
+    }
+    .btn-book-primary:hover {
+      background: #7e5538;
+      transform: translateY(-3px);
+      box-shadow: 0 12px 18px -6px rgba(126,85,56,0.4);
+    }
+
+    footer {
+      background: #2a241f;
+      color: #f3ede6;
+      padding: 3rem 5% 1rem;
+      margin-top: 2rem;
+    }
+    .footer-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 2rem;
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+    .footer-section h4 {
+      margin-bottom: 1rem;
+      font-weight: 600;
+    }
+    .footer-section ul {
+      list-style: none;
+    }
+    .footer-section li {
+      margin-bottom: 0.5rem;
+    }
+    .footer-section a {
+      color: #e2cfbb;
+      text-decoration: none;
+    }
+    .footer-section a:hover {
+      color: #f3bc8c;
+    }
+    .copyright {
+      text-align: center;
+      margin-top: 2rem;
+      padding-top: 1rem;
+      border-top: 1px solid #51473e;
+      font-size: 0.8rem;
+    }
+
+    /* MODAL */
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.75);
+      backdrop-filter: blur(8px);
+      justify-content: center;
+      align-items: center;
+      z-index: 2000;
+    }
+    .modal-card {
+      background: #ffffff;
+      max-width: 520px;
+      width: 90%;
+      border-radius: 48px;
+      padding: 32px 28px;
+      position: relative;
+      box-shadow: 0 40px 55px rgba(0,0,0,0.3);
+      animation: fadeUp 0.25s ease;
+    }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px);}
+      to { opacity: 1; transform: translateY(0);}
+    }
+    .modal-card h3 {
+      font-size: 1.9rem;
+      margin-bottom: 6px;
+    }
+    .modal-close {
+      position: absolute;
+      top: 20px;
+      right: 26px;
+      font-size: 28px;
+      cursor: pointer;
+      color: #7b5e46;
+    }
+    .modal-card input, .modal-card select, .modal-card textarea {
+      width: 100%;
+      padding: 12px 16px;
+      margin: 10px 0;
+      border: 1px solid #e2cfb9;
+      border-radius: 40px;
+      background: #fefaf5;
+      font-family: inherit;
+    }
+    .modal-card button[type="submit"] {
+      background: #9f6a45;
+      color: white;
+      border: none;
+      padding: 12px;
+      width: 100%;
+      border-radius: 40px;
+      font-weight: bold;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+    .form-note {
+      font-size: 0.7rem;
+      text-align: center;
+      margin-top: 12px;
+      color: #a77b56;
+    }
+
+    @media (max-width: 750px) {
+      .navbar { flex-direction: column; gap: 14px; }
+      .hero h1 { font-size: 2.4rem; }
+      .session-panel { flex-direction: column; text-align: center; padding: 32px 24px; }
+      .details-grid { justify-content: center; }
+      .footer-content { flex-direction: column; align-items: center; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+    <nav>
+      <div class="logo"><img src="img/Auraveda logo.png" width="50" height="50"></div>
+	        <div class="logo">AURA<span>VEDA</span></div>
+
+      <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+		
+				<li><a href="about.html">About us</a></li>
+  <li><a href="services.html">Services</a></li>
+  <li><a href="classbox.html">Classes</a></li>
+  <li><a href="consultation.html">Consultation</a></li>
+  
+  <li><a href="Help.html">Help</a></li>
+   
+  <li><a href="payment.html">Payment</a></li>
+ 		
+		       
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="burger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </nav>
+  </header>
+
+<section class="hero">
+  <div class="container">
+    <span class="hero-badge"><i class="fas fa-hand-sparkles"></i> Ancient Art of Divination</span>
+    <h1>Dowsing Session</h1>
+    <p>Discover the hidden language of energy — pendulum, rods & intuitive clarity for healing and decision-making.</p>
+    <div class="hero-img-grid">
+      <img src="img/Dowsingphoto.JPG" alt="Pendulum dowsing" loading="lazy">
+      <img src="https://images.unsplash.com/photo-1606761568499-6d2451b23c66?w=500&auto=format" alt="Dowsing rods and crystal" loading="lazy">
+      <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=500&auto=format" alt="Energy field and hands" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<div class="container">
+  <!-- Two column layout: What You Will Learn + Ideal For -->
+  <div class="features-grid">
+    <!-- What You Will Learn Card -->
+    <div class="info-card">
+      <div class="card-icon"><i class="fas fa-chalkboard-user"></i></div>
+      <h3>What You Will Learn</h3>
+      <ul class="info-list">
+        <li><i class="fas fa-book-open"></i> Understanding the concept and history of dowsing</li>
+        <li><i class="fas fa-tools"></i> Introduction to dowsing tools – pendulum, rods, and charts</li>
+        <li><i class="fas fa-question-circle"></i> How to use a pendulum for yes/no answers and intuitive clarity</li>
+        <li><i class="fas fa-bolt"></i> Detecting energy blockages in the body and surroundings</li>
+        <li><i class="fas fa-microphone-alt"></i> Asking effective questions for spiritual or practical guidance</li>
+        <li><i class="fas fa-heartbeat"></i> Daily dowsing practice for healing and decision-making</li>
+      </ul>
+    </div>
+    <!-- Ideal For Card -->
+    <div class="info-card">
+      <div class="card-icon"><i class="fas fa-users"></i></div>
+      <h3>Ideal For</h3>
+      <ul class="info-list ideal-list">
+        <li><i class="fas fa-star-of-life"></i> Anyone curious about energy work and intuitive development</li>
+        <li><i class="fas fa-hand-holding-heart"></i> Healers, Reiki practitioners, and holistic therapists</li>
+        <li><i class="fas fa-gem"></i> Individuals seeking spiritual insight or energy clearing tools</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Session Details Panel (exact content) -->
+  <div class="session-panel">
+    <div class="details-text">
+      <h3><i class="fas fa-calendar-alt"></i> Session Details</h3>
+      <div class="details-grid">
+        <span class="detail-item"><i class="far fa-clock"></i> Duration: 2.5 to 3 hours (single intensive session)</span>
+        <span class="detail-item"><i class="fas fa-globe"></i> Mode: Online (Zoom) or In-person</span>
+        <span class="detail-item"><i class="fas fa-box-open"></i> Includes: Practical exercises, dowsing charts, and tool guidance</span>
+        <span class="detail-item"><i class="fas fa-headset"></i> Support: Post-session Q&A and follow-up support</span>
+        <span class="bonus-badge"><i class="fas fa-rupee-sign"></i> Fee: ₹5,999 (complete session)</span>
+      </div>
+    </div>
+    <a href="https://forms.gle/XLdAw8dKRaZXBzaFA">
+    <button class="cta-large" id="heroBookBtn"> Book Your Dowsing Session</button>
+    </a></div>
+  <!-- Extra CTA block -->
+  <div class="booking-banner">
+    <h3><i class="fas fa-hand-peace"></i> Awaken your inner dowser</h3>
+    <p style="margin-top: 10px;">Master pendulum skills, clear energy blocks, and gain clarity in just one session.</p>
+    <a href="https://forms.gle/XLdAw8dKRaZXBzaFA">
+    <button class="btn-book-primary" id="mainBookBtn"> Book Your Dowsing Session</button>
+    </a></div>
+</div>
+
+<footer>
+  <div class="footer-content">
+    <div class="footer-section">
+      <h4>Auraveda</h4>
+      <p>Awaken your inner knowing with ancient healing wisdom.</p>
+    </div>
+    <div class="footer-section">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Contact</h4>
+      <ul>
+        <li><i class="fas fa-phone"></i> +91 98765 43210</li>
+        <li><i class="fas fa-envelope"></i> hello@auraveda.co.in</li>
+      </ul>
+    </div>
+  </div>
+  <div class="copyright">
+    &copy; 2026 Auraveda — All rights reserved. Dowsing is a powerful tool for energetic alignment.
+  </div>
+</footer>
+
+ 
+
+<script>
+  // Modal and form handling with advanced validation
+  const modal = document.getElementById('bookingModal');
+  const closeModalBtn = document.getElementById('closeModalBtn');
+  const bookingForm = document.getElementById('bookingForm');
+
+  function openModal() {
+    modal.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeModal() {
+    modal.style.display = 'none';
+    document.body.style.overflow = '';
+  }
+
+  // attach open events to all booking buttons
+  const btns = [
+    document.getElementById('navBookTrigger'),
+    document.getElementById('heroBookBtn'),
+    document.getElementById('mainBookBtn')
+  ];
+  btns.forEach(btn => {
+    if (btn) btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      openModal();
+    });
+  });
+
+  if (closeModalBtn) closeModalBtn.addEventListener('click', closeModal);
+  window.addEventListener('click', (e) => {
+    if (e.target === modal) closeModal();
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modal.style.display === 'flex') closeModal();
+  });
+
+  if (bookingForm) {
+    bookingForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const name = document.getElementById('userName')?.value.trim();
+      const email = document.getElementById('userEmail')?.value.trim();
+      if (!name) {
+        alert("✨ Please enter your name to book the Dowsing Session.");
+        return;
+      }
+      if (!email || !email.includes('@')) {
+        alert("Please provide a valid email address for confirmation.");
+        return;
+      }
+      const modeSelect = document.getElementById('sessionMode');
+      const mode = modeSelect ? modeSelect.value : 'Online';
+      const dateInput = document.getElementById('prefDate')?.value;
+      const dateMsg = dateInput ? ` on ${new Date(dateInput).toLocaleDateString()}` : ' (flexible date)';
+      
+      alert(`🔮 Thank you ${name}, your Dowsing Session request (${mode}${dateMsg}) has been received.\n\nYou'll receive a confirmation email with pendulum tips & session details within 24h. We look forward to guiding you!`);
+      
+      bookingForm.reset();
+      closeModal();
+    });
+  }
+
+  // smooth scroll for anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      const href = this.getAttribute('href');
+      if (href !== "#" && href !== "#" && href !== "#booking") {
+        const target = document.querySelector(href);
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+    });
+  });
+
+  // dynamic date min tomorrow
+  const datePicker = document.getElementById('prefDate');
+  if (datePicker) {
+    const tomorrow = new Date();
+    tomorrow.setDate(tomorrow.getDate() + 1);
+    const yyyy = tomorrow.getFullYear();
+    const mm = String(tomorrow.getMonth() + 1).padStart(2, '0');
+    const dd = String(tomorrow.getDate()).padStart(2, '0');
+    datePicker.min = `${yyyy}-${mm}-${dd}`;
+  }
+
+  // input focus effects
+  const inputs = document.querySelectorAll('.modal-card input, .modal-card select, .modal-card textarea');
+  inputs.forEach(input => {
+    input.addEventListener('focus', () => input.style.borderColor = '#b27a55');
+    input.addEventListener('blur', () => input.style.borderColor = '#e2cfb9');
+  });
+
+  console.log("✨ Dowsing Session page ready — align with intuitive energy.");
+</script>
+</body>
+</html>

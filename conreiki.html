@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Transform your energy with Auraveda's Reiki consultation for working professional women. Personalized healing sessions, stress relief, emotional clarity, and career support. Book now.">
+  <meta name="keywords" content="Reiki Consultation, Energy Healing, Auraveda, Reiki for Women, Career Support, Emotional Healing, Stress Relief, Holistic Healing, Professional Women">
+  <meta name="author" content="Auraveda">
+  <meta property="og:title" content="Reiki Consultation | Auraveda — Energy Healing for Professional Women">
+  <meta property="og:description" content="Personalized Reiki sessions tailored to your challenges: chronic healing, relationship issues, ancestral blocks, career support. Premium energy healing for working women.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1545205597-3d9d02c29597?w=1200&auto=format">
+  <meta name="robots" content="index, follow">
+  <title>Reiki Consultation | Auraveda — Transform Energy & Balance</title>
+  <!-- Google Fonts + Font Awesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #F8F9FA;  /* Soft White – 60% primary background */
+      color: #2C2A2E;
+      line-height: 1.5;
+      scroll-behavior: smooth;
+    }
+
+    h1, h2, h3, .logo-text, .price-card h4 {
+      font-family: 'Playfair Display', serif;
+    }
+
+    /* colour system variables */
+    :root {
+      --purple: #5A189A;      /* Primary: deep royal purple */
+      --white-bg: #F8F9FA;
+      --burgundy: #800020;    /* CTA / action colour */
+      --dusty-rose: #D88C9A;  /* Accent limited use */
+      --dark-charcoal: #2C2A2E;
+      --soft-gray: #F0EFED;
+      --purple-light: #7B2FBF20;
+    }
+
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 28px;
+    }
+
+    /* header styles – classy & premium */
+    .site-header {
+      background: rgba(248, 249, 250, 0.96);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.02);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      border-bottom: 1px solid #E9E3DA;
+    }
+
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 16px 0;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo-icon {
+      font-size: 2rem;
+      color: var(--purple);
+    }
+
+    .logo-text {
+      font-size: 1.8rem;
+      font-weight: 600;
+      background: linear-gradient(135deg, var(--purple), #8A3FBF);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      letter-spacing: -0.3px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      font-weight: 500;
+      color: #3F3A45;
+      transition: 0.2s;
+    }
+
+    .nav-links a:hover {
+      color: var(--purple);
+    }
+
+    .btn-nav {
+      border: 1px solid #DBC8B6;
+      padding: 6px 20px;
+      border-radius: 40px;
+      background: transparent;
+    }
+
+    /* hero */
+    .hero {
+      background: linear-gradient(115deg, #FEFCF8, #FDF5EE);
+      padding: 44px 0 56px;
+      border-bottom: 1px solid #F0E6DD;
+    }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none;
+      color: var(--purple);
+      font-weight: 500;
+      margin-bottom: 24px;
+      transition: 0.2s;
+      font-size: 0.95rem;
+    }
+
+    .back-link i {
+      font-size: 0.9rem;
+    }
+
+    .back-link:hover {
+      color: var(--burgundy);
+      transform: translateX(-4px);
+    }
+
+    .hero h1 {
+      font-size: 3.4rem;
+      font-weight: 600;
+      color: var(--purple);
+      margin-bottom: 16px;
+    }
+
+    .hero-tagline {
+      font-size: 1.25rem;
+      color: #5B4A3F;
+      max-width: 680px;
+      margin-bottom: 32px;
+    }
+
+    .hero-img-grid {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      flex-wrap: wrap;
+      margin-top: 40px;
+    }
+
+    .hero-img-grid img {
+      width: 260px;
+      height: 190px;
+      object-fit: cover;
+      border-radius: 32px;
+      box-shadow: 0 20px 30px -12px rgba(90, 24, 154, 0.12);
+      transition: transform 0.25s ease;
+    }
+
+    .hero-img-grid img:hover {
+      transform: scale(1.02);
+    }
+
+    /* intro + benefits layout */
+    .intro-section {
+      margin: 64px 0 56px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 48px;
+      align-items: flex-start;
+    }
+
+    .intro-text {
+      flex: 1.2;
+    }
+
+    .intro-text h2 {
+      font-size: 2rem;
+      color: var(--purple);
+      border-left: 4px solid var(--burgundy);
+      padding-left: 20px;
+      margin-bottom: 20px;
+    }
+
+    .intro-text p {
+      font-size: 1rem;
+      color: #3A3530;
+      margin-bottom: 20px;
+    }
+
+    .reiki-benefits {
+      flex: 1;
+      background: #FFFFFF;
+      border-radius: 32px;
+      padding: 28px 28px;
+      box-shadow: 0 15px 30px -12px rgba(0, 0, 0, 0.05);
+      border: 1px solid #F0E4D8;
+    }
+
+    .reiki-benefits h3 {
+      font-size: 1.6rem;
+      color: var(--purple);
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .benefits-list {
+      list-style: none;
+    }
+
+    .benefits-list li {
+      margin-bottom: 16px;
+      display: flex;
+      gap: 14px;
+      align-items: center;
+    }
+
+    .benefits-list li i {
+      color: var(--burgundy);
+      font-size: 1.2rem;
+      width: 28px;
+    }
+
+    /* pricing sections */
+    .pricing-section {
+      margin: 60px 0 40px;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      font-weight: 600;
+      color: var(--purple);
+      text-align: center;
+      margin-bottom: 48px;
+      position: relative;
+    }
+
+    .section-title:after {
+      content: '';
+      display: block;
+      width: 70px;
+      height: 3px;
+      background: var(--dusty-rose);
+      margin: 14px auto 0;
+      border-radius: 4px;
+    }
+
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 28px;
+      margin-bottom: 56px;
+    }
+
+    .price-card {
+      background: white;
+      border-radius: 32px;
+      padding: 28px 24px;
+      transition: all 0.25s;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.02);
+      border: 1px solid #F3E8DF;
+      text-align: center;
+    }
+
+    .price-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 35px -12px rgba(90, 24, 154, 0.12);
+      border-color: var(--dusty-rose);
+    }
+
+    .price-card h4 {
+      font-size: 1.6rem;
+      font-weight: 600;
+      color: var(--purple);
+      margin-bottom: 12px;
+    }
+
+    .price {
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--burgundy);
+      margin: 16px 0;
+      font-family: 'Inter', sans-serif;
+    }
+
+    .price small {
+      font-size: 0.9rem;
+      font-weight: 400;
+      color: #6F6A65;
+    }
+
+    .price-card p {
+      color: #4F4A45;
+      font-size: 0.9rem;
+    }
+
+    .counseling-wrapper {
+      background: #FFF9F5;
+      border-radius: 44px;
+      padding: 36px 32px;
+      margin: 20px 0 48px;
+      border: 1px solid #F2E4DA;
+    }
+
+    .counseling-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-bottom: 28px;
+    }
+
+    .counseling-header h3 {
+      font-size: 1.8rem;
+      color: var(--purple);
+    }
+
+    .counseling-badge {
+      background: var(--dusty-rose);
+      padding: 6px 18px;
+      border-radius: 40px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: #3F2A2A;
+    }
+
+    .counseling-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+      justify-content: space-between;
+    }
+
+    .counsel-item {
+      flex: 1;
+      min-width: 180px;
+      background: white;
+      border-radius: 28px;
+      padding: 20px 16px;
+      text-align: center;
+      box-shadow: 0 5px 12px rgba(0, 0, 0, 0.02);
+      border: 1px solid #F0E0D4;
+    }
+
+    .counsel-item .counsel-price {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--burgundy);
+      margin-top: 10px;
+    }
+
+    .counsel-item p {
+      font-weight: 500;
+      color: #4F3E35;
+    }
+
+    .note-optional {
+      margin-top: 24px;
+      font-size: 0.85rem;
+      background: #FEF5EB;
+      padding: 12px 20px;
+      border-radius: 48px;
+      display: inline-block;
+      color: #6B4C3C;
+    }
+
+    /* CTA banner */
+    .booking-banner {
+      text-align: center;
+      background: linear-gradient(105deg, #F9F1EA, #FEF6EF);
+      border-radius: 56px;
+      padding: 56px 32px;
+      margin: 20px 0 70px;
+      border: 1px solid #F2E2D4;
+    }
+
+    .booking-banner h3 {
+      font-size: 2.1rem;
+      font-weight: 500;
+      color: var(--purple);
+      margin-bottom: 16px;
+    }
+
+    .btn-book-primary {
+      background: var(--burgundy);
+      color: white;
+      border: none;
+      padding: 16px 44px;
+      border-radius: 60px;
+      font-weight: 700;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: all 0.25s;
+      margin-top: 24px;
+      display: inline-flex;
+      gap: 12px;
+      align-items: center;
+      box-shadow: 0 8px 18px rgba(128, 0, 32, 0.25);
+    }
+
+    .btn-book-primary:hover {
+      background: #5E0018;
+      transform: translateY(-3px);
+      box-shadow: 0 14px 22px -8px rgba(128, 0, 32, 0.35);
+    }
+
+    /* footer */
+    footer {
+      background: #2C1A3A;
+      color: #FEF3E6;
+      padding: 3rem 5% 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .footer-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 2rem;
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+
+    .footer-section h4 {
+      margin-bottom: 1rem;
+      font-weight: 600;
+      color: #F0D9C5;
+    }
+
+    .footer-section ul {
+      list-style: none;
+    }
+
+    .footer-section li {
+      margin-bottom: 0.5rem;
+    }
+
+    .footer-section a {
+      color: #E6D5C2;
+      text-decoration: none;
+      transition: 0.2s;
+    }
+
+    .footer-section a:hover {
+      color: var(--dusty-rose);
+    }
+
+    .copyright {
+      text-align: center;
+      margin-top: 2rem;
+      padding-top: 1rem;
+      border-top: 1px solid #5C4375;
+      font-size: 0.8rem;
+    }
+
+    /* MODAL */
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(44, 26, 58, 0.85);
+      backdrop-filter: blur(10px);
+      justify-content: center;
+      align-items: center;
+      z-index: 2000;
+    }
+
+    .modal-card {
+      background: white;
+      max-width: 560px;
+      width: 90%;
+      border-radius: 48px;
+      padding: 36px 32px;
+      position: relative;
+      box-shadow: 0 40px 60px rgba(0, 0, 0, 0.3);
+      animation: fadeUp 0.3s ease;
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(25px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .modal-card h3 {
+      font-size: 2rem;
+      color: var(--purple);
+      margin-bottom: 6px;
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 20px;
+      right: 26px;
+      font-size: 28px;
+      cursor: pointer;
+      color: #9A7C64;
+      transition: 0.2s;
+    }
+
+    .modal-close:hover {
+      color: var(--burgundy);
+    }
+
+    .modal-card input,
+    .modal-card select,
+    .modal-card textarea {
+      width: 100%;
+      padding: 12px 18px;
+      margin: 10px 0 16px;
+      border: 1px solid #E2CFBB;
+      border-radius: 40px;
+      background: #FEFAF5;
+      font-family: inherit;
+      font-size: 0.95rem;
+    }
+
+    .modal-card button[type="submit"] {
+      background: var(--burgundy);
+      color: white;
+      border: none;
+      padding: 14px;
+      width: 100%;
+      border-radius: 60px;
+      font-weight: bold;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    .form-note {
+      font-size: 0.7rem;
+      text-align: center;
+      margin-top: 14px;
+      color: #8F6F56;
+    }
+
+    @media (max-width: 780px) {
+      .navbar {
+        flex-direction: column;
+        gap: 14px;
+      }
+
+      .hero h1 {
+        font-size: 2.4rem;
+      }
+
+      .intro-section {
+        flex-direction: column;
+      }
+
+      .pricing-grid {
+        gap: 20px;
+      }
+
+      .counseling-grid {
+        flex-direction: column;
+      }
+
+      .booking-banner h3 {
+        font-size: 1.6rem;
+      }
+
+      .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <div class="navbar">
+      <div class="logo">
+        <i class="fas fa-spa logo-icon"></i>
+        <span class="logo-text">AURA<span style="color: #5A189A;">VEDA</span></span>
+      </div>
+      <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+		
+				<li><a href="about.html">About us</a></li>
+  <li><a href="services.html">Services</a></li>
+  <li><a href="classbox.html">Classes</a></li>
+  <li><a href="consultation.html">Consultation</a></li>
+  
+  <li><a href="Help.html">Help</a></li>
+   
+  <li><a href="payment.html">Payment</a></li>
+ 		
+		       
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- Hero Section with Back link -->
+  <section class="hero">
+    <div class="container">
+      <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> Back</a>
+      <h1>Reiki Consultation</h1>
+      <p class="hero-tagline">Transform your energy, balance your life with Auraveda's Reiki sessions</p>
+      <div class="hero-img-grid">
+        <img src="img/108.jpg?w=500&auto=format" alt="Healing hands with crystal" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1545205597-3d9d02c29597?w=500&auto=format" alt="Woman meditating with energy" loading="lazy">
+        <img src="img/2149403922.jpg?w=500&auto=format" alt="Reiki healing session" loading="lazy">      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <!-- intro + reiki benefits -->
+    <div class="intro-section">
+      <div class="intro-text">
+        <h2>Personalized energy healing for your unique journey</h2>
+        <p>At Auraveda, we offer personalized Reiki consultations tailored to your unique challenges and life situations. Whether you're seeking healing, clarity, or energetic alignment, our Reiki sessions are designed to gently restore harmony to your body, mind, and spirit.</p>
+        <p><strong>Reiki</strong> is a gentle yet powerful energy healing technique that works by channeling universal life force energy through the hands of a trained practitioner. It helps balance the body's energy systems, clears blockages, and supports natural healing.</p>
+      </div>
+      <div class="reiki-benefits">
+        <h3><i class="fas fa-feather-alt" style="color: var(--dusty-rose);"></i> What Reiki Can Do for You</h3>
+        <ul class="benefits-list">
+          <li><i class="fas fa-leaf"></i> Reduces stress and promotes deep relaxation</li>
+          <li><i class="fas fa-brain"></i> Aids emotional healing and mental clarity</li>
+          <li><i class="fas fa-heartbeat"></i> Supports physical healing from chronic or acute conditions</li>
+          <li><i class="fas fa-history"></i> Helps release energetic patterns from past traumas</li>
+          <li><i class="fas fa-peace"></i> Restores inner peace and spiritual connection</li>
+          <li><i class="fas fa-chart-line"></i> Enhances focus, creativity, and emotional resilience</li>
+          <li><i class="fas fa-shield-alt"></i> Strengthens the body’s natural ability to heal itself</li>
+        </ul>
+        <p style="margin-top: 18px; font-style: italic; color: #7C6856;"><i class="fas fa-quote-left"></i> Whether you're facing emotional blocks, physical discomfort, or simply feel out of alignment — Reiki offers a compassionate space for healing and transformation.</p>
+      </div>
+    </div>
+
+    <!-- Consultation Fee Structure -->
+    <div class="pricing-section">
+      <h2 class="section-title">Consultation Fee Structure</h2>
+      <div class="pricing-grid">
+        <div class="price-card">
+          <h4>Chronic Healing</h4>
+          <div class="price">₹100 <small>/ day</small></div>
+          <p>Support for long-term physical or emotional imbalances</p>
+        </div>
+        <div class="price-card">
+          <h4>Educational Blocks</h4>
+          <div class="price">₹200 <small>/ day</small></div>
+          <p>Overcome learning hurdles, exam anxiety & focus issues</p>
+        </div>
+        <div class="price-card">
+          <h4>Relationship Issues</h4>
+          <div class="price">₹300 <small>/ day</small></div>
+          <p>Heal conflicts, past patterns & emotional disconnect</p>
+        </div>
+        <div class="price-card">
+          <h4>Ancestral Healing</h4>
+          <div class="price">₹400 <small>/ day</small></div>
+          <p>Release inherited energetic imprints & karmic blocks</p>
+        </div>
+        <div class="price-card">
+          <h4>Job / Career Support</h4>
+          <div class="price">₹500 <small>/ day</small></div>
+          <p>Professional clarity, confidence & aligned opportunities</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Counseling Add-on -->
+    <div class="counseling-wrapper">
+      <div class="counseling-header">
+        <h3><i class="fas fa-comments"></i> Counseling Charges (Optional Add-on)</h3>
+        <span class="counseling-badge"><i class="far fa-clock"></i> flexible scheduling</span>
+      </div>
+      <div class="counseling-grid">
+        <div class="counsel-item">
+          <p><strong>15-min Counseling Session</strong></p>
+          <div class="counsel-price">₹200</div>
+        </div>
+        <div class="counsel-item">
+          <p><strong>30-min Counseling Session</strong></p>
+          <div class="counsel-price">₹350</div>
+        </div>
+        <div class="counsel-item">
+          <p><strong>60-min Deep Guidance</strong></p>
+          <div class="counsel-price">₹600</div>
+        </div>
+      </div>
+      <div class="note-optional">
+        <i class="fas fa-info-circle"></i> These optional counseling sessions can be scheduled before or after Reiki healing for deeper insight, emotional clarity, and personalized guidance.
+      </div>
+    </div>
+
+    <!-- CTA Banner -->
+    <div class="booking-banner">
+      <h3><i class="fas fa-hand-sparkles"></i> Ready to realign your energy?</h3>
+      <p style="margin-top: 8px;">Step into deep healing, clarity, and balance with a Reiki consultation crafted for you.</p>
+      <div><a href="https://forms.gle/wDKA8wdLy3XN6Nd19">Book Your Consultation Now</a></div>
+     
+  </div>
+</main>
+
+<footer>
+  <div class="footer-content">
+    <div class="footer-section">
+      <h4>Auraveda</h4>
+      <p>Awaken your inner knowing with ancient healing wisdom.</p>
+    </div>
+    <div class="footer-section">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Contact</h4>
+      <ul>
+        <li><i class="fas fa-phone"></i> +91 98765 43210</li>
+        <li><i class="fas fa-envelope"></i> hello@auraveda.co.in</li>
+      </ul>
+    </div>
+  </div>
+  <div class="copyright">
+    &copy; 2026 Auraveda — All rights reserved. Reiki is a powerful tool for energetic alignment.
+  </div>
+</footer>
+
+<!-- Modal for Booking -->
+< 
+
+<script>
+  // Modal handling + advanced validation
+  const modal = document.getElementById('bookingModal');
+  const closeModalBtn = document.getElementById('closeModalBtn');
+  const bookingForm = document.getElementById('bookingForm');
+
+  function openModal() {
+    modal.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeModal() {
+    modal.style.display = 'none';
+    document.body.style.overflow = '';
+  }
+
+  const mainBookBtn = document.getElementById('mainBookBtn');
+  if (mainBookBtn) {
+    mainBookBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      openModal();
+    });
+  }
+
+  if (closeModalBtn) closeModalBtn.addEventListener('click', closeModal);
+  window.addEventListener('click', (e) => {
+    if (e.target === modal) closeModal();
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modal.style.display === 'flex') closeModal();
+  });
+
+  if (bookingForm) {
+    bookingForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const name = document.getElementById('userName')?.value.trim();
+      const email = document.getElementById('userEmail')?.value.trim();
+      if (!name) {
+        alert("✨ Please enter your name to book your Reiki consultation.");
+        return;
+      }
+      if (!email || !email.includes('@')) {
+        alert("Please provide a valid email address for confirmation.");
+        return;
+      }
+      const healing = document.getElementById('healingNeed')?.value;
+      const counseling = document.getElementById('counselingAddon')?.value;
+      const dateInput = document.getElementById('prefDate')?.value;
+      const dateMsg = dateInput ? ` on ${new Date(dateInput).toLocaleDateString()}` : ' (flexible date)';
+      
+      alert(`🔮 Thank you ${name}, your Reiki consultation request (${healing} | ${counseling})${dateMsg} has been received.\n\nYou'll receive a confirmation email with session guidance & practitioner details within 24 hours. We look forward to supporting your healing journey.`);
+      
+      bookingForm.reset();
+      closeModal();
+    });
+  }
+
+  // set min date for tomorrow
+  const datePicker = document.getElementById('prefDate');
+  if (datePicker) {
+    const tomorrow = new Date();
+    tomorrow.setDate(tomorrow.getDate() + 1);
+    const yyyy = tomorrow.getFullYear();
+    const mm = String(tomorrow.getMonth() + 1).padStart(2, '0');
+    const dd = String(tomorrow.getDate()).padStart(2, '0');
+    datePicker.min = `${yyyy}-${mm}-${dd}`;
+  }
+
+  // input focus effect
+  const inputs = document.querySelectorAll('.modal-card input, .modal-card select, .modal-card textarea');
+  inputs.forEach(input => {
+    input.addEventListener('focus', () => input.style.borderColor = '#5A189A');
+    input.addEventListener('blur', () => input.style.borderColor = '#e2cfb9');
+  });
+
+  console.log("✨ Auraveda Reiki Consultation page — premium energy healing for professional women.");
+</script>
+</body>
+</html>

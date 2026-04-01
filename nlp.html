@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NLP – Master Your Mind | Auraveda</title>
+  <!-- Fonts & Icons (same as astrology.html) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    /* === RESET & VARIABLES (identical to astrology.html) === */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --white: #fefcf5;
+      --accent-gold: #c6a43f;
+      --text-dark: #2e2e2e;
+      --text-light: #5a5a5a;
+      --bg-light: #f9f7f0;
+      --shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      color: var(--text-dark);
+      background-color: var(--white);
+      line-height: 1.6;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: 'Playfair Display', serif;
+      font-weight: 400;
+      letter-spacing: 0.02em;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* === HEADER & NAVIGATION (exact copy) === */
+    header {
+      background-color: var(--white);
+      box-shadow: var(--shadow);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.2rem 5%;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      font-weight: 500;
+      letter-spacing: 2px;
+    }
+
+    .logo span {
+      color: var(--accent-gold);
+      font-style: italic;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2.5rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--text-dark);
+      font-weight: 400;
+      font-size: 1rem;
+      transition: color 0.3s;
+      letter-spacing: 0.5px;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: var(--accent-gold);
+    }
+
+    .burger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+
+    .burger div {
+      width: 25px;
+      height: 2px;
+      background-color: var(--text-dark);
+      margin: 3px 0;
+      transition: 0.3s;
+    }
+
+    /* === FOOTER (exact copy) === */
+    footer {
+      background-color: #2a2a2a;
+      color: #ddd;
+      padding: 3rem 5% 1rem;
+    }
+
+    .footer-content {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .footer-section h4 {
+      color: var(--accent-gold);
+      margin-bottom: 1rem;
+      font-size: 1.2rem;
+    }
+
+    .footer-section ul {
+      list-style: none;
+    }
+
+    .footer-section ul li {
+      margin-bottom: 0.5rem;
+    }
+
+    .footer-section a {
+      color: #ddd;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .footer-section a:hover {
+      color: var(--accent-gold);
+    }
+
+    .copyright {
+      text-align: center;
+      padding: 1.5rem 0 0.5rem;
+      font-size: 0.9rem;
+      color: #aaa;
+      border-top: 1px solid #444;
+      margin-top: 2rem;
+    }
+
+    /* === CUSTOM STYLES FOR NLP PAGE (adapted from astrology) === */
+    section {
+      padding: 4rem 20px;
+    }
+
+    .section-bg-white {
+      background: var(--white);
+    }
+
+    .section-bg-light {
+      background: var(--bg-light);
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      color: var(--text-dark);
+    }
+
+    h2 {
+      font-size: 2.2rem;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    h3 {
+      font-size: 1.6rem;
+      margin: 1.5rem 0 1rem;
+      color: var(--text-dark);
+    }
+
+    .lead {
+      font-size: 1.2rem;
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto 2rem;
+      color: var(--text-light);
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: center;
+    }
+
+    .bullet-list {
+      list-style: none;
+      margin: 1.5rem 0;
+    }
+
+    .bullet-list li {
+      margin-bottom: 1rem;
+      padding-left: 1.8rem;
+      position: relative;
+    }
+
+    .bullet-list li:before {
+      content: "•";
+      color: var(--accent-gold);
+      font-size: 1.5rem;
+      position: absolute;
+      left: 0;
+      top: -0.3rem;
+    }
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .step-item {
+      text-align: center;
+      padding: 1.8rem 1.2rem;
+      background: var(--white);
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+    }
+
+    .step-item h4 {
+      font-size: 1.3rem;
+      margin-bottom: 0.8rem;
+      color: var(--accent-gold);
+    }
+
+    .founder-section {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 3rem;
+      align-items: center;
+    }
+
+    .founder-image {
+      width: 100%;
+      border-radius: 50%;
+      border: 5px solid var(--accent-gold);
+    }
+
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .callout {
+      text-align: center;
+      font-size: 1.3rem;
+      font-style: italic;
+      margin: 2rem auto 0;
+      max-width: 700px;
+      color: var(--text-dark);
+      border-top: 1px solid var(--accent-gold);
+      padding-top: 2rem;
+    }
+
+    .accent-quote {
+      background: rgba(198, 164, 63, 0.08);
+      padding: 1.5rem;
+      border-left: 4px solid var(--accent-gold);
+      border-radius: 0 8px 8px 0;
+      margin: 2rem 0;
+      font-style: italic;
+    }
+
+    /* subhead left alignment override */
+    .left-align {
+      text-align: left;
+    }
+
+    /* === RESPONSIVE DESIGN (same as astrology) === */
+    @media (max-width: 768px) {
+      .nav-links {
+        position: fixed;
+        right: 0;
+        top: 70px;
+        height: calc(100vh - 70px);
+        background: var(--white);
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding-top: 2rem;
+        width: 60%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        box-shadow: -5px 0 20px rgba(0,0,0,0.05);
+        z-index: 99;
+      }
+
+      .nav-links.nav-active {
+        transform: translateX(0%);
+      }
+
+      .burger {
+        display: flex;
+      }
+
+      .grid-2, .founder-section {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+
+      h1 {
+        font-size: 2.5rem;
+      }
+
+      h2 {
+        font-size: 2rem;
+      }
+
+      .founder-image {
+        max-width: 280px;
+        margin: 0 auto;
+      }
+    }
+
+    @media (max-width: 480px) {
+      section {
+        padding: 3rem 20px;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      h2 {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">AURA<span>VEDA</span></div>
+      <ul class="nav-links">
+           <li><a href="index.html" class="active">Home</a></li>
+		
+				<li><a href="about.html">About us</a></li>
+  <li><a href="services.html">Services</a></li>
+  <li><a href="classbox.html">Classes</a></li>
+  <li><a href="consultation.html">Consultation</a></li>
+  
+  <li><a href="Help.html">Help</a></li>
+   
+  <li><a href="payment.html">Payment</a></li>
+ 		
+		       
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="burger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO SECTION: The Magic Behind NLP -->
+    <section style="padding: 3rem 20px 2rem;">
+      <div class="container">
+        <h1 class="fade-in">The Magic Behind NLP</h1>
+        <p class="lead fade-in">What is NLP? Unlocking the Power of Natural Language Processing</p>
+        <p class="fade-in" style="max-width: 800px; margin: 0 auto;">Natural Language Processing (NLP) is a groundbreaking field of artificial intelligence (AI) that enables computers to understand, interpret, and respond to human language. By bridging the gap between human communication and machine understanding, NLP is transforming industries and enhancing digital experiences worldwide.</p>
+      </div>
+    </section>
+
+    <!-- What is NLP? (Neuro-Linguistic Programming) - brain manual concept -->
+    <section class="section-bg-light">
+      <div class="container">
+        <h2 class="fade-in">What is NLP? The User Manual for Your Brain</h2>
+        <p class="fade-in" style="max-width: 800px; margin: 0 auto 1.5rem;">Neuro-Linguistic Programming (NLP) is like a user manual for your brain. Just as a manual helps you operate a complex machine, NLP gives you the tools to understand and influence how your mind works—so you can think better, feel better, and achieve better results.</p>
+        <div class="grid-2 fade-in" style="margin-top: 2rem;">
+          <div>
+            <ul class="bullet-list">
+              <li><strong>Neuro</strong> – how we experience the world through our nervous system</li>
+              <li><strong>Linguistic</strong> – how language shapes our thoughts and communication</li>
+              <li><strong>Programming</strong> – how repeated patterns become habits and behaviors</li>
+            </ul>
+          </div>
+          <div class="accent-quote">
+            <p style="font-size: 1.2rem;"><strong>NLP = Brain Manual:</strong> Think of NLP as the operating system for your mind. It helps you reprogram negative thought patterns, install empowering beliefs, and create lasting personal change.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why NLP Matters (bullet list) -->
+    <section>
+      <div class="container">
+        <h2 class="fade-in">Why NLP Matters</h2>
+        <p class="fade-in" style="max-width:800px; margin:0 auto 1.5rem;">Neuro-Linguistic Programming (NLP) matters because it gives you the tools to understand, reframe, and reprogram your inner world—so you can create real and lasting change in your outer world.</p>
+        <ul class="bullet-list fade-in" style="max-width: 800px; margin: 0 auto;">
+          <li>Break free from negative self-talk and emotional blocks</li>
+          <li>Develop unshakable confidence, clarity, and focus</li>
+          <li>Build better relationships through effective communication</li>
+          <li>Rewire your mindset for success, growth, and peace of mind</li>
+          <li>Transform how you respond to challenges, stress, and setbacks</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- How Does NLP Work? (steps / inner programming) -->
+    <section class="section-bg-light">
+      <div class="container">
+        <h2 class="fade-in">How Does NLP Work?</h2>
+        <div class="steps">
+          <div class="step-item fade-in"><h4>Reveals Inner Programming</h4><p>Become aware of hidden patterns and automatic thoughts (like ANTs—Automatic Negative Thoughts).</p></div>
+          <div class="step-item fade-in"><h4>Reframes Limiting Beliefs</h4><p>Use language patterns and tools to shift from self-sabotage to empowerment.</p></div>
+          <div class="step-item fade-in"><h4>Rewires Emotional Responses</h4><p>Use anchoring and timeline therapy to change emotional reactions.</p></div>
+          <div class="step-item fade-in"><h4>Aligns Mind and Goals</h4><p>Align the subconscious with conscious goals for more ease and clarity.</p></div>
+          <div class="step-item fade-in"><h4>Installs New Mental Habits</h4><p>Through guided visualizations and repetition, form new empowering patterns.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Real-World Applications of NLP (first set — personal / professional) -->
+    <section>
+      <div class="container">
+        <h2 class="fade-in">Real-World Applications of NLP</h2>
+        <ul class="bullet-list fade-in" style="max-width: 900px; margin: 0 auto; columns: 2; column-gap: 2.5rem;">
+          <li><strong>Personal Growth & Self-Mastery:</strong> Break limiting beliefs, develop confidence, and gain emotional resilience.</li>
+          <li><strong>Mental Health & Wellness:</strong> Manage anxiety, reframe trauma, and enhance mental clarity.</li>
+          <li><strong>Professional Performance:</strong> Improve communication, leadership, and productivity.</li>
+          <li><strong>Education & Learning:</strong> Boost memory, motivation, and overcome exam anxiety.</li>
+          <li><strong>Coaching & Healing:</strong> Offer breakthrough tools for transformation alongside Reiki, mindfulness, and more.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Key Benefits of NLP (compact) -->
+    <section class="section-bg-light">
+      <div class="container">
+        <h2 class="fade-in">Key Benefits of NLP</h2>
+        <div style="display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center; max-width: 900px; margin:0 auto;">
+          <div class="step-item fade-in" style="flex:1 1 200px;"><h4>ANTs Reprogramming</h4><p>Eliminate automatic negative thoughts for healthier mental habits.</p></div>
+          <div class="step-item fade-in" style="flex:1 1 200px;"><h4>Mental Wellness</h4><p>Build calm, clarity, and emotional balance through structured NLP tools.</p></div>
+          <div class="step-item fade-in" style="flex:1 1 200px;"><h4>Strategic Change</h4><p>Apply practical tools to shift habits, overcome fears, and achieve personal goals.</p></div>
+        </div>
+        <!-- why choose our NLP solutions (integrated) -->
+        <div class="callout fade-in" style="margin-top: 3rem;">
+          <p style="font-size:1.3rem;">✨ You’re not just learning NLP—you’re learning to master your own mind.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- The Technical Side: How Does NLP Work? (text preprocessing & AI) -->
+    <section>
+      <div class="container">
+        <h2 class="fade-in">How Does NLP Work? The Secret Behind the Magic</h2>
+        <div class="grid-2 fade-in" style="align-items:start;">
+          <div>
+            <h3 style="font-size:1.4rem;">1. Text Preprocessing</h3>
+            <ul class="bullet-list">
+              <li><strong>Tokenization:</strong> Breaking down text into words or phrases.</li>
+              <li><strong>Stopword Removal:</strong> Eliminating common words like "and," "the".</li>
+              <li><strong>Stemming & Lemmatization:</strong> Reducing words to root form.</li>
+            </ul>
+            <h3 style="font-size:1.4rem; margin-top:1.2rem;">2. Text Representation</h3>
+            <ul class="bullet-list">
+              <li><strong>Bag of Words (BoW):</strong> Converts text into numerical values.</li>
+              <li><strong>TF-IDF:</strong> Weighs important words over common ones.</li>
+              <li><strong>Word Embeddings:</strong> Word2Vec, GloVe capture semantic meaning.</li>
+            </ul>
+          </div>
+          <div>
+            <h3 style="font-size:1.4rem;">3. Understanding & Analysis</h3>
+            <ul class="bullet-list">
+              <li><strong>Named Entity Recognition (NER):</strong> Identifies people, places, organizations.</li>
+              <li><strong>Sentiment Analysis:</strong> Evaluates emotions or opinions.</li>
+              <li><strong>Syntax & Semantic Analysis:</strong> Examines grammar and meaning.</li>
+            </ul>
+            <h3 style="font-size:1.4rem; margin-top:1.2rem;">4. Generating Outputs</h3>
+            <ul class="bullet-list">
+              <li><strong>Text Generation:</strong> Chat responses, creative writing (GPT-4).</li>
+              <li><strong>Translation & Summarization:</strong> Converts and condenses information.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Real-World Applications of NLP (industry specific) -->
+    <section class="section-bg-light">
+      <div class="container">
+        <h2 class="fade-in">NLP Across Industries</h2>
+        <div class="steps">
+          <div class="step-item fade-in"><h4>E‑commerce & Marketing</h4><p>Chatbots, sentiment analysis, automated marketing copy.</p></div>
+          <div class="step-item fade-in"><h4>Healthcare</h4><p>Clinical data analysis, virtual health assistants.</p></div>
+          <div class="step-item fade-in"><h4>Business & Finance</h4><p>Document processing, risk management from news.</p></div>
+          <div class="step-item fade-in"><h4>Entertainment & Media</h4><p>Content moderation, personalized recommendations (Netflix, Spotify).</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- The Future of NLP & Why Choose Us (combined) -->
+    <section>
+      <div class="container">
+        <h2 class="fade-in">The Future of NLP: What’s Next?</h2>
+        <ul class="bullet-list fade-in" style="max-width:800px; margin:1rem auto;">
+          <li><strong>Contextual Understanding:</strong> Beyond words, understanding emotions and intent.</li>
+          <li><strong>Multimodal NLP:</strong> Combining text, audio, and visuals for deeper insights.</li>
+          <li><strong>Ethical AI:</strong> Ensuring fairness and reducing biases in AI models.</li>
+          <li><strong>Low-Resource Languages:</strong> Expanding NLP to diverse languages globally.</li>
+        </ul>
+        <div style="margin-top:3rem;">
+          <h2 class="fade-in">Why Choose Our NLP Solutions?</h2>
+          <div style="display:flex; flex-wrap:wrap; gap:1.5rem; justify-content:center; max-width:1000px; margin:0 auto;">
+            <div class="step-item fade-in" style="flex:1 1 180px;"><h4>Personalized Approach</h4><p>Custom NLP techniques to meet your unique goals.</p></div>
+            <div class="step-item fade-in" style="flex:1 1 180px;"><h4>Root-Level Change</h4><p>Reprogram subconscious beliefs for deep, lasting impact.</p></div>
+            <div class="step-item fade-in" style="flex:1 1 180px;"><h4>Practical Tools</h4><p>Learn real-world strategies you can apply immediately.</p></div>
+            <div class="step-item fade-in" style="flex:1 1 180px;"><h4>Integrative & Holistic</h4><p>Combine NLP with energy healing, mindfulness, coaching.</p></div>
+            <div class="step-item fade-in" style="flex:1 1 180px;"><h4>Proven Results</h4><p>Clients report lasting gains in confidence, focus, success.</p></div>
+          </div>
+          <div class="accent-quote fade-in" style="max-width:700px; margin:2rem auto 0; text-align:center;">
+            <p><strong>Custom NLP Development:</strong> Tailored solutions using cutting-edge tools like BERT, GPT, and Transformer models. Seamless integration into your workflow.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Founder section: Revathi Bhaikatti – NLP Coach & Transformational Guide -->
+    <section class="section-bg-light" style="padding: 4rem 20px;">
+      <div class="container">
+        <div class="founder-section">
+          <div class="fade-in">
+            <!-- same image filename pattern as astrology, alt updated -->
+            <img src="img/Ravati Bhaikatti.jpg" alt="Revathi Bhaikatti - NLP Coach" class="founder-image">
+          </div>
+          <div class="fade-in">
+            <h2 style="text-align: left; margin-bottom: 0.5rem;">Meet Revathi Bhaikatti</h2>
+            <p style="font-size: 1.2rem; font-style: italic; margin-bottom: 1.5rem;">NLP Coach & Transformational Guide</p>
+            <p>Revathi Bhaikatti is a skilled NLP (Neuro-Linguistic Programming) practitioner, dedicated to helping individuals unlock the power of their mind to create lasting change. Through her expertise in NLP techniques, Revathi empowers clients to reprogram limiting beliefs, shift negative patterns, and achieve personal and professional breakthroughs. With a compassionate and result-oriented approach, she guides people in mastering their emotions, enhancing communication, and building confidence. Revathi’s NLP sessions are designed to accelerate growth, remove subconscious blocks, and align actions with goals, creating powerful transformations and a mindset for success.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Auraveda</h4>
+        <p>Let your aura shine brighter with holistic wellness.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Contact</h4>
+        <ul>
+          <li><i class="fas fa-phone"></i> +91 98765 43210</li>
+          <li><i class="fas fa-envelope"></i> hello@auraveda.co.in</li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">
+      &copy; 2026 Auraveda. All rights reserved.
+    </div>
+  </footer>
+
+  <script>
+    // === BURGER MENU TOGGLE (same as astrology) ===
+    const burger = document.querySelector('.burger');
+    const navLinks = document.querySelector('.nav-links');
+
+    burger.addEventListener('click', () => {
+      navLinks.classList.toggle('nav-active');
+      
+      // Burger animation
+      burger.children[0].classList.toggle('toggle');
+      burger.children[1].classList.toggle('toggle');
+      burger.children[2].classList.toggle('toggle');
+    });
+
+    // Smooth close on link click (for mobile)
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('nav-active');
+      });
+    });
+
+    // === FADE-IN ON SCROLL ===
+    const faders = document.querySelectorAll('.fade-in');
+
+    const appearOptions = {
+      threshold: 0.2,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const appearOnScroll = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      });
+    }, appearOptions);
+
+    faders.forEach(fader => {
+      appearOnScroll.observe(fader);
+    });
+
+    // Burger animation helper (optional)
+    burger.addEventListener('click', () => {
+      burger.children[0].classList.toggle('rotate1');
+      burger.children[1].classList.toggle('hide');
+      burger.children[2].classList.toggle('rotate2');
+    });
+  </script>
+
+  <style>
+    /* Additional burger animation styles (same) */
+    .burger .toggle:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+    .burger .toggle:nth-child(2) {
+      opacity: 0;
+    }
+    .burger .toggle:nth-child(3) {
+      transform: rotate(-45deg) translate(5px, -5px);
+    }
+    /* fix columns on small screens */
+    @media (max-width: 700px) {
+      .bullet-list[style*="columns"] {
+        columns: 1;
+      }
+    }
+  </style>
+</body>
+</html>

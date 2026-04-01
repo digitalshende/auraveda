@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Akashic Records Consultation for professional women seeking soul-level answers, karmic clarity, and spiritual alignment. Premium guidance for career, relationships, and life purpose.">
+  <meta name="keywords" content="Akashic Records, Soul Reading, Karmic Healing, Spiritual Guidance, Akashic Consultation, Professional Women, Past Life Healing, Soul Purpose">
+  <meta name="author" content="Auraveda">
+  <meta property="og:title" content="Akashic Records Consultation | Auraveda — Soul-Level Guidance for Women">
+  <meta property="og:description" content="Access your soul's archive. Receive divine clarity on purpose, patterns, and path. Premium Akashic readings for working professional women.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=1200&auto=format">
+  <meta name="robots" content="index, follow">
+  <title>Akashic Records Consultation | Auraveda — Soul Clarity for Professional Women</title>
+  
+  <!-- Google Fonts + Font Awesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #F8F9FA;  /* Soft White – 60% primary background */
+      color: #2C2A2E;
+      line-height: 1.5;
+      scroll-behavior: smooth;
+    }
+
+    h1, h2, h3, .logo-text, .price-card h4, .section-title {
+      font-family: 'Playfair Display', serif;
+    }
+
+    /* Colour system variables – Brand palette */
+    :root {
+      --purple: #5A189A;      /* Primary: deep royal purple */
+      --white-bg: #F8F9FA;
+      --burgundy: #800020;    /* CTA / action colour */
+      --dusty-rose: #D88C9A;  /* Accent limited use */
+      --dark-charcoal: #2C2A2E;
+      --soft-gray: #F0EFED;
+      --purple-light: #7B2FBF10;
+    }
+
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 28px;
+    }
+
+    /* Header – premium sticky */
+    .site-header {
+      background: rgba(248, 249, 250, 0.96);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.02);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      border-bottom: 1px solid #E9E3DA;
+    }
+
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 16px 0;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo-icon {
+      font-size: 2rem;
+      color: var(--purple);
+    }
+
+    .logo-text {
+      font-size: 1.8rem;
+      font-weight: 600;
+      background: linear-gradient(135deg, var(--purple), #8A3FBF);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      letter-spacing: -0.3px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      font-weight: 500;
+      color: #3F3A45;
+      transition: 0.2s;
+    }
+
+    .nav-links a:hover {
+      color: var(--purple);
+    }
+
+    /* Hero */
+    .hero {
+      background: linear-gradient(115deg, #FEFCF8, #FDF5EE);
+      padding: 44px 0 56px;
+      border-bottom: 1px solid #F0E6DD;
+    }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none;
+      color: var(--purple);
+      font-weight: 500;
+      margin-bottom: 24px;
+      transition: 0.2s;
+      font-size: 0.95rem;
+    }
+
+    .back-link i {
+      font-size: 0.9rem;
+    }
+
+    .back-link:hover {
+      color: var(--burgundy);
+      transform: translateX(-4px);
+    }
+
+    .hero h1 {
+      font-size: 3.4rem;
+      font-weight: 600;
+      color: var(--purple);
+      margin-bottom: 16px;
+    }
+
+    .hero-tagline {
+      font-size: 1.25rem;
+      color: #5B4A3F;
+      max-width: 680px;
+      margin-bottom: 32px;
+    }
+
+    .hero-img-grid {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      flex-wrap: wrap;
+      margin-top: 40px;
+    }
+
+    .hero-img-grid img {
+      width: 260px;
+      height: 190px;
+      object-fit: cover;
+      border-radius: 32px;
+      box-shadow: 0 20px 30px -12px rgba(90, 24, 154, 0.12);
+      transition: transform 0.25s ease;
+    }
+
+    .hero-img-grid img:hover {
+      transform: scale(1.02);
+    }
+
+    /* Intro + Akashic description */
+    .intro-section {
+      margin: 64px 0 56px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 48px;
+      align-items: flex-start;
+    }
+
+    .intro-text {
+      flex: 1.2;
+    }
+
+    .intro-text h2 {
+      font-size: 2rem;
+      color: var(--purple);
+      border-left: 4px solid var(--burgundy);
+      padding-left: 20px;
+      margin-bottom: 20px;
+    }
+
+    .intro-text p {
+      font-size: 1rem;
+      color: #3A3530;
+      margin-bottom: 20px;
+    }
+
+    .akashic-highlight {
+      flex: 1;
+      background: #FFFFFF;
+      border-radius: 32px;
+      padding: 28px 28px;
+      box-shadow: 0 15px 30px -12px rgba(0, 0, 0, 0.05);
+      border: 1px solid #F0E4D8;
+    }
+
+    .akashic-highlight h3 {
+      font-size: 1.6rem;
+      color: var(--purple);
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .questions-list {
+      list-style: none;
+    }
+
+    .questions-list li {
+      margin-bottom: 14px;
+      display: flex;
+      gap: 12px;
+      align-items: baseline;
+    }
+
+    .questions-list li i {
+      color: var(--burgundy);
+      font-size: 1rem;
+      width: 24px;
+      margin-top: 3px;
+    }
+
+    /* Types of questions grid */
+    .questions-showcase {
+      margin: 56px 0 48px;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      font-weight: 600;
+      color: var(--purple);
+      text-align: center;
+      margin-bottom: 48px;
+      position: relative;
+    }
+
+    .section-title:after {
+      content: '';
+      display: block;
+      width: 70px;
+      height: 3px;
+      background: var(--dusty-rose);
+      margin: 14px auto 0;
+      border-radius: 4px;
+    }
+
+    .questions-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 28px;
+    }
+
+    .question-card {
+      background: white;
+      border-radius: 28px;
+      padding: 24px 20px;
+      transition: all 0.25s;
+      border: 1px solid #F3E8DF;
+      box-shadow: 0 6px 14px rgba(0,0,0,0.02);
+    }
+
+    .question-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--dusty-rose);
+      box-shadow: 0 16px 28px -10px rgba(90,24,154,0.08);
+    }
+
+    .question-card i {
+      font-size: 2rem;
+      color: var(--purple);
+      margin-bottom: 16px;
+    }
+
+    .question-card p {
+      font-weight: 500;
+      color: #2C2A2E;
+    }
+
+    .tip-badge {
+      background: #FEF5EB;
+      border-left: 3px solid var(--dusty-rose);
+      padding: 16px 24px;
+      border-radius: 24px;
+      margin-top: 32px;
+      font-size: 0.9rem;
+      color: #5B4A3F;
+    }
+
+    /* Session + pricing */
+    .pricing-section {
+      margin: 20px 0 40px;
+    }
+
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 28px;
+      margin-bottom: 48px;
+    }
+
+    .price-card {
+      background: white;
+      border-radius: 32px;
+      padding: 28px 24px;
+      text-align: center;
+      border: 1px solid #F3E8DF;
+      transition: all 0.25s;
+    }
+
+    .price-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 30px -12px rgba(90, 24, 154, 0.1);
+      border-color: var(--dusty-rose);
+    }
+
+    .price-card h4 {
+      font-size: 1.6rem;
+      font-weight: 600;
+      color: var(--purple);
+      margin-bottom: 12px;
+    }
+
+    .price {
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--burgundy);
+      margin: 16px 0;
+      font-family: 'Inter', sans-serif;
+    }
+
+    .price small {
+      font-size: 0.9rem;
+      font-weight: 400;
+      color: #6F6A65;
+    }
+
+    .session-note {
+      margin-top: 12px;
+      font-size: 0.85rem;
+      color: #7C6B5A;
+    }
+
+    /* Counseling wrapper */
+    .counseling-wrapper {
+      background: #FFF9F5;
+      border-radius: 44px;
+      padding: 36px 32px;
+      margin: 20px 0 48px;
+      border: 1px solid #F2E4DA;
+    }
+
+    .counseling-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-bottom: 28px;
+    }
+
+    .counseling-header h3 {
+      font-size: 1.8rem;
+      color: var(--purple);
+    }
+
+    .counseling-badge {
+      background: var(--dusty-rose);
+      padding: 6px 18px;
+      border-radius: 40px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: #3F2A2A;
+    }
+
+    .counseling-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+      justify-content: space-between;
+    }
+
+    .counsel-item {
+      flex: 1;
+      min-width: 180px;
+      background: white;
+      border-radius: 28px;
+      padding: 20px 16px;
+      text-align: center;
+      box-shadow: 0 5px 12px rgba(0, 0, 0, 0.02);
+      border: 1px solid #F0E0D4;
+    }
+
+    .counsel-item .counsel-price {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--burgundy);
+      margin-top: 10px;
+    }
+
+    .counsel-item p {
+      font-weight: 500;
+      color: #4F3E35;
+    }
+
+    .note-optional {
+      margin-top: 24px;
+      font-size: 0.85rem;
+      background: #FEF5EB;
+      padding: 12px 20px;
+      border-radius: 48px;
+      display: inline-block;
+      color: #6B4C3C;
+    }
+
+    /* CTA banner */
+    .booking-banner {
+      text-align: center;
+      background: linear-gradient(105deg, #F9F1EA, #FEF6EF);
+      border-radius: 56px;
+      padding: 56px 32px;
+      margin: 20px 0 70px;
+      border: 1px solid #F2E2D4;
+    }
+
+    .booking-banner h3 {
+      font-size: 2.1rem;
+      font-weight: 500;
+      color: var(--purple);
+      margin-bottom: 16px;
+    }
+
+    .btn-book-primary {
+      background: var(--burgundy);
+      color: white;
+      border: none;
+      padding: 16px 44px;
+      border-radius: 60px;
+      font-weight: 700;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: all 0.25s;
+      margin-top: 24px;
+      display: inline-flex;
+      gap: 12px;
+      align-items: center;
+      box-shadow: 0 8px 18px rgba(128, 0, 32, 0.25);
+    }
+
+    .btn-book-primary:hover {
+      background: #5E0018;
+      transform: translateY(-3px);
+      box-shadow: 0 14px 22px -8px rgba(128, 0, 32, 0.35);
+    }
+
+    /* Footer */
+    footer {
+      background: #2C1A3A;
+      color: #FEF3E6;
+      padding: 3rem 5% 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .footer-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 2rem;
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+
+    .footer-section h4 {
+      margin-bottom: 1rem;
+      font-weight: 600;
+      color: #F0D9C5;
+    }
+
+    .footer-section ul {
+      list-style: none;
+    }
+
+    .footer-section li {
+      margin-bottom: 0.5rem;
+    }
+
+    .footer-section a {
+      color: #E6D5C2;
+      text-decoration: none;
+      transition: 0.2s;
+    }
+
+    .footer-section a:hover {
+      color: var(--dusty-rose);
+    }
+
+    .copyright {
+      text-align: center;
+      margin-top: 2rem;
+      padding-top: 1rem;
+      border-top: 1px solid #5C4375;
+      font-size: 0.8rem;
+    }
+
+    /* MODAL */
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(44, 26, 58, 0.85);
+      backdrop-filter: blur(10px);
+      justify-content: center;
+      align-items: center;
+      z-index: 2000;
+    }
+
+    .modal-card {
+      background: white;
+      max-width: 580px;
+      width: 90%;
+      border-radius: 48px;
+      padding: 36px 32px;
+      position: relative;
+      box-shadow: 0 40px 60px rgba(0, 0, 0, 0.3);
+      animation: fadeUp 0.3s ease;
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(25px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .modal-card h3 {
+      font-size: 2rem;
+      color: var(--purple);
+      margin-bottom: 6px;
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 20px;
+      right: 26px;
+      font-size: 28px;
+      cursor: pointer;
+      color: #9A7C64;
+      transition: 0.2s;
+    }
+
+    .modal-close:hover {
+      color: var(--burgundy);
+    }
+
+    .modal-card input, .modal-card select, .modal-card textarea {
+      width: 100%;
+      padding: 12px 18px;
+      margin: 10px 0 16px;
+      border: 1px solid #E2CFBB;
+      border-radius: 40px;
+      background: #FEFAF5;
+      font-family: inherit;
+      font-size: 0.95rem;
+    }
+
+    .total-estimate {
+      background: #F8F2EC;
+      padding: 12px 16px;
+      border-radius: 32px;
+      margin: 12px 0;
+      font-weight: 600;
+      color: #5A189A;
+      text-align: center;
+    }
+
+    .modal-card button[type="submit"] {
+      background: var(--burgundy);
+      color: white;
+      border: none;
+      padding: 14px;
+      width: 100%;
+      border-radius: 60px;
+      font-weight: bold;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    .form-note {
+      font-size: 0.7rem;
+      text-align: center;
+      margin-top: 14px;
+      color: #8F6F56;
+    }
+
+    @media (max-width: 780px) {
+      .navbar {
+        flex-direction: column;
+        gap: 14px;
+      }
+      .hero h1 {
+        font-size: 2.4rem;
+      }
+      .intro-section {
+        flex-direction: column;
+      }
+      .counseling-grid {
+        flex-direction: column;
+      }
+      .booking-banner h3 {
+        font-size: 1.6rem;
+      }
+      .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <div class="navbar">
+      <div class="logo">
+        <i class="fas fa-spa logo-icon"></i>
+        <span class="logo-text">AURA<span style="color: #5A189A;">VEDA</span></span>
+      </div>
+      <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+		
+				<li><a href="about.html">About us</a></li>
+  <li><a href="services.html">Services</a></li>
+  <li><a href="classbox.html">Classes</a></li>
+  <li><a href="consultation.html">Consultation</a></li>
+  
+  <li><a href="Help.html">Help</a></li>
+   
+  <li><a href="payment.html">Payment</a></li>
+ 		
+		       
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container">
+      <a href="#" class="back-link"><i class="fas fa-arrow-left"></i> Back</a>
+      <h1>Akashic Records Consultation</h1>
+      <p class="hero-tagline">Receive soul-level answers and karmic clarity through the Akashic field</p>
+      <div class="hero-img-grid">
+        <img src="https://images.unsplash.com/photo-1545205597-3d9d02c29597?w=500&auto=format" alt="Sacred energy healing session" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=500&auto=format" alt="Woman meditating with spiritual energy" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?w=500&auto=format" alt="Mystical Akashic light" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="intro-section">
+      <div class="intro-text">
+        <h2>Access the eternal archive of your soul</h2>
+        <p>The Akashic Records are a vibrational archive of your soul’s entire journey — past, present, and potential future. Through this sacred reading, we receive divine guidance, uncover karmic patterns, and reconnect with your true purpose. Each question opens a doorway to deep spiritual understanding and healing.</p>
+        <p><strong>Why working women choose Auraveda:</strong> Our Akashic sessions are gentle yet powerful, helping you release subconscious blocks, gain career clarity, heal relational patterns, and align with your highest timeline. All readings are held with reverence, professionalism, and intuitive precision.</p>
+      </div>
+      <div class="akashic-highlight">
+        <h3><i class="fas fa-book-open" style="color: var(--dusty-rose);"></i> Wisdom from the Records</h3>
+        <ul class="questions-list">
+          <li><i class="fas fa-feather-alt"></i> Reveal soul purpose & life direction</li>
+          <li><i class="fas fa-history"></i> Understand karmic patterns and past lives</li>
+          <li><i class="fas fa-hand-sparkles"></i> Heal ancestral & energetic imprints</li>
+          <li><i class="fas fa-chart-line"></i> Align with career & abundance flow</li>
+          <li><i class="fas fa-heart"></i> Deepen relationships & self-worth</li>
+          <li><i class="fas fa-gem"></i> Awaken spiritual gifts & intuition</li>
+        </ul>
+        <p style="margin-top: 18px; font-style: italic; color: #7C6856;"><i class="fas fa-quote-left"></i> The Records hold gentle truth — every answer guides you back to your soul's sovereignty.</p>
+      </div>
+    </div>
+
+    <!-- Types of questions grid -->
+    <div class="questions-showcase">
+      <h2 class="section-title">Types of Questions You Can Ask</h2>
+      <div class="questions-grid">
+        <div class="question-card"><i class="fas fa-star-of-life"></i><p>What is my soul's purpose in this lifetime?</p></div>
+        <div class="question-card"><i class="fas fa-infinity"></i><p>What karmic lessons am I repeating and why?</p></div>
+        <div class="question-card"><i class="fas fa-moon"></i><p>Is a past life influencing my current situation?</p></div>
+        <div class="question-card"><i class="fas fa-heartbeat"></i><p>What is the nature of my connection with [person's name]?</p></div>
+        <div class="question-card"><i class="fas fa-lock"></i><p>What is blocking me from achieving [goal or area]?</p></div>
+        <div class="question-card"><i class="fas fa-feather"></i><p>What are my soul gifts or spiritual abilities?</p></div>
+        <div class="question-card"><i class="fas fa-briefcase"></i><p>Am I on the right career or life path?</p></div>
+        <div class="question-card"><i class="fas fa-question-circle"></i><p>What guidance do my Records hold about a current decision?</p></div>
+      </div>
+      <div class="tip-badge">
+        <i class="fas fa-lightbulb" style="color: #800020; margin-right: 12px;"></i> <strong>Tip:</strong> Ask clear, open-ended questions for deeper soul-level insight. Your Records respond with loving clarity.
+      </div>
+    </div>
+
+    <!-- Session duration & investment -->
+    <div class="pricing-section">
+      <div class="pricing-grid">
+        <div class="price-card">
+          <h4><i class="fas fa-hourglass-half"></i> Per Question Reading</h4>
+          <div class="price">₹2,100 <small>/ question</small></div>
+          <p>30–40 minutes of profound Akashic guidance</p>
+          <div class="session-note"><i class="fas fa-clock"></i> Duration may vary slightly based on depth of guidance received for each question.</div>
+        </div>
+        <div class="price-card">
+          <h4><i class="fas fa-gem"></i> 3 Questions Deep Dive</h4>
+          <div class="price">₹5,700 <small>/ session</small></div>
+          <p>Complete soul blueprint + Q&A (90 min)</p>
+          <div class="session-note"><i class="fas fa-leaf"></i> Includes integration guidance</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Counseling add-on -->
+    <div class="counseling-wrapper">
+      <div class="counseling-header">
+        <h3><i class="fas fa-comments"></i> Counseling Charges (Optional Add-on)</h3>
+        <span class="counseling-badge"><i class="far fa-clock"></i> flexible scheduling</span>
+      </div>
+      <div class="counseling-grid">
+        <div class="counsel-item"><p><strong>15-min Counseling Session</strong></p><div class="counsel-price">₹200</div></div>
+        <div class="counsel-item"><p><strong>30-min Counseling Session</strong></p><div class="counsel-price">₹350</div></div>
+        <div class="counsel-item"><p><strong>60-min Deep Guidance</strong></p><div class="counsel-price">₹600</div></div>
+      </div>
+      <div class="note-optional">
+        <i class="fas fa-info-circle"></i> These optional counseling sessions can be scheduled before or after your Akashic reading for deeper insight, emotional clarity, and personalized guidance.
+      </div>
+    </div>
+
+    <!-- CTA Banner -->
+    <div class="booking-banner">
+      <h3><i class="fas fa-hand-sparkles"></i> Ready to open your Akashic Records?</h3>
+      <p style="margin-top: 8px;">Receive soul-led answers, heal karmic blocks, and step into your power.</p>
+      <button class="btn-book-primary" id="mainBookBtn"><i class="fas fa-calendar-check"></i> Book Akashic Consultation</button>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-content">
+    <div class="footer-section">
+      <h4>Auraveda</h4>
+      <p>Awaken your inner knowing with ancient healing wisdom.</p>
+    </div>
+    <div class="footer-section">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Contact</h4>
+      <ul>
+        <li><i class="fas fa-phone"></i> +91 98765 43210</li>
+        <li><i class="fas fa-envelope"></i> hello@auraveda.co.in</li>
+      </ul>
+    </div>
+  </div>
+  <div class="copyright">
+    &copy; 2026 Auraveda — All rights reserved. Dowsing is a powerful tool for energetic alignment.
+  </div>
+</footer>
+
+<!-- Booking Modal -->
+<div id="bookingModal" class="modal">
+  <div class="modal-card">
+    <span class="modal-close" id="closeModalBtn">&times;</span>
+    <h3><i class="fas fa-scroll"></i> Akashic Session</h3>
+    <p style="margin-bottom: 20px;">Share your details — we'll reverently open your Records</p>
+    <form id="bookingForm">
+      <input type="text" id="userName" placeholder="Full name *" required>
+      <input type="email" id="userEmail" placeholder="Email address *" required>
+      <select id="questionCount">
+        <option value="1">1 Question (₹2,100)</option>
+        <option value="2">2 Questions (₹4,200)</option>
+        <option value="3">3 Questions Deep Dive (₹5,700)</option>
+      </select>
+      <select id="counselingAddon">
+        <option value="none">No counseling add-on</option>
+        <option value="200">15-min Counseling (+₹200)</option>
+        <option value="350">30-min Counseling (+₹350)</option>
+        <option value="600">60-min Deep Guidance (+₹600)</option>
+      </select>
+      <input type="date" id="prefDate" placeholder="Preferred date (optional)">
+      <textarea rows="2" placeholder="Your specific questions or focus area (optional)"></textarea>
+      <div class="total-estimate" id="totalEstimate">💰 Total: ₹2,100</div>
+      <button type="submit">Request Akashic Reading</button>
+      <div class="form-note">✨ We'll email you to confirm time & practitioner within 24h.</div>
+    </form>
+  </div>
+</div>
+
+<script>
+  // Modal & dynamic pricing logic
+  const modal = document.getElementById('bookingModal');
+  const closeModalBtn = document.getElementById('closeModalBtn');
+  const bookingForm = document.getElementById('bookingForm');
+  const questionSelect = document.getElementById('questionCount');
+  const counselingSelect = document.getElementById('counselingAddon');
+  const totalSpan = document.getElementById('totalEstimate');
+
+  function updateTotal() {
+    let base = 0;
+    const qVal = questionSelect.value;
+    if (qVal === '1') base = 2100;
+    else if (qVal === '2') base = 4200;
+    else base = 5700;
+    let counselingAdd = 0;
+    const counselingVal = counselingSelect.value;
+    if (counselingVal === '200') counselingAdd = 200;
+    else if (counselingVal === '350') counselingAdd = 350;
+    else if (counselingVal === '600') counselingAdd = 600;
+    const total = base + counselingAdd;
+    totalSpan.innerHTML = `💰 Total: ₹${total.toLocaleString('en-IN')}`;
+  }
+
+  if (questionSelect && counselingSelect) {
+    questionSelect.addEventListener('change', updateTotal);
+    counselingSelect.addEventListener('change', updateTotal);
+    updateTotal();
+  }
+
+  function openModal() {
+    modal.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+    updateTotal();
+  }
+
+  function closeModal() {
+    modal.style.display = 'none';
+    document.body.style.overflow = '';
+  }
+
+  const mainBookBtn = document.getElementById('mainBookBtn');
+  if (mainBookBtn) mainBookBtn.addEventListener('click', (e) => { e.preventDefault(); openModal(); });
+  if (closeModalBtn) closeModalBtn.addEventListener('click', closeModal);
+  window.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && modal.style.display === 'flex') closeModal(); });
+
+  if (bookingForm) {
+    bookingForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const name = document.getElementById('userName')?.value.trim();
+      const email = document.getElementById('userEmail')?.value.trim();
+      if (!name) { alert("✨ Please enter your name to book your Akashic consultation."); return; }
+      if (!email || !email.includes('@')) { alert("Please provide a valid email address for confirmation."); return; }
+      let questionText = questionSelect.options[questionSelect.selectedIndex]?.text || "1 Question";
+      let counselingText = counselingSelect.options[counselingSelect.selectedIndex]?.text || "None";
+      const dateInput = document.getElementById('prefDate')?.value;
+      const dateMsg = dateInput ? ` on ${new Date(dateInput).toLocaleDateString()}` : ' (flexible date)';
+      alert(`🔮 Thank you ${name}, your Akashic Records consultation request (${questionText} | ${counselingText})${dateMsg} has been received.\n\nYou'll receive a confirmation email with session details, preparation guidance & practitioner's sacred space link within 24 hours. We honor your soul's journey.`);
+      bookingForm.reset();
+      closeModal();
+      updateTotal();
+    });
+  }
+
+  const datePicker = document.getElementById('prefDate');
+  if (datePicker) {
+    const tomorrow = new Date();
+    tomorrow.setDate(tomorrow.getDate() + 1);
+    const yyyy = tomorrow.getFullYear();
+    const mm = String(tomorrow.getMonth() + 1).padStart(2, '0');
+    const dd = String(tomorrow.getDate()).padStart(2, '0');
+    datePicker.min = `${yyyy}-${mm}-${dd}`;
+  }
+
+  const inputs = document.querySelectorAll('.modal-card input, .modal-card select, .modal-card textarea');
+  inputs.forEach(input => {
+    input.addEventListener('focus', () => input.style.borderColor = '#5A189A');
+    input.addEventListener('blur', () => input.style.borderColor = '#e2cfb9');
+  });
+  console.log("✨ Auraveda Akashic Records — soul-level guidance for professional women.");
+</script>
+</body>
+</html>

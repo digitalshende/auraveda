@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rajyoga Meditation – Brahma Kumaris | Auraveda</title>
+  <!-- Fonts & Icons (same as chakrahealing.html) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    /* ===== RESET & VARIABLES (identical to chakrahealing.html) ===== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --white: #fefcf5;
+      --accent-gold: #c6a43f;
+      --text-dark: #2e2e2e;
+      --text-light: #5a5a5a;
+      --bg-light: #f9f7f0;
+      --shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      color: var(--text-dark);
+      background-color: var(--white);
+      line-height: 1.6;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: 'Playfair Display', serif;
+      font-weight: 400;
+      letter-spacing: 0.02em;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* ===== HEADER & NAVIGATION (exact copy) ===== */
+    header {
+      background-color: var(--white);
+      box-shadow: var(--shadow);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.2rem 5%;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      font-weight: 500;
+      letter-spacing: 2px;
+    }
+
+    .logo span {
+      color: var(--accent-gold);
+      font-style: italic;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2.5rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--text-dark);
+      font-weight: 400;
+      font-size: 1rem;
+      transition: color 0.3s;
+      letter-spacing: 0.5px;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: var(--accent-gold);
+    }
+
+    .burger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+
+    .burger div {
+      width: 25px;
+      height: 2px;
+      background-color: var(--text-dark);
+      margin: 3px 0;
+      transition: 0.3s;
+    }
+
+    /* ===== FOOTER (exact copy) ===== */
+    footer {
+      background-color: #2a2a2a;
+      color: #ddd;
+      padding: 3rem 5% 1rem;
+    }
+
+    .footer-content {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .footer-section h4 {
+      color: var(--accent-gold);
+      margin-bottom: 1rem;
+      font-size: 1.2rem;
+    }
+
+    .footer-section ul {
+      list-style: none;
+    }
+
+    .footer-section ul li {
+      margin-bottom: 0.5rem;
+    }
+
+    .footer-section a {
+      color: #ddd;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .footer-section a:hover {
+      color: var(--accent-gold);
+    }
+
+    .copyright {
+      text-align: center;
+      padding: 1.5rem 0 0.5rem;
+      font-size: 0.9rem;
+      color: #aaa;
+      border-top: 1px solid #444;
+      margin-top: 2rem;
+    }
+
+    /* ===== CUSTOM STYLES FOR RAJYOGA PAGE (adapted from chakrahealing) ===== */
+    section {
+      padding: 4rem 20px;
+    }
+
+    .section-bg-white {
+      background: var(--white);
+    }
+
+    .section-bg-light {
+      background: var(--bg-light);
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      color: var(--text-dark);
+    }
+
+    h2 {
+      font-size: 2.2rem;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    h3 {
+      font-size: 1.6rem;
+      margin: 1.5rem 0 1rem;
+      color: var(--text-dark);
+    }
+
+    .lead {
+      font-size: 1.2rem;
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto 2rem;
+      color: var(--text-light);
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: center;
+    }
+
+    .bullet-list {
+      list-style: none;
+      margin: 1.5rem 0;
+    }
+
+    .bullet-list li {
+      margin-bottom: 1rem;
+      padding-left: 1.8rem;
+      position: relative;
+    }
+
+    .bullet-list li:before {
+      content: "•";
+      color: var(--accent-gold);
+      font-size: 1.5rem;
+      position: absolute;
+      left: 0;
+      top: -0.3rem;
+    }
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .step-item {
+      text-align: center;
+      padding: 1.5rem;
+      background: var(--white);
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+    }
+
+    .step-item h4 {
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+      color: var(--accent-gold);
+    }
+
+    .founder-section {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 3rem;
+      align-items: center;
+    }
+
+    .founder-image {
+      width: 100%;
+      border-radius: 50%;
+      border: 5px solid var(--accent-gold);
+    }
+
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .callout {
+      text-align: center;
+      font-size: 1.3rem;
+      font-style: italic;
+      margin: 2rem auto 0;
+      max-width: 700px;
+      color: var(--text-dark);
+      border-top: 1px solid var(--accent-gold);
+      padding-top: 2rem;
+    }
+
+    /* subtle rajya-specific tag style */
+    .meditation-tag {
+      display: inline-block;
+      background: rgba(198, 164, 63, 0.08);
+      padding: 0.2rem 1rem;
+      border-radius: 30px;
+      font-size: 0.9rem;
+      margin-right: 0.5rem;
+      margin-bottom: 0.5rem;
+      border: 1px solid rgba(198, 164, 63, 0.2);
+    }
+
+    /* ===== RESPONSIVE DESIGN (same as chakrahealing) ===== */
+    @media (max-width: 768px) {
+      .nav-links {
+        position: fixed;
+        right: 0;
+        top: 70px;
+        height: calc(100vh - 70px);
+        background: var(--white);
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding-top: 2rem;
+        width: 60%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        box-shadow: -5px 0 20px rgba(0,0,0,0.05);
+        z-index: 99;
+      }
+
+      .nav-links.nav-active {
+        transform: translateX(0%);
+      }
+
+      .burger {
+        display: flex;
+      }
+
+      .grid-2, .founder-section {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+
+      h1 {
+        font-size: 2.5rem;
+      }
+
+      h2 {
+        font-size: 2rem;
+      }
+
+      .founder-image {
+        max-width: 300px;
+        margin: 0 auto;
+      }
+    }
+
+    @media (max-width: 480px) {
+      section {
+        padding: 3rem 20px;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      h2 {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">AURA<span>VEDA</span></div>
+      <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+		
+				<li><a href="about.html">About us</a></li>
+  <li><a href="services.html">Services</a></li>
+  <li><a href="classbox.html">Classes</a></li>
+  <li><a href="consultation.html">Consultation</a></li>
+  
+  <li><a href="Help.html">Help</a></li>
+   
+  <li><a href="payment.html">Payment</a></li>
+ 		
+		       
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="burger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO SECTION: Rajyoga Meditation - Brahma Kumaris -->
+    <section style="padding: 3rem 20px 2rem;">
+      <div class="container">
+        <h1 class="fade-in">Rajyoga Meditation <br><span style="font-size: 2rem; color: var(--accent-gold);">Brahma Kumaris</span></h1>
+        <p class="lead fade-in">Rajyoga Meditation, taught by the Brahma Kumaris, is a powerful technique of connecting with your inner self and the Supreme Soul (God). Unlike other forms of meditation, it does not involve rituals or mantras. It is a simple, thought-based practice that empowers the mind and brings clarity, peace, and purpose to life.</p>
+      </div>
+    </section>
+
+    <!-- What is Rajyoga? (bg-light) -->
+    <section class="section-bg-light">
+      <div class="container">
+        <h2 class="fade-in">What is Rajyoga?</h2>
+        <p class="fade-in" style="max-width: 800px; margin: 0 auto;">‘Rajyoga’ means the ‘Supreme Union’—a connection between the soul and the Supreme Soul. Through guided reflection and spiritual knowledge, one learns to experience the soul's original qualities of peace, love, and purity.</p>
+        <div style="text-align: center; margin-top: 2rem;">
+          <span class="meditation-tag">🧘 soul conscious</span>
+          <span class="meditation-tag">✨ peace & love</span>
+          <span class="meditation-tag">🌌 no rituals</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefits of Rajyoga Meditation -->
+    <section>
+      <div class="container">
+        <h2 class="fade-in">Benefits of Rajyoga Meditation</h2>
+        <ul class="bullet-list fade-in" style="max-width: 800px; margin: 0 auto;">
+          <li>Reduces stress, anxiety, and overthinking</li>
+          <li>Improves emotional stability and clarity of thought</li>
+          <li>Enhances concentration and decision-making</li>
+          <li>Promotes spiritual awareness and soul consciousness</li>
+          <li>Strengthens willpower, values, and inner peace</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Course Structure (using steps + bullet) -->
+    <section class="section-bg-light">
+      <div class="container">
+        <h2 class="fade-in">Course Structure</h2>
+        <div class="steps" style="grid-template-columns: repeat(2, 1fr); max-width: 700px; margin: 0 auto;">
+          <div class="step-item fade-in">
+            <h4>📅 Duration</h4>
+            <p>7 days (1 hour per day)</p>
+          </div>
+          <div class="step-item fade-in">
+            <h4>🌐 Mode</h4>
+            <p>Online / Offline (as per availability)</p>
+          </div>
+        </div>
+        <h3 style="text-align: center; margin: 2rem 0 1rem;">Topics Covered</h3>
+        <ul class="bullet-list fade-in" style="max-width: 700px; margin: 0 auto;">
+          <li><strong>Understanding the Self</strong> – Who am I?</li>
+          <li><strong>The Supreme</strong> – Who is God?</li>
+          <li><strong>The Eternal World Drama</strong></li>
+          <li><strong>The Law of Karma</strong></li>
+          <li><strong>Cycle of Time</strong></li>
+          <li><strong>Rajyoga Meditation Practice</strong></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Who Can Join? -->
+    <section>
+      <div class="container">
+        <h2 class="fade-in">Who Can Join?</h2>
+        <p class="fade-in" style="max-width: 800px; margin: 0 auto; font-size: 1.2rem;">Anyone seeking inner peace, clarity, and a deeper understanding of life is welcome. There are no age or religious restrictions.</p>
+      </div>
+    </section>
+
+    <!-- Founder section: Revathi Bhaikatti – NLP Coach & Transformational Guide (from URL) -->
+    <section class="section-bg-light" style="padding: 4rem 20px;">
+      <div class="container">
+        <div class="founder-section">
+          <div class="fade-in">
+            <!-- same image filename as before, updated alt -->
+            <img src="img/Ravati Bhaikatti.jpg" alt="Revathi Bhaikatti - NLP Coach & Transformational Guide" class="founder-image">
+          </div>
+          <div class="fade-in">
+            <h2 style="text-align: left; margin-bottom: 1rem;">Meet Revathi Bhaikatti</h2>
+            <p style="font-size: 1.2rem; font-style: italic; margin-bottom: 1.5rem;">NLP Coach & Transformational Guide</p>
+            <p>Revathi Bhaikatti is a skilled NLP (Neuro-Linguistic Programming) practitioner, dedicated to helping individuals unlock the power of their mind to create lasting change. Through her expertise in NLP techniques, Revathi empowers clients to reprogram limiting beliefs, shift negative patterns, and achieve personal and professional breakthroughs. With a compassionate and result-oriented approach, she guides people in mastering their emotions, enhancing communication, and building confidence. Revathi’s NLP sessions are designed to accelerate growth, remove subconscious blocks, and align actions with goals, creating powerful transformations and a mindset for success.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final call to action -->
+    <section style="padding-top: 2rem; padding-bottom: 3rem;">
+      <div class="container">
+        <div class="callout fade-in">
+          Experience the silence and strength within you. Join our Rajyoga Meditation sessions and begin a journey of self-mastery and spiritual awakening.
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Auraveda</h4>
+        <p>Let your aura shine brighter with holistic wellness.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Contact</h4>
+        <ul>
+          <li><i class="fas fa-phone"></i> +91 98765 43210</li>
+          <li><i class="fas fa-envelope"></i> hello@auraveda.co.in</li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">
+      &copy; 2026 Auraveda. All rights reserved.
+    </div>
+  </footer>
+
+  <script>
+    // ===== BURGER MENU TOGGLE (same as chakrahealing.html) =====
+    const burger = document.querySelector('.burger');
+    const navLinks = document.querySelector('.nav-links');
+
+    burger.addEventListener('click', () => {
+      navLinks.classList.toggle('nav-active');
+      
+      // Burger animation
+      burger.children[0].classList.toggle('toggle');
+      burger.children[1].classList.toggle('toggle');
+      burger.children[2].classList.toggle('toggle');
+    });
+
+    // Smooth close on link click (for mobile)
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('nav-active');
+      });
+    });
+
+    // ===== FADE-IN ON SCROLL =====
+    const faders = document.querySelectorAll('.fade-in');
+
+    const appearOptions = {
+      threshold: 0.2,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const appearOnScroll = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      });
+    }, appearOptions);
+
+    faders.forEach(fader => {
+      appearOnScroll.observe(fader);
+    });
+
+    // Burger animation helper (optional)
+    burger.addEventListener('click', () => {
+      burger.children[0].classList.toggle('rotate1');
+      burger.children[1].classList.toggle('hide');
+      burger.children[2].classList.toggle('rotate2');
+    });
+  </script>
+
+  <style>
+    /* Additional burger animation styles (same) */
+    .burger .toggle:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+    .burger .toggle:nth-child(2) {
+      opacity: 0;
+    }
+    .burger .toggle:nth-child(3) {
+      transform: rotate(-45deg) translate(5px, -5px);
+    }
+  </style>
+</body>
+</html>

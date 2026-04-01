@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="NLP Consultation for professional women — Transform limiting beliefs, reprogram your mindset, and achieve breakthrough success with Auraveda's Neuro-Linguistic Programming & guided meditation.">
+  <meta name="keywords" content="NLP Consultation, Neuro-Linguistic Programming, Mindset Coach, Personal Transformation, Confidence Building, Career Growth, Guided Meditation, Auraveda, Working Women">
+  <meta name="author" content="Auraveda">
+  <meta property="og:title" content="NLP Consultation | Auraveda — Reprogram Your Mind for Success">
+  <meta property="og:description" content="Unlock your full potential with NLP techniques, practical tasks, and guided meditation. Free consultation available.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=1200&auto=format">
+  <meta name="robots" content="index, follow">
+  <title>NLP Consultation | Auraveda — Transform Your Mindset</title>
+
+  <!-- Google Fonts + Font Awesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #F8F9FA;   /* 60% Soft White */
+      color: #2C2A2E;
+      line-height: 1.5;
+      scroll-behavior: smooth;
+    }
+
+    h1, h2, h3, .logo-text, .section-title, .package-card h4 {
+      font-family: 'Playfair Display', serif;
+    }
+
+    /* Brand color variables */
+    :root {
+      --purple: #5A189A;      /* Primary 25% */
+      --white-bg: #F8F9FA;
+      --burgundy: #800020;    /* CTA 10% */
+      --dusty-rose: #D88C9A;  /* Accent 5% */
+      --dark-charcoal: #2C2A2E;
+      --soft-border: #F0E4DA;
+    }
+
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 28px;
+    }
+
+    /* Premium sticky header */
+    .site-header {
+      background: rgba(248, 249, 250, 0.96);
+      backdrop-filter: blur(12px);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      border-bottom: 1px solid #E9E3DA;
+    }
+
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 18px 0;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo-icon {
+      font-size: 2rem;
+      color: var(--purple);
+    }
+
+    .logo-text {
+      font-size: 1.8rem;
+      font-weight: 600;
+      background: linear-gradient(135deg, var(--purple), #8A3FBF);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      letter-spacing: -0.2px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      font-weight: 500;
+      color: #3F3A45;
+      transition: 0.2s;
+    }
+
+    .nav-links a:hover {
+      color: var(--purple);
+    }
+
+    /* Hero section */
+    .hero {
+      background: #FEFCF8;
+      padding: 48px 0 56px;
+      border-bottom: 1px solid #F0E6DD;
+    }
+
+    .hero-grid {
+      display: flex;
+      align-items: center;
+      gap: 48px;
+      flex-wrap: wrap;
+    }
+
+    .hero-content {
+      flex: 1.2;
+    }
+
+    .hero-content h1 {
+      font-size: 3.5rem;
+      font-weight: 600;
+      color: var(--purple);
+      margin-bottom: 16px;
+    }
+
+    .hero-tagline {
+      font-size: 1.25rem;
+      color: #5B4A3F;
+      margin-bottom: 32px;
+    }
+
+    .hero-image {
+      flex: 0.9;
+    }
+
+    .hero-image img {
+      width: 100%;
+      border-radius: 32px;
+      object-fit: cover;
+      box-shadow: 0 20px 30px -12px rgba(90, 24, 154, 0.12);
+      transition: transform 0.25s ease;
+    }
+
+    .hero-image img:hover {
+      transform: scale(1.01);
+    }
+
+    /* Intro + NLP explanation */
+    .intro-section {
+      margin: 64px 0 56px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 48px;
+      align-items: flex-start;
+    }
+
+    .intro-text {
+      flex: 1.2;
+    }
+
+    .intro-text h2 {
+      font-size: 2rem;
+      color: var(--purple);
+      border-left: 4px solid var(--burgundy);
+      padding-left: 20px;
+      margin-bottom: 20px;
+    }
+
+    .intro-text p {
+      font-size: 1rem;
+      color: #3A3530;
+      margin-bottom: 20px;
+    }
+
+    .why-nlp {
+      flex: 1;
+      background: #FFFFFF;
+      border-radius: 32px;
+      padding: 28px;
+      box-shadow: 0 15px 30px -12px rgba(0, 0, 0, 0.05);
+      border: 1px solid var(--soft-border);
+    }
+
+    .why-nlp h3 {
+      font-size: 1.6rem;
+      color: var(--purple);
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .benefits-list {
+      list-style: none;
+    }
+
+    .benefits-list li {
+      margin-bottom: 14px;
+      display: flex;
+      gap: 12px;
+      align-items: baseline;
+    }
+
+    .benefits-list li i {
+      color: var(--burgundy);
+      font-size: 1rem;
+      width: 24px;
+      margin-top: 3px;
+    }
+
+    /* Section titles */
+    .section-title {
+      font-size: 2rem;
+      font-weight: 600;
+      color: var(--purple);
+      text-align: center;
+      margin-bottom: 48px;
+      position: relative;
+    }
+
+    .section-title:after {
+      content: '';
+      display: block;
+      width: 70px;
+      height: 3px;
+      background: var(--dusty-rose);
+      margin: 14px auto 0;
+      border-radius: 4px;
+    }
+
+    /* Benefits grid (6 items) */
+    .benefits-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 28px;
+      margin: 40px 0 60px;
+    }
+
+    .benefit-card {
+      background: white;
+      border-radius: 28px;
+      padding: 24px 20px;
+      text-align: center;
+      transition: all 0.25s;
+      border: 1px solid var(--soft-border);
+      box-shadow: 0 5px 12px rgba(0, 0, 0, 0.02);
+    }
+
+    .benefit-card i {
+      font-size: 2.2rem;
+      color: var(--purple);
+      margin-bottom: 16px;
+    }
+
+    .benefit-card h4 {
+      font-size: 1.25rem;
+      font-family: 'Inter', sans-serif;
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: #2C2A2E;
+    }
+
+    .benefit-card p {
+      font-size: 0.9rem;
+      color: #5A4F46;
+    }
+
+    /* Pricing cards (packages) */
+    .pricing-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 28px;
+      margin: 20px 0 32px;
+    }
+
+    .package-card {
+      background: white;
+      border-radius: 36px;
+      padding: 28px 22px;
+      flex: 1;
+      min-width: 220px;
+      max-width: 260px;
+      text-align: center;
+      transition: transform 0.2s, box-shadow 0.2s;
+      border: 1px solid var(--soft-border);
+      box-shadow: 0 12px 24px -12px rgba(0, 0, 0, 0.08);
+    }
+
+    .package-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 24px 36px -14px rgba(90, 24, 154, 0.15);
+      border-color: var(--dusty-rose);
+    }
+
+    .package-card.highlight {
+      border-top: 5px solid var(--burgundy);
+      background: #FFFCF9;
+    }
+
+    .package-card h4 {
+      font-size: 1.5rem;
+      color: var(--purple);
+      margin-bottom: 12px;
+    }
+
+    .package-price {
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--burgundy);
+      margin: 16px 0 8px;
+    }
+
+    .package-duration {
+      font-size: 0.8rem;
+      color: #8A7A6A;
+      margin-bottom: 16px;
+    }
+
+    .package-feature {
+      font-size: 0.85rem;
+      margin: 12px 0;
+      color: #4F3E35;
+    }
+
+    .btn-select {
+      background: transparent;
+      border: 1.5px solid var(--purple);
+      padding: 10px 20px;
+      border-radius: 60px;
+      font-weight: 600;
+      color: var(--purple);
+      cursor: pointer;
+      transition: 0.2s;
+      margin-top: 12px;
+      width: 100%;
+      font-family: inherit;
+    }
+
+    .btn-select:hover {
+      background: var(--purple);
+      color: white;
+    }
+
+    .package-note {
+      background: #FEF5EB;
+      border-radius: 28px;
+      padding: 18px 24px;
+      margin: 32px 0 24px;
+      text-align: center;
+      font-size: 0.9rem;
+      border-left: 4px solid var(--dusty-rose);
+      color: #5B3E2E;
+    }
+
+    /* CTA Banner */
+    .booking-banner {
+      text-align: center;
+      background: linear-gradient(105deg, #F9F1EA, #FEF6EF);
+      border-radius: 56px;
+      padding: 56px 32px;
+      margin: 40px 0 70px;
+      border: 1px solid #F2E2D4;
+    }
+
+    .booking-banner h3 {
+      font-size: 2.1rem;
+      font-weight: 500;
+      color: var(--purple);
+      margin-bottom: 16px;
+    }
+
+    .btn-book-primary {
+      background: var(--burgundy);
+      color: white;
+      border: none;
+      padding: 16px 44px;
+      border-radius: 60px;
+      font-weight: 700;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: all 0.25s;
+      margin-top: 24px;
+      display: inline-flex;
+      gap: 12px;
+      align-items: center;
+      box-shadow: 0 8px 18px rgba(128, 0, 32, 0.25);
+    }
+
+    .btn-book-primary:hover {
+      background: #5E0018;
+      transform: translateY(-3px);
+      box-shadow: 0 14px 22px -8px rgba(128, 0, 32, 0.35);
+    }
+
+    /* Footer */
+    footer {
+      background: #2C1A3A;
+      color: #FEF3E6;
+      padding: 3rem 5% 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .footer-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 2rem;
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+
+    .footer-section h4 {
+      margin-bottom: 1rem;
+      font-weight: 600;
+      color: #F0D9C5;
+    }
+
+    .footer-section ul {
+      list-style: none;
+    }
+
+    .footer-section li {
+      margin-bottom: 0.5rem;
+    }
+
+    .footer-section a {
+      color: #E6D5C2;
+      text-decoration: none;
+      transition: 0.2s;
+    }
+
+    .footer-section a:hover {
+      color: var(--dusty-rose);
+    }
+
+    .copyright {
+      text-align: center;
+      margin-top: 2rem;
+      padding-top: 1rem;
+      border-top: 1px solid #5C4375;
+      font-size: 0.8rem;
+    }
+
+    /* MODAL */
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(44, 26, 58, 0.85);
+      backdrop-filter: blur(10px);
+      justify-content: center;
+      align-items: center;
+      z-index: 2000;
+    }
+
+    .modal-card {
+      background: white;
+      max-width: 620px;
+      width: 90%;
+      border-radius: 48px;
+      padding: 36px 32px;
+      position: relative;
+      box-shadow: 0 40px 60px rgba(0, 0, 0, 0.3);
+      animation: fadeUp 0.3s ease;
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(25px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .modal-card h3 {
+      font-size: 2rem;
+      color: var(--purple);
+      margin-bottom: 6px;
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 20px;
+      right: 26px;
+      font-size: 28px;
+      cursor: pointer;
+      color: #9A7C64;
+      transition: 0.2s;
+    }
+
+    .modal-close:hover {
+      color: var(--burgundy);
+    }
+
+    .modal-card input, .modal-card select, .modal-card textarea {
+      width: 100%;
+      padding: 12px 18px;
+      margin: 10px 0 16px;
+      border: 1px solid #E2CFBB;
+      border-radius: 40px;
+      background: #FEFAF5;
+      font-family: inherit;
+      font-size: 0.95rem;
+    }
+
+    .total-estimate {
+      background: #F8F2EC;
+      padding: 12px 16px;
+      border-radius: 32px;
+      margin: 12px 0;
+      font-weight: 600;
+      color: #5A189A;
+      text-align: center;
+    }
+
+    .modal-card button[type="submit"] {
+      background: var(--burgundy);
+      color: white;
+      border: none;
+      padding: 14px;
+      width: 100%;
+      border-radius: 60px;
+      font-weight: bold;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    .form-note {
+      font-size: 0.7rem;
+      text-align: center;
+      margin-top: 14px;
+      color: #8F6F56;
+    }
+
+    @media (max-width: 780px) {
+      .navbar {
+        flex-direction: column;
+        gap: 14px;
+      }
+      .hero-content h1 {
+        font-size: 2.4rem;
+      }
+      .intro-section {
+        flex-direction: column;
+      }
+      .pricing-grid {
+        flex-direction: column;
+        align-items: center;
+      }
+      .package-card {
+        max-width: 100%;
+      }
+      .booking-banner h3 {
+        font-size: 1.6rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <div class="navbar">
+      <div class="logo">
+        <i class="fas fa-moon logo-icon"></i>
+        <span class="logo-text">AURA<span style="color: #5A189A;">VEDA</span></span>
+      </div>
+      <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+		
+				<li><a href="about.html">About us</a></li>
+  <li><a href="services.html">Services</a></li>
+  <li><a href="classbox.html">Classes</a></li>
+  <li><a href="consultation.html">Consultation</a></li>
+  
+  <li><a href="Help.html">Help</a></li>
+   
+  <li><a href="payment.html">Payment</a></li>
+ 		
+		       
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <h1>NLP Consultation</h1>
+          <p class="hero-tagline">Unlock your full potential with NLP techniques and guided meditation — reprogram your mind for breakthrough success.</p>
+         </div>
+        <div class="hero-image">
+          <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800&auto=format" alt="Woman meditating with calm energy" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="intro-section">
+      <div class="intro-text">
+        <h2>Rewire your mind. Elevate your life.</h2>
+        <p><strong>Neuro-Linguistic Programming (NLP)</strong> is a powerful approach to personal development that helps you reprogram negative patterns and behaviors. Through NLP, you can transform your mindset, boost your confidence, and overcome obstacles in your personal and professional life.</p>
+        <p>At Auraveda, we combine NLP techniques with guided meditation and practical tasks — tailored specifically for ambitious working women who seek clarity, emotional resilience, and authentic success.</p>
+      </div>
+      <div class="why-nlp">
+        <h3><i class="fas fa-brain" style="color: var(--dusty-rose);"></i> Why NLP Works</h3>
+        <ul class="benefits-list">
+          <li><i class="fas fa-check-circle"></i> Rewire subconscious patterns for lasting change</li>
+          <li><i class="fas fa-comments"></i> Master communication & leadership presence</li>
+          <li><i class="fas fa-chart-line"></i> Accelerate career growth & decision-making</li>
+          <li><i class="fas fa-heart"></i> Build unshakable self-esteem & inner harmony</li>
+          <li><i class="fas fa-leaf"></i> Reduce anxiety, manage stress elegantly</li>
+          <li><i class="fas fa-gem"></i> Align daily actions with your highest potential</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Benefits of NLP (grid from original) -->
+    <div>
+      <h2 class="section-title">Benefits of NLP</h2>
+      <div class="benefits-grid">
+        <div class="benefit-card"><i class="fas fa-ban"></i><h4>Overcome limiting beliefs</h4><p>Break free from self-sabotage and negative thought loops.</p></div>
+        <div class="benefit-card"><i class="fas fa-hand-sparkles"></i><h4>Enhance communication</h4><p>Build rapport, influence positively, and lead with clarity.</p></div>
+        <div class="benefit-card"><i class="fas fa-chart-simple"></i><h4>Boost confidence</h4><p>Step into your power with authentic self-belief.</p></div>
+        <div class="benefit-card"><i class="fas fa-bullseye"></i><h4>Achieve goals faster</h4><p>Align your neurology with your desired outcomes.</p></div>
+        <div class="benefit-card"><i class="fas fa-brain"></i><h4>Reprogram for success</h4><p>Install empowering habits and mindset shifts.</p></div>
+        <div class="benefit-card"><i class="fas fa-heartbeat"></i><h4>Emotional resilience</h4><p>Manage stress and thrive under pressure.</p></div>
+      </div>
+    </div>
+
+    <!-- Consultation Packages -->
+    <div>
+      <h2 class="section-title">Consultation Packages</h2>
+      <div class="pricing-grid">
+        <div class="package-card">
+          <h4>Free Consultation</h4>
+          <div class="package-price">₹0</div>
+          <div class="package-duration">1 Hour Session</div>
+          <div class="package-feature">✨ Introduction to NLP + initial clarity</div>
+         </div>
+        <div class="package-card">
+          <h4>3 Sessions</h4>
+          <div class="package-price">₹3,999</div>
+          <div class="package-duration">3 x 1 Hour Sessions</div>
+          <div class="package-feature">📘 NLP techniques + practical tasks</div>
+         </div>
+        <div class="package-card">
+          <h4>6 Sessions</h4>
+          <div class="package-price">₹7,999</div>
+          <div class="package-duration">6 x 1 Hour Sessions</div>
+          <div class="package-feature">🎯 Deep transformation + guided meditation</div>
+         </div>
+        <div class="package-card">
+          <h4>12 Sessions</h4>
+          <div class="package-price">₹10,999</div>
+          <div class="package-duration">12 x 1 Hour Sessions</div>
+          <div class="package-feature">🌟 Holistic NLP & meditation integration</div>
+         </div>
+        <div class="package-card highlight">
+          <h4>Full Package</h4>
+          <div class="package-price">₹50,000</div>
+          <div class="package-duration">1 Hour per session (tailored)</div>
+          <div class="package-feature">🏆 Exclusive access: all NLP techniques + deep meditation practices for long-term success</div>
+         </div>
+      </div>
+      <div class="package-note">
+        <i class="fas fa-spa" style="color: var(--burgundy); margin-right: 8px;"></i> 
+        <strong>Each session includes:</strong> Tailored NLP techniques, practical tasks, and guided meditation to accelerate personal transformation. The Full Package offers a combination of all NLP methods & exclusive meditations designed for enduring success.
+      </div>
+    </div>
+
+    <!-- CTA Banner -->
+    <div class="booking-banner">
+      <h3><i class="fas fa-seedling"></i> Ready to reprogram your mindset?</h3>
+      <p style="margin-top: 8px;">Begin your transformation journey with a certified NLP coach. Choose your package or book a free exploration call.</p>
+	  
+	  
+	  
+	   <div><a href="	  https://docs.google.com/forms/d/e/1FAIpQLSdWT9kNZ0VdMESBkMrmKSeJNEadttGGae1kLt4zCT2wICN5SA/viewform">Book Your Consultation Now</a></div>
+     
+  </div>
+	   
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-content">
+    <div class="footer-section">
+      <h4>Auraveda</h4>
+      <p>Awaken your inner knowing with ancient healing wisdom.</p>
+    </div>
+    <div class="footer-section">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Contact</h4>
+      <ul>
+        <li><i class="fas fa-phone"></i> +91 98765 43210</li>
+        <li><i class="fas fa-envelope"></i> hello@auraveda.co.in</li>
+      </ul>
+    </div>
+  </div>
+  <div class="copyright">
+    © 2026 Auraveda — All rights reserved. Dowsing is a powerful tool for energetic alignment.
+  </div>
+</footer>
+
+<!-- Booking Modal -->
+<div id="bookingModal" class="modal">
+  <div class="modal-card">
+    <span class="modal-close" id="closeModalBtn">&times;</span>
+    <h3><i class="fas fa-chalkboard-user"></i> NLP Session</h3>
+    <p style="margin-bottom: 20px;">Share your details — we’ll connect you with expert NLP guidance.</p>
+    <form id="bookingForm">
+      <input type="text" id="userName" placeholder="Full Name *" required>
+      <input type="email" id="userEmail" placeholder="Email Address *" required>
+      <input type="tel" id="userPhone" placeholder="Phone (optional)">
+      <select id="nlpPackageSelect" required>
+        <option value="0" data-name="Free Consultation (1 Hour)">Free Consultation — ₹0 (1 Hour)</option>
+        <option value="3999" data-name="3 Sessions Package (3 x 1 Hour)">3 Sessions Package — ₹3,999 (3 x 1 Hour)</option>
+        <option value="7999" data-name="6 Sessions Package (6 x 1 Hour)">6 Sessions Package — ₹7,999 (6 x 1 Hour)</option>
+        <option value="10999" data-name="12 Sessions Package (12 x 1 Hour)">12 Sessions Package — ₹10,999 (12 x 1 Hour)</option>
+        <option value="50000" data-name="Full Package (Complete NLP Transformation)">Full Package — ₹50,000 (Complete NLP Transformation)</option>
+      </select>
+      <input type="date" id="prefDate" placeholder="Preferred Date (optional)">
+      <textarea rows="2" placeholder="Any specific goals or questions? (optional)"></textarea>
+      <div class="total-estimate" id="totalEstimate">💰 Total: ₹0</div>
+      <button type="submit"><i class="fas fa-star-of-life"></i> Request Consultation</button>
+      <div class="form-note">We'll reach out within 24h to confirm your session and share preparation details.</div>
+    </form>
+  </div>
+</div>
+
+<script>
+  // Package selection logic in modal
+  const packageSelect = document.getElementById('nlpPackageSelect');
+  const totalSpan = document.getElementById('totalEstimate');
+
+  function updateModalTotal() {
+    let price = parseInt(packageSelect.value, 10) || 0;
+    totalSpan.innerHTML = `💰 Total: ₹${price.toLocaleString('en-IN')}`;
+  }
+
+  if (packageSelect) {
+    packageSelect.addEventListener('change', updateModalTotal);
+    updateModalTotal();
+  }
+
+  // Modal handling
+  const modal = document.getElementById('bookingModal');
+  const closeModalBtn = document.getElementById('closeModalBtn');
+  const heroBookBtn = document.getElementById('heroBookBtn');
+  const footerBookBtn = document.getElementById('footerBookBtn');
+  const bookingForm = document.getElementById('bookingForm');
+
+  function openModalWithPreset(packageValue = null) {
+    if (packageValue !== null && packageSelect) {
+      packageSelect.value = packageValue;
+      updateModalTotal();
+    }
+    modal.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+    const datePicker = document.getElementById('prefDate');
+    if (datePicker && !datePicker.min) {
+      const tomorrow = new Date();
+      tomorrow.setDate(tomorrow.getDate() + 1);
+      const yyyy = tomorrow.getFullYear();
+      const mm = String(tomorrow.getMonth() + 1).padStart(2, '0');
+      const dd = String(tomorrow.getDate()).padStart(2, '0');
+      datePicker.min = `${yyyy}-${mm}-${dd}`;
+    }
+  }
+
+  function closeModal() {
+    modal.style.display = 'none';
+    document.body.style.overflow = '';
+  }
+
+  if (heroBookBtn) heroBookBtn.addEventListener('click', (e) => { e.preventDefault(); openModalWithPreset('0'); });
+  if (footerBookBtn) footerBookBtn.addEventListener('click', (e) => { e.preventDefault(); openModalWithPreset(null); });
+  if (closeModalBtn) closeModalBtn.addEventListener('click', closeModal);
+  window.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && modal.style.display === 'flex') closeModal(); });
+
+  // Handling "Select" buttons from package cards (preselect package)
+  const selectBtns = document.querySelectorAll('.btn-select');
+  selectBtns.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      let pkgData = btn.getAttribute('data-pkg');
+      if (pkgData) {
+        try {
+          const pkg = JSON.parse(pkgData);
+          let priceValue = pkg.price;
+          let optionToSelect = null;
+          for (let i = 0; i < packageSelect.options.length; i++) {
+            let opt = packageSelect.options[i];
+            if (parseInt(opt.value, 10) === priceValue) {
+              optionToSelect = opt.value;
+              break;
+            }
+          }
+          if (optionToSelect !== null) {
+            openModalWithPreset(optionToSelect);
+          } else {
+            openModalWithPreset(null);
+          }
+        } catch(e) { openModalWithPreset(null); }
+      } else {
+        openModalWithPreset(null);
+      }
+    });
+  });
+
+  // Form submit handler
+  if (bookingForm) {
+    bookingForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const name = document.getElementById('userName')?.value.trim();
+      const email = document.getElementById('userEmail')?.value.trim();
+      if (!name) { alert("✨ Please enter your name to begin your journey."); return; }
+      if (!email || !email.includes('@')) { alert("Please provide a valid email address for confirmation."); return; }
+
+      const selectedOption = packageSelect.options[packageSelect.selectedIndex];
+      const packageName = selectedOption?.getAttribute('data-name') || selectedOption?.text || "NLP Package";
+      const priceVal = parseInt(packageSelect.value, 10) || 0;
+      const dateInput = document.getElementById('prefDate')?.value;
+      const dateMsg = dateInput ? ` on ${new Date(dateInput).toLocaleDateString()}` : ' (flexible date)';
+
+      alert(`🔮 Thank you ${name}, your NLP Consultation request (${packageName} — ₹${priceVal.toLocaleString('en-IN')})${dateMsg} has been received.\n\nYou will receive a confirmation email with session details, preparation guide, and practitioner link within 24 hours. Empower your mind — transform your life.`);
+      
+      bookingForm.reset();
+      packageSelect.value = "0";
+      updateModalTotal();
+      closeModal();
+      
+      const datePicker = document.getElementById('prefDate');
+      if (datePicker) {
+        const tomorrow = new Date();
+        tomorrow.setDate(tomorrow.getDate() + 1);
+        const yyyy = tomorrow.getFullYear();
+        const mm = String(tomorrow.getMonth() + 1).padStart(2, '0');
+        const dd = String(tomorrow.getDate()).padStart(2, '0');
+        datePicker.min = `${yyyy}-${mm}-${dd}`;
+        datePicker.value = '';
+      }
+    });
+  }
+
+  const datePickerElem = document.getElementById('prefDate');
+  if (datePickerElem) {
+    const tomorrow = new Date();
+    tomorrow.setDate(tomorrow.getDate() + 1);
+    const yyyy = tomorrow.getFullYear();
+    const mm = String(tomorrow.getMonth() + 1).padStart(2, '0');
+    const dd = String(tomorrow.getDate()).padStart(2, '0');
+    datePickerElem.min = `${yyyy}-${mm}-${dd}`;
+  }
+</script>
+</body>
+</html>

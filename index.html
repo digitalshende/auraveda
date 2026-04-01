@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auraveda - Holistic Wellness for Working Women</title>
+  <meta name="description" content="Auraveda offers holistic healing services for professional women: Reiki, Astrology, Numerology, NLP, Dowsing, and Akashic Records. Transform your life with powerful, feminine energy work.">
+  <meta name="keywords" content="holistic wellness, working women, Reiki, Astrology, Numerology, NLP, Dowsing, Akashic Records, energy healing, professional women">
+  <meta name="author" content="Auraveda">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --white: #F8F9FA;
+      --purple: #5A189A;
+      --burgundy: #800020;
+      --dusty-rose: #D88C9A;
+      --text-dark: #2e2e2e;
+      --text-light: #5a5a5a;
+      --shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--white);
+      color: var(--text-dark);
+      line-height: 1.6;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: 'Playfair Display', serif;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    header {
+      background-color: var(--white);
+      box-shadow: var(--shadow);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.2rem 5%;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      font-weight: 500;
+    }
+
+    .logo span {
+      color: var(--purple);
+      font-style: italic;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2.5rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--text-dark);
+      font-weight: 400;
+      font-size: 1rem;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: var(--purple);
+    }
+
+    .burger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+
+    .burger div {
+      width: 25px;
+      height: 2px;
+      background-color: var(--text-dark);
+      margin: 3px 0;
+      transition: 0.3s;
+    }
+
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 3rem;
+      padding: 4rem 5%;
+      max-width: 1400px;
+      margin: 0 auto;
+      flex-wrap: wrap;
+    }
+
+    .hero-content {
+      flex: 1;
+    }
+
+    .hero-content h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      color: var(--purple);
+    }
+
+    .hero-content h1 span {
+      color: var(--burgundy);
+    }
+
+    .hero-content p {
+      font-size: 1.1rem;
+      color: var(--text-light);
+      margin-bottom: 2rem;
+    }
+
+    .btn-primary {
+      display: inline-block;
+      background: var(--burgundy);
+      color: white;
+      padding: 12px 28px;
+      border-radius: 40px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s;
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn-primary:hover {
+      background: #5A189A;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 14px rgba(90, 24, 154, 0.2);
+    }
+
+    .hero-media {
+      flex: 1;
+      text-align: center;
+    }
+
+    .hero-media img {
+      max-width: 100%;
+      border-radius: 30px;
+      box-shadow: 0 20px 30px -10px rgba(0,0,0,0.1);
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      margin: 3rem 0;
+    }
+
+    .service-card {
+      background: white;
+      padding: 2rem;
+      border-radius: 20px;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(90, 24, 154, 0.1);
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 30px rgba(90, 24, 154, 0.1);
+    }
+
+    .service-icon {
+      font-size: 2.5rem;
+      color: var(--purple);
+      margin-bottom: 1rem;
+    }
+
+    .service-card h3 {
+      color: var(--purple);
+      margin-bottom: 1rem;
+    }
+
+    .service-card p {
+      color: var(--text-light);
+    }
+
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin: 3rem 0;
+    }
+
+    .value-item {
+      text-align: center;
+      padding: 1.5rem;
+    }
+
+    .value-icon {
+      font-size: 2rem;
+      color: var(--dusty-rose);
+      margin-bottom: 1rem;
+    }
+
+    .value-item h3 {
+      color: var(--purple);
+      margin-bottom: 1rem;
+    }
+
+    footer {
+      background-color: #2a2a2a;
+      color: #ddd;
+      padding: 3rem 5% 1rem;
+    }
+
+    .footer-content {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .footer-section h4 {
+      color: var(--dusty-rose);
+      margin-bottom: 1rem;
+    }
+
+    .footer-section ul {
+      list-style: none;
+    }
+
+    .footer-section ul li {
+      margin-bottom: 0.5rem;
+    }
+
+    .footer-section a {
+      color: #ddd;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .footer-section a:hover {
+      color: var(--dusty-rose);
+    }
+
+    .copyright {
+      text-align: center;
+      padding: 1.5rem 0 0.5rem;
+      font-size: 0.9rem;
+      color: #aaa;
+      border-top: 1px solid #444;
+      margin-top: 2rem;
+    }
+
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        position: fixed;
+        right: 0;
+        top: 70px;
+        height: calc(100vh - 70px);
+        background: var(--white);
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding-top: 2rem;
+        width: 60%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        box-shadow: -5px 0 20px rgba(0,0,0,0.05);
+        z-index: 99;
+      }
+      .nav-links.nav-active {
+        transform: translateX(0%);
+      }
+      .burger {
+        display: flex;
+      }
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+      .hero-content h1 {
+        font-size: 2.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo"><img src="img/Auraveda logo.png" width="50" height="50" alt="Auraveda Logo"></div>
+      <div class="logo">AURA<span>VEDA</span></div>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+		
+				<li><a href="about.html">About us</a></li>
+  <li><a href="services.html">Services</a></li>
+  <li><a href="classbox.html">Classes</a></li>
+  <li><a href="consultation.html">Consultation</a></li>
+  
+  <li><a href="Help.html">Help</a></li>
+   
+  <li><a href="payment.html">Payment</a></li>
+ 		
+		       
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="burger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content fade-in">
+        <h1>Let your <span>aura shine</span> brighter with Auraveda!</h1>
+        <p>Welcome to AURAVEDA: Explore our premium wellness services designed for the modern professional woman. From energy healing to spiritual guidance, experience transformation the natural way.</p>
+        <a href="services.html" class="btn-primary">Discover Our Services</a>
+      </div>
+      <div class="hero-media fade-in">
+        <img src="img/Ravati Bhaikatti.jpg" width="350" height="450" alt="Revathi Bhaikatti - Founder">
+      </div>
+    </section>
+
+    <section class="container" style="padding: 4rem 20px;">
+      <h2 class="fade-in" style="text-align: center; font-size: 2.5rem; margin-bottom: 1rem; color: var(--purple);">Our Holistic Services</h2>
+      <div class="services-grid">
+        <div class="service-card fade-in">
+          <div class="service-icon"><i class="fas fa-hands"></i></div>
+          <h3>Reiki</h3>
+          <p>Harness universal life force energy to heal, balance, and rejuvenate.</p>
+        </div>
+        <div class="service-card fade-in">
+          <div class="service-icon"><i class="fas fa-star-and-crescent"></i></div>
+          <h3>Astrology</h3>
+          <p>Decode the secrets of your birth chart and align with your cosmic path.</p>
+        </div>
+        <div class="service-card fade-in">
+          <div class="service-icon"><i class="fas fa-hashtag"></i></div>
+          <h3>Numerology</h3>
+          <p>Discover the power of numbers and how they influence your destiny.</p>
+        </div>
+        <div class="service-card fade-in">
+          <div class="service-icon"><i class="fas fa-brain"></i></div>
+          <h3>NLP</h3>
+          <p>Rewire your mind for success, positivity, and personal growth.</p>
+        </div>
+        <div class="service-card fade-in">
+          <div class="service-icon"><i class="fas fa-pendulum"></i></div>
+          <h3>Dowsing</h3>
+          <p>Tap into your intuition and find answers through pendulum techniques.</p>
+        </div>
+        <div class="service-card fade-in">
+          <div class="service-icon"><i class="fas fa-book-open"></i></div>
+          <h3>Akashic Records</h3>
+          <p>Access your soul's library to uncover past lives, life purpose and spiritual lessons.</p>
+        </div>
+      </div>
+    </section>
+
+    <section style="background: white; padding: 4rem 20px;">
+      <div class="container">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;">
+          <div class="fade-in">
+            <h2 style="font-size: 2.2rem; margin-bottom: 1.5rem; color: var(--purple);">Why Choose Auraveda</h2>
+            <ul style="list-style: none;">
+              <li style="margin-bottom: 1rem;"><i class="fas fa-check-circle" style="color: var(--purple); margin-right: 10px;"></i> Experienced Practitioners</li>
+              <li style="margin-bottom: 1rem;"><i class="fas fa-check-circle" style="color: var(--purple); margin-right: 10px;"></i> Personalized Sessions</li>
+              <li style="margin-bottom: 1rem;"><i class="fas fa-check-circle" style="color: var(--purple); margin-right: 10px;"></i> Safe and Sacred Space</li>
+            </ul>
+            <p style="margin: 2rem 0;">We address every aspect of your being – mind, body and spirit. Our certified experts are passionate about your healing journey.</p>
+            <a href="about.html" class="btn-primary">Meet Our Practitioners</a>
+          </div>
+          <div class="fade-in">
+            <img src="https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="Peaceful therapy room" style="width: 100%; border-radius: 15px; box-shadow: var(--shadow);">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container" style="padding: 4rem 20px;">
+      <h2 class="fade-in" style="text-align: center; font-size: 2.5rem; margin-bottom: 3rem; color: var(--purple);">Our Core Values</h2>
+      <div class="values-grid">
+        <div class="value-item fade-in">
+          <div class="value-icon"><i class="fas fa-heart"></i></div>
+          <h3>Healing</h3>
+          <p>Nurturing mind, body, and spirit through holistic practices.</p>
+        </div>
+        <div class="value-item fade-in">
+          <div class="value-icon"><i class="fas fa-gem"></i></div>
+          <h3>Integrity</h3>
+          <p>Authentic, transparent, and ethical care for every client.</p>
+        </div>
+        <div class="value-item fade-in">
+          <div class="value-icon"><i class="fas fa-seedling"></i></div>
+          <h3>Personal Growth</h3>
+          <p>Supporting self-awareness, mindfulness, and transformation.</p>
+        </div>
+        <div class="value-item fade-in">
+          <div class="value-icon"><i class="fas fa-users"></i></div>
+          <h3>Community</h3>
+          <p>Creating a safe, nurturing space to connect and grow together.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Auraveda</h4>
+        <p>Let your aura shine brighter with holistic wellness.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Contact</h4>
+        <ul>
+          <li><i class="fas fa-phone"></i> +91 98765 43210</li>
+          <li><i class="fas fa-envelope"></i> hello@auraveda.co.in</li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">
+      &copy; 2026 Auraveda. All rights reserved.
+    </div>
+  </footer>
+
+  <script>
+    // Burger menu
+    const burger = document.querySelector('.burger');
+    const navLinks = document.querySelector('.nav-links');
+    if (burger) {
+      burger.addEventListener('click', () => {
+        navLinks.classList.toggle('nav-active');
+        burger.children[0].classList.toggle('toggle');
+        burger.children[1].classList.toggle('toggle');
+        burger.children[2].classList.toggle('toggle');
+      });
+    }
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => navLinks.classList.remove('nav-active'));
+    });
+
+    // Fade-in on scroll
+    const faders = document.querySelectorAll('.fade-in');
+    const appearOptions = { threshold: 0.2, rootMargin: '0px 0px -50px 0px' };
+    const appearOnScroll = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          appearOnScroll.unobserve(entry.target);
+        }
+      });
+    }, appearOptions);
+    faders.forEach(fader => appearOnScroll.observe(fader));
+  </script>
+</body>
+</html>

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reiki Healing – Universal Energy for Balance | Auraveda</title>
+  <meta name="description" content="Experience profound Reiki healing at Auraveda. Reduce stress, release emotional blockages, and restore harmony. Sessions tailored for working professional women.">
+  <meta name="keywords" content="Reiki healing, energy healing, stress relief, emotional balance, professional women, Reiki master">
+  <meta name="author" content="Auraveda">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --white: #F8F9FA;
+      --purple: #5A189A;
+      --burgundy: #800020;
+      --dusty-rose: #D88C9A;
+      --text-dark: #2e2e2e;
+      --text-light: #5a5a5a;
+      --shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+    }
+    body { font-family: 'Inter', sans-serif; background-color: var(--white); color: var(--text-dark); line-height: 1.6; }
+    h1, h2, h3, h4 { font-family: 'Playfair Display', serif; font-weight: 500; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+    header { background-color: var(--white); box-shadow: var(--shadow); position: sticky; top: 0; z-index: 100; }
+    nav { display: flex; justify-content: space-between; align-items: center; padding: 1.2rem 5%; max-width: 1400px; margin: 0 auto; }
+    .logo { display: flex; align-items: center; gap: 10px; font-family: 'Playfair Display', serif; font-size: 1.8rem; font-weight: 500; }
+    .logo span { color: var(--purple); font-style: italic; }
+    .nav-links { display: flex; gap: 2.5rem; list-style: none; }
+    .nav-links a { text-decoration: none; color: var(--text-dark); font-weight: 400; transition: color 0.3s; }
+    .nav-links a:hover, .nav-links a.active { color: var(--purple); }
+    .burger { display: none; flex-direction: column; cursor: pointer; }
+    .burger div { width: 25px; height: 2px; background-color: var(--text-dark); margin: 3px 0; transition: 0.3s; }
+    .btn-primary { display: inline-block; background: var(--burgundy); color: white; padding: 12px 28px; border-radius: 40px; text-decoration: none; font-weight: 600; transition: all 0.3s; border: none; cursor: pointer; }
+    .btn-primary:hover { background: var(--purple); transform: translateY(-2px); }
+    section { padding: 4rem 20px; }
+    .section-bg-light { background: white; }
+    h1 { font-size: 3rem; margin-bottom: 1rem; color: var(--purple); }
+    h2 { font-size: 2.2rem; margin-bottom: 2rem; text-align: center; color: var(--purple); }
+    .lead { font-size: 1.2rem; text-align: center; max-width: 800px; margin: 0 auto 2rem; color: var(--text-light); }
+    .bullet-list { list-style: none; margin: 1.5rem 0; }
+    .bullet-list li { margin-bottom: 1rem; padding-left: 1.8rem; position: relative; }
+    .bullet-list li:before { content: "•"; color: var(--purple); font-size: 1.5rem; position: absolute; left: 0; top: -0.3rem; }
+    .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; margin-top: 2rem; }
+    .step-item { text-align: center; padding: 1.5rem; background: white; border-radius: 8px; box-shadow: var(--shadow); }
+    .step-item h4 { font-size: 1.3rem; margin-bottom: 0.5rem; color: var(--purple); }
+    .founder-section { display: grid; grid-template-columns: 1fr 2fr; gap: 3rem; align-items: center; }
+    .founder-image { width: 100%; border-radius: 50%; border: 5px solid var(--purple); }
+    .fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.8s ease, transform 0.8s ease; }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+    footer { background-color: #2a2a2a; color: #ddd; padding: 3rem 5% 1rem; }
+    .footer-content { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; max-width: 1200px; margin: 0 auto; }
+    .footer-section h4 { color: var(--dusty-rose); margin-bottom: 1rem; }
+    .footer-section ul { list-style: none; }
+    .footer-section a { color: #ddd; text-decoration: none; transition: color 0.3s; }
+    .footer-section a:hover { color: var(--dusty-rose); }
+    .copyright { text-align: center; padding: 1.5rem 0 0.5rem; font-size: 0.9rem; border-top: 1px solid #444; margin-top: 2rem; }
+    @media (max-width: 768px) {
+      .nav-links { position: fixed; right: 0; top: 70px; height: calc(100vh - 70px); background: var(--white); flex-direction: column; align-items: center; justify-content: flex-start; padding-top: 2rem; width: 60%; transform: translateX(100%); transition: transform 0.5s ease-in; box-shadow: -5px 0 20px rgba(0,0,0,0.05); z-index: 99; }
+      .nav-links.nav-active { transform: translateX(0%); }
+      .burger { display: flex; }
+      .founder-section { grid-template-columns: 1fr; gap: 2rem; text-align: center; }
+      h1 { font-size: 2.2rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">AURA<span>VEDA</span></div>
+      <ul class="nav-links">
+           <li><a href="index.html">Home</a></li>
+		
+				<li><a href="about.html">About us</a></li>
+  <li><a href="services.html">Services</a></li>
+  <li><a href="classbox.html">Classes</a></li>
+  <li><a href="consultation.html">Consultation</a></li>
+  
+  <li><a href="Help.html">Help</a></li>
+   
+  <li><a href="payment.html">Payment</a></li>
+ 		
+		       
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="burger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section style="padding: 3rem 20px 2rem;">
+      <div class="container">
+        <h1 class="fade-in">Discover the Power of Reiki</h1>
+        <p class="lead fade-in">Your Reiki Healing Journey</p>
+        <p class="fade-in" style="max-width: 800px; margin: 0 auto;">Reiki is a holistic healing art that channels universal life force energy to bring balance, inner peace, and deep healing. At Auraveda, we empower you to harness this energy for emotional well-being, spiritual growth, and personal transformation.</p>
+      </div>
+    </section>
+
+    <section class="section-bg-light">
+      <div class="container">
+        <h2 class="fade-in">What is Reiki?</h2>
+        <p class="fade-in" style="max-width: 800px; margin: 0 auto;">Reiki is a Japanese technique for stress reduction and energy healing, using gentle touch or distance energy transfer. By balancing your life force energy (ki), Reiki supports the body's natural ability to heal on physical, emotional, and spiritual levels.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2 class="fade-in">Why Choose Reiki at Auraveda?</h2>
+        <ul class="bullet-list fade-in" style="max-width: 800px; margin: 0 auto;">
+          <li><strong>Holistic Healing:</strong> Restore harmony to body, mind, and spirit.</li>
+          <li><strong>Personalized Experience:</strong> Tailored sessions and courses for your unique journey.</li>
+          <li><strong>Self-Empowerment:</strong> Learn to channel Reiki energy for yourself and others.</li>
+          <li><strong>Spiritual Evolution:</strong> Deepen your connection to universal energy and your higher self.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section-bg-light">
+      <div class="container">
+        <div class="fade-in">
+          <p style="max-width: 900px; margin: 0 auto; font-size: 1.1rem;">At Auraveda, we believe that true healing begins at the energetic and emotional level. Many of the challenges we face—such as phobias, stress, anxiety, and other mental health concerns—often stem from emotional blockages stored deep within us. These blockages tend to accumulate in the body's seven main chakras, disrupting the natural flow of energy and eventually manifesting as emotional or mental illness.</p>
+          <p style="max-width: 900px; margin: 2rem auto 0; font-size: 1.1rem;">Reiki at Auraveda focuses on gently clearing these blockages and restoring energetic balance. By addressing the root cause—rather than just the symptoms—Reiki supports deep, lasting healing on all levels: physical, emotional, mental, and spiritual.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2 class="fade-in">How Reiki Supports Your Spiritual Journey</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 2rem;">
+          <div class="fade-in"><strong>Emotional Release:</strong> Heal from stress, anxiety, and emotional blockages.</div>
+          <div class="fade-in"><strong>Physical Wellness:</strong> Promote relaxation and support natural healing.</div>
+          <div class="fade-in"><strong>Mental Clarity:</strong> Clear the mind and enhance focus.</div>
+          <div class="fade-in"><strong>Spiritual Awakening:</strong> Reconnect with your intuition and soul purpose.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-bg-light">
+      <div class="container">
+        <h2 class="fade-in">Features of Auraveda for Reiki Healing</h2>
+        <ul class="bullet-list fade-in" style="max-width: 800px; margin: 0 auto;">
+          <li>Remote Reiki Healing Sessions</li>
+          <li>Reiki Training & Certification (Beginner to Advanced)</li>
+          <li>Guided Reiki Meditations & Energy Work</li>
+          <li>Chakra Balancing and Energy Clearing Techniques</li>
+          <li>Personalized Reiki Insights and Support</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2 class="fade-in">How It Works</h2>
+        <div class="steps">
+          <div class="step-item fade-in"><h4>1. Join Auraveda</h4><p>Create your account and access courses and healing sessions.</p></div>
+          <div class="step-item fade-in"><h4>2. Select Your Reiki Path</h4><p>Choose from personalized sessions or training programs.</p></div>
+          <div class="step-item fade-in"><h4>3. Experience the Healing</h4><p>Participate in remote healing, guided meditations, or workshops.</p></div>
+          <div class="step-item fade-in"><h4>4. Ongoing Growth</h4><p>Receive insights and continuous support for your Reiki journey.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-bg-light">
+      <div class="container">
+        <h2 class="fade-in">Who Can Benefit from Reiki at Auraveda?</h2>
+        <ul class="bullet-list fade-in" style="max-width: 800px; margin: 0 auto;">
+          <li>Those healing from stress, emotional wounds, or life transitions.</li>
+          <li>Spiritual seekers aiming to deepen their divine connection.</li>
+          <li>Reiki practitioners looking to enhance and refine their abilities.</li>
+          <li>Mindfulness and yoga practitioners integrating energy healing practices.</li>
+          <li>Anyone committed to personal growth and inner balance.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2 class="fade-in">Why Choose Auraveda?</h2>
+        <ul class="bullet-list fade-in" style="max-width: 800px; margin: 0 auto;">
+          <li>Accessible Anytime, Anywhere with Remote Options</li>
+          <li>Holistic, Heart-Centered Approach to Healing</li>
+          <li>Support for Beginners & Advanced Practitioners Alike</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section-bg-light" style="padding: 4rem 20px;">
+      <div class="container">
+        <div class="founder-section">
+          <div class="fade-in">
+            <img src="img/Ravati Bhaikatti.jpg" alt="Revathi Bhaikatti - Reiki Master" class="founder-image">
+          </div>
+          <div class="fade-in">
+            <h2 style="text-align: left; margin-bottom: 1rem;">Meet Revathi Bhaikatti</h2>
+            <p style="font-size: 1.2rem; font-style: italic; margin-bottom: 1.5rem;">Reiki Master & Energy Healer</p>
+            <p>Revathi Bhaikatti is a compassionate Reiki Master dedicated to helping individuals restore balance, heal emotional wounds, and awaken their spiritual potential. Through the gentle yet powerful energy of Reiki, she guides clients on a journey of deep relaxation, emotional release, and self-discovery.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Auraveda</h4>
+        <p>Let your aura shine brighter with holistic wellness.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Contact</h4>
+        <ul>
+          <li><i class="fas fa-phone"></i> +91 98765 43210</li>
+          <li><i class="fas fa-envelope"></i> hello@auraveda.co.in</li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">
+      &copy; 2026 Auraveda. All rights reserved.
+    </div>
+  </footer>
+
+  <script>
+    // Burger and fade-in scripts (identical to previous)
+    const burger = document.querySelector('.burger');
+    const navLinks = document.querySelector('.nav-links');
+    if (burger) {
+      burger.addEventListener('click', () => {
+        navLinks.classList.toggle('nav-active');
+        burger.children[0].classList.toggle('toggle');
+        burger.children[1].classList.toggle('toggle');
+        burger.children[2].classList.toggle('toggle');
+      });
+    }
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => navLinks.classList.remove('nav-active'));
+    });
+    const faders = document.querySelectorAll('.fade-in');
+    const appearOptions = { threshold: 0.2, rootMargin: '0px 0px -50px 0px' };
+    const appearOnScroll = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          appearOnScroll.unobserve(entry.target);
+        }
+      });
+    }, appearOptions);
+    faders.forEach(fader => appearOnScroll.observe(fader));
+  </script>
+</body>
+</html>

@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Contact Auraveda – holistic healing, Reiki, astrology, numerology, NLP, and spiritual coaching for professional women. Reach out for consultations, workshops, or any inquiries.">
+  <meta name="keywords" content="Contact Auraveda, energy healing consultation, Reiki appointment, spiritual coach contact, holistic healing Bangalore, online healing sessions">
+  <meta name="author" content="Auraveda">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Auraveda | Connect With Us">
+  <meta property="og:description" content="Reach out for personalized healing sessions, spiritual guidance, or any questions. We're here to support your journey.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://placehold.co/1200x630/5A189A/F8F9FA?text=Auraveda+Contact">
+  <title>Auraveda | Contact – Begin Your Healing Journey</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #F8F9FA;
+      color: #1E1A2F;
+      font-family: 'Inter', sans-serif;
+      line-height: 1.5;
+      scroll-behavior: smooth;
+    }
+
+    /* Color System (strict usage) */
+    :root {
+      --deep-purple: #5A189A;
+      --soft-white: #F8F9FA;
+      --burgundy: #800020;
+      --dusty-rose: #D88C9A;
+      --dark-charcoal: #2C2A3A;
+      --border-light: #E9ECEF;
+      --shadow-sm: 0 8px 20px rgba(90, 24, 154, 0.05), 0 2px 6px rgba(0,0,0,0.02);
+      --shadow-md: 0 20px 30px -12px rgba(90, 24, 154, 0.12);
+    }
+
+    h1, h2, h3, .logo {
+      font-family: 'Playfair Display', serif;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      background: linear-gradient(135deg, var(--deep-purple) 0%, #3c0b6b 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      margin-bottom: 1rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+      color: var(--deep-purple);
+      border-left: 5px solid var(--deep-purple);
+      padding-left: 1.2rem;
+      margin: 1.5rem 0 1.5rem 0;
+      font-weight: 600;
+    }
+
+    h3 {
+      font-size: 1.4rem;
+      color: var(--deep-purple);
+      margin: 1.2rem 0 0.8rem 0;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 28px;
+    }
+
+    /* Header / Navigation */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.2rem 0;
+      flex-wrap: wrap;
+      gap: 1rem;
+      border-bottom: 1px solid rgba(90, 24, 154, 0.15);
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--deep-purple);
+    }
+    .logo span {
+      font-weight: 400;
+      color: var(--burgundy);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+    .nav-links a {
+      text-decoration: none;
+      font-weight: 500;
+      color: #2C2A3A;
+      transition: 0.2s;
+    }
+    .nav-links a:hover, .nav-links a.active {
+      color: var(--deep-purple);
+      border-bottom: 2px solid var(--deep-purple);
+      padding-bottom: 4px;
+    }
+
+    .btn-cta {
+      background: var(--burgundy);
+      color: white;
+      border: none;
+      padding: 0.8rem 2rem;
+      border-radius: 40px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: all 0.25s ease;
+      font-family: 'Inter', sans-serif;
+      box-shadow: 0 2px 6px rgba(128, 0, 32, 0.2);
+    }
+    .btn-cta:hover {
+      background: #5e0018;
+      transform: translateY(-2px);
+      box-shadow: 0 10px 20px -6px rgba(128, 0, 32, 0.3);
+    }
+
+    .btn-outline {
+      background: transparent;
+      border: 1.5px solid var(--deep-purple);
+      color: var(--deep-purple);
+      padding: 0.7rem 1.8rem;
+      border-radius: 40px;
+      font-weight: 500;
+      transition: 0.2s;
+      cursor: pointer;
+    }
+    .btn-outline:hover {
+      background: var(--deep-purple);
+      color: white;
+    }
+
+    /* Hero contact section */
+    .contact-hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+      padding: 2rem 0 1.5rem;
+    }
+    .hero-text {
+      flex: 1;
+    }
+    .hero-text p {
+      font-size: 1.2rem;
+      color: #4a4a5a;
+      margin: 1rem 0;
+    }
+    .hero-img {
+      flex: 0.8;
+      text-align: center;
+    }
+    .hero-img img {
+      max-width: 100%;
+      border-radius: 32px;
+      box-shadow: var(--shadow-md);
+    }
+
+    /* Contact main layout */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2.5rem;
+      margin: 2rem 0 2.5rem;
+    }
+    .info-card, .form-card {
+      background: white;
+      border-radius: 32px;
+      padding: 2rem;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid var(--border-light);
+    }
+    .info-item {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 1.8rem;
+      align-items: flex-start;
+    }
+    .info-icon {
+      background: rgba(90, 24, 154, 0.1);
+      width: 48px;
+      height: 48px;
+      border-radius: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--deep-purple);
+      font-size: 1.3rem;
+    }
+    .info-text h4 {
+      font-weight: 700;
+      margin-bottom: 0.25rem;
+      color: var(--dark-charcoal);
+    }
+    .info-text p, .info-text a {
+      color: #555;
+      text-decoration: none;
+    }
+    .info-text a:hover {
+      color: var(--burgundy);
+    }
+
+    .value-badge {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 2rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--border-light);
+    }
+    .value-item {
+      background: #FEF5F2;
+      padding: 0.5rem 1rem;
+      border-radius: 50px;
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: var(--burgundy);
+    }
+
+    /* Form styling */
+    .form-group {
+      margin-bottom: 1.25rem;
+    }
+    .form-group input, .form-group textarea, .form-group select {
+      width: 100%;
+      padding: 0.9rem 1rem;
+      border-radius: 28px;
+      border: 1px solid #e0e0e0;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.95rem;
+      transition: 0.2s;
+      background: #FEFEFE;
+    }
+    .form-group input:focus, .form-group textarea:focus {
+      outline: none;
+      border-color: var(--deep-purple);
+      box-shadow: 0 0 0 3px rgba(90, 24, 154, 0.1);
+    }
+    textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+    .btn-submit {
+      background: var(--burgundy);
+      width: 100%;
+      margin-top: 0.5rem;
+    }
+
+    /* Map placeholder */
+    .map-placeholder {
+      background: linear-gradient(145deg, #f0eaf5, #faf5fc);
+      border-radius: 28px;
+      padding: 2rem;
+      text-align: center;
+      margin: 1rem 0 2rem;
+      border: 1px solid rgba(216, 140, 154, 0.3);
+    }
+    .map-placeholder i {
+      font-size: 3rem;
+      color: var(--deep-purple);
+      margin-bottom: 1rem;
+    }
+
+    /* Values section (from index) */
+    .core-values {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.8rem;
+      justify-content: space-between;
+      margin: 2rem 0 1rem;
+    }
+    .value-core {
+      flex: 1;
+      min-width: 180px;
+      background: white;
+      border-radius: 24px;
+      padding: 1.5rem;
+      text-align: center;
+      box-shadow: var(--shadow-sm);
+    }
+    .value-core i {
+      font-size: 2rem;
+      color: var(--dusty-rose);
+      margin-bottom: 0.8rem;
+    }
+    .value-core h4 {
+      color: var(--deep-purple);
+      margin-bottom: 0.5rem;
+    }
+
+    /* Footer (consistent) */
+    footer {
+      background-color: #1E1A2F;
+      color: #E0D6F0;
+      margin-top: 3rem;
+      padding: 3rem 0 1.8rem;
+      border-top-left-radius: 40px;
+      border-top-right-radius: 40px;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 2rem;
+      margin-bottom: 2rem;
+    }
+    .footer-col h4 {
+      color: white;
+      margin-bottom: 1rem;
+      font-size: 1.2rem;
+    }
+    .footer-col p, .footer-col a {
+      color: #cdc6e6;
+      text-decoration: none;
+      line-height: 1.6;
+    }
+    .footer-col a:hover {
+      color: var(--dusty-rose);
+    }
+    .copyright {
+      text-align: center;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(216, 140, 154, 0.2);
+      font-size: 0.85rem;
+    }
+
+    @media (max-width: 850px) {
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+      h1 { font-size: 2rem; }
+      .navbar {
+        flex-direction: column;
+      }
+      .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .contact-hero {
+        flex-direction: column-reverse;
+        text-align: center;
+      }
+    }
+
+    .success-message {
+      background: #D88C9A20;
+      border-left: 4px solid var(--burgundy);
+      padding: 0.8rem;
+      margin-bottom: 1rem;
+      border-radius: 16px;
+      font-size: 0.9rem;
+      color: #2c2a3a;
+    }
+    .small-note {
+      font-size: 0.75rem;
+      color: #777;
+      margin-top: 0.8rem;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="logo">AURAVEDA <span>✦ healing</span></div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+    <button class="btn-cta" id="bookConsultBtn"><i class="fas fa-calendar-alt"></i> Book a Call</button>
+  </nav>
+
+  <!-- Hero Section with brand message -->
+  <div class="contact-hero">
+    <div class="hero-text">
+      <h1>Let’s Connect &<br>Begin Your Healing</h1>
+      <p>Whether you're seeking clarity, emotional balance, or spiritual guidance — we're here to support you with compassion and expertise. Reach out for personalized sessions, workshop inquiries, or just a gentle conversation.</p>
+      <div><i class="fas fa-leaf" style="color: var(--dusty-rose);"></i> <em>“Let your aura shine brighter with Auraveda.”</em> — Revathi Bhaikatti</div>
+    </div>
+    <div class="hero-img">
+      <img src="https://placehold.co/500x450/F8F9FA/5A189A?text=✨+Healing+Connection" alt="Auraveda healing contact" style="background: #e9daf5; object-fit: cover; width: 100%;">
+    </div>
+  </div>
+
+  <!-- Main Contact Grid -->
+  <div class="contact-grid">
+    <!-- Left side: contact info + values -->
+    <div class="info-card">
+      <h3><i class="fas fa-heart" style="color: var(--burgundy);"></i> Reach out to us</h3>
+      <div class="info-item">
+        <div class="info-icon"><i class="fas fa-phone-alt"></i></div>
+        <div class="info-text"><h4>Phone / WhatsApp</h4><p><a href="tel:+919876543210">+91 98765 43210</a><br>Mon–Sat: 10:00 AM – 7:00 PM</p></div>
+      </div>
+      <div class="info-item">
+        <div class="info-icon"><i class="fas fa-envelope"></i></div>
+        <div class="info-text"><h4>Email</h4><p><a href="mailto:hello@auraveda.co.in">hello@auraveda.co.in</a><br>We respond within 24 hours.</p></div>
+      </div>
+      <div class="info-item">
+        <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+        <div class="info-text"><h4>Healing Space</h4><p>Online sessions worldwide & in-person by appointment.<br>📍 Bangalore (Whitefield / Indiranagar — address shared on booking)</p></div>
+      </div>
+      <div class="info-item">
+        <div class="info-icon"><i class="fas fa-clock"></i></div>
+        <div class="info-text"><h4>Session Hours</h4><p>Flexible timing for working professionals. Early mornings & weekends available.</p></div>
+      </div>
+
+      <div class="value-badge">
+        <span class="value-item"><i class="fas fa-hand-sparkles"></i> 100% Confidential</span>
+        <span class="value-item"><i class="fas fa-globe"></i> Online / In-person</span>
+        <span class="value-item"><i class="fas fa-heart"></i> Tailored Guidance</span>
+      </div>
+    </div>
+
+    <!-- Right side: Contact Form -->
+    <div class="form-card">
+      <h3><i class="fas fa-pen-alt"></i> Send a Message</h3>
+      <p>Share what you're looking for — Reiki, Numerology, NLP, or just clarity. We'll connect you with the right practitioner.</p>
+      <form id="contactForm">
+        <div class="form-group">
+          <input type="text" id="fullName" placeholder="Full Name *" required>
+        </div>
+        <div class="form-group">
+          <input type="email" id="emailId" placeholder="Email Address *" required>
+        </div>
+        <div class="form-group">
+          <input type="tel" id="phoneNum" placeholder="Phone Number (optional)">
+        </div>
+        <div class="form-group">
+          <select id="serviceInterest">
+            <option value="">I'm interested in...</option>
+            <option>Reiki Healing / Classes</option>
+            <option>Numerology Consultation</option>
+            <option>Astrology Reading</option>
+            <option>NLP Coaching</option>
+            <option>Dowsing / Akashic Records</option>
+            <option>General Inquiry / Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <textarea id="message" placeholder="Tell us about your goals or questions..."></textarea>
+        </div>
+        <div id="formFeedback" class="success-message" style="display: none;"></div>
+        <button type="submit" class="btn-cta btn-submit"><i class="fas fa-paper-plane"></i> Send Message</button>
+        <p class="small-note">✨ By submitting, you agree to receive a response via email/WhatsApp. Your privacy is respected.</p>
+      </form>
+    </div>
+  </div>
+
+  <!-- Values Section - Inspired by index.html (Our Values) -->
+  <h2>Our Healing Values</h2>
+  <div class="core-values">
+    <div class="value-core"><i class="fas fa-seedling"></i><h4>Healing</h4><p>Nurturing mind, body & spirit through ancient wisdom.</p></div>
+    <div class="value-core"><i class="fas fa-gem"></i><h4>Integrity</h4><p>Authentic, transparent & ethical spiritual guidance.</p></div>
+    <div class="value-core"><i class="fas fa-chart-line"></i><h4>Personal Growth</h4><p>Empowering self-awareness & transformation.</p></div>
+    <div class="value-core"><i class="fas fa-hands-helping"></i><h4>Community</h4><p>Safe, sacred space for every seeker.</p></div>
+  </div>
+
+  <!-- Map placeholder with subtle styling -->
+  <div class="map-placeholder">
+    <i class="fas fa-map-marked-alt"></i>
+    <h3 style="margin: 0.5rem 0;">Find Our Healing Sanctuary</h3>
+    <p>We offer sessions in Bangalore (by appointment) and worldwide via Zoom. Connect with us to receive location details or online session link.</p>
+    <button class="btn-outline" id="directionBtn" style="margin-top: 0.8rem;"><i class="fas fa-location-dot"></i> Request Studio Address</button>
+  </div>
+
+  <!-- CTA section - subtle reminder -->
+  <div style="background: rgba(216, 140, 154, 0.1); border-radius: 32px; padding: 1.5rem; text-align: center; margin: 1rem 0 2rem;">
+    <p style="font-weight: 500;">✨ <strong>Start your transformation journey</strong> — Book a free 15-min discovery call to understand which modality suits you best.</p>
+    <button class="btn-cta" id="floatingBookBtn" style="margin-top: 10px;">Schedule Call Now</button>
+  </div>
+</div>
+
+<!-- Footer (exactly matching brand requirement) -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>Auraveda</h4>
+        <p>Awaken your inner knowing with ancient healing wisdom.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <p><a href="index.html">Home</a><br><a href="#">Services</a><br><a href="#">About</a><br><a href="contact.html">Contact</a></p>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p><i class="fas fa-phone-alt"></i> +91 98765 43210<br><i class="fas fa-envelope"></i> hello@auraveda.co.in</p>
+      </div>
+    </div>
+    <div class="copyright">
+      © 2026 Auraveda — All rights reserved. Dowsing is a powerful tool for energetic alignment.
+    </div>
+  </div>
+</footer>
+
+<!-- Modal for Quick Booking (reusable from payment page style) -->
+<div id="bookingModal" class="modal" style="display: none; position: fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.6); align-items: center; justify-content: center; z-index: 1000;">
+  <div class="modal-content" style="background:white; max-width:450px; width:90%; border-radius:32px; padding:2rem; position:relative;">
+    <span class="close-modal" style="position: absolute; right: 1.5rem; top:1.2rem; font-size:1.6rem; cursor:pointer;">&times;</span>
+    <h3><i class="fas fa-calendar-check"></i> Schedule a Call</h3>
+    <p>Let’s talk about your healing goals. We’ll reach out within hours.</p>
+    <form id="quickBookForm">
+      <div class="form-group"><input type="text" placeholder="Full Name" required id="quickName"></div>
+      <div class="form-group"><input type="email" placeholder="Email Address" required id="quickEmail"></div>
+      <div class="form-group"><input type="tel" placeholder="WhatsApp Number"></div>
+      <button type="submit" class="btn-cta btn-submit">Request Callback</button>
+    </form>
+  </div>
+</div>
+
+<script>
+  // Modal handling for book buttons
+  const modal = document.getElementById('bookingModal');
+  const bookBtns = document.querySelectorAll('#bookConsultBtn, #floatingBookBtn');
+  const closeModalBtn = document.querySelector('.close-modal');
+
+  function openModal() { modal.style.display = 'flex'; }
+  function closeModal() { modal.style.display = 'none'; }
+
+  bookBtns.forEach(btn => btn.addEventListener('click', openModal));
+  if(closeModalBtn) closeModalBtn.addEventListener('click', closeModal);
+  window.addEventListener('click', (e) => { if(e.target === modal) closeModal(); });
+
+  // Quick booking form submission
+  const quickForm = document.getElementById('quickBookForm');
+  if(quickForm) {
+    quickForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const name = document.getElementById('quickName')?.value;
+      if(name && name.trim() !== "") {
+        alert(`Thank you ${name}! Your callback request is received. Auraveda will connect with you shortly. 🙏`);
+        closeModal();
+        quickForm.reset();
+      } else {
+        alert("Please share your name to schedule a call ✨");
+      }
+    });
+  }
+
+  // Contact form handling with validation and success feedback
+  const contactForm = document.getElementById('contactForm');
+  const feedbackDiv = document.getElementById('formFeedback');
+
+  contactForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const name = document.getElementById('fullName').value.trim();
+    const email = document.getElementById('emailId').value.trim();
+    if(!name || !email) {
+      alert("Please enter your name and email address.");
+      return;
+    }
+    const emailPattern = /^[^\s@]+@([^\s@]+\.)+[^\s@]+$/;
+    if(!emailPattern.test(email)) {
+      alert("Please enter a valid email address.");
+      return;
+    }
+    // Simulate successful submission
+    feedbackDiv.style.display = 'block';
+    feedbackDiv.innerHTML = `<i class="fas fa-check-circle"></i> Thanks ${name}! Your message has been sent. We'll reply within 24 hours.`;
+    contactForm.reset();
+    setTimeout(() => {
+      feedbackDiv.style.display = 'none';
+    }, 5000);
+  });
+
+  // Direction button action
+  const dirBtn = document.getElementById('directionBtn');
+  if(dirBtn) {
+    dirBtn.addEventListener('click', () => {
+      alert("📍 Our Bangalore healing space address will be shared upon booking confirmation. For online sessions, we'll provide Zoom link. For inquiries, please email hello@auraveda.co.in");
+    });
+  }
+
+  // subtle hover effect on value cards
+  const values = document.querySelectorAll('.value-core');
+  values.forEach(v => {
+    v.addEventListener('mouseenter', () => v.style.transform = 'translateY(-4px)');
+    v.addEventListener('mouseleave', () => v.style.transform = 'translateY(0)');
+    v.style.transition = '0.2s';
+  });
+</script>
+
+<style>
+  .modal {
+    display: none;
+  }
+  .modal-content {
+    transition: 0.2s;
+  }
+  .value-core, .info-card, .form-card, .map-placeholder {
+    transition: all 0.2s ease;
+  }
+</style>
+</body>
+</html>

@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Golden Tera Mai™ Reiki & Seichem classes for working professional women. Level 1, Mastership, Akasha Seichem — energy healing initiations & certifications. Transform your energy, elevate your leadership.">
+  <meta name="keywords" content="Golden Tera Mai Reiki, Seichem, Akasha, energy healing, Reiki classes, Auraveda, certification, attunements, spiritual healing, corporate wellness, women empowerment">
+  <meta name="author" content="Auraveda">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Auraveda | Golden Tera Mai™ Reiki & Seichem Classes — Power for Professional Women">
+  <meta property="og:description" content="Sacred initiations, healing systems, and mastership courses. Designed for ambitious women seeking balance, clarity, and inner power.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1545389336-cf090694435e?w=1200&auto=format">
+  <title>Auraveda | Reiki Mastery for Women Leaders — Golden Tera Mai™ & Seichem</title>
+  
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  
+  <style>
+    /* ----- BRAND COLOR SYSTEM (Premium | Royal Purple + Burgundy + Dusty Rose) ----- */
+    :root {
+      --royal-purple: #5A189A;      /* Primary: headings, logo, accents */
+      --soft-white: #F8F9FA;        /* Main background — clean, premium */
+      --burgundy: #800020;          /* CTA buttons: Book, Register, DM */
+      --dusty-rose: #D88C9A;        /* Testimonials, subtle highlights */
+      --dark-charcoal: #2C2A2E;
+      --warm-gray: #F4F0EA;
+      --pure-white: #FFFFFF;
+      --shadow-sm: 0 10px 25px -5px rgba(90, 24, 154, 0.08), 0 8px 10px -6px rgba(0,0,0,0.02);
+      --shadow-md: 0 20px 30px -12px rgba(90, 24, 154, 0.12);
+      --transition: all 0.3s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--soft-white);
+      color: #2E2A28;
+      line-height: 1.5;
+      scroll-behavior: smooth;
+    }
+
+    h1, h2, h3, h4, .logo, .course-title, .price {
+      font-family: 'Playfair Display', serif;
+      font-weight: 500;
+    }
+
+    /* --- HEADER & NAV (matching index.html but with brand colors) --- */
+    header {
+      background: var(--pure-white);
+      box-shadow: 0 2px 12px rgba(90, 24, 154, 0.05);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 1px solid rgba(90, 24, 154, 0.1);
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 5%;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 1.7rem;
+      font-weight: 600;
+      letter-spacing: -0.3px;
+    }
+    .logo img {
+      border-radius: 50%;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    .logo span {
+      color: var(--royal-purple);
+    }
+    .logo:first-of-type {
+      font-size: 1.8rem;
+      background: linear-gradient(135deg, var(--royal-purple), #3b0764);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    .nav-links {
+      display: flex;
+      list-style: none;
+      gap: 2.5rem;
+    }
+    .nav-links a {
+      text-decoration: none;
+      font-weight: 500;
+      color: #2C2A2E;
+      transition: 0.2s;
+      font-size: 1rem;
+    }
+    .nav-links a:hover, .nav-links a.active {
+      color: var(--royal-purple);
+    }
+    .burger {
+      display: none;
+      cursor: pointer;
+    }
+    .burger div {
+      width: 25px;
+      height: 2px;
+      background: var(--royal-purple);
+      margin: 6px;
+      transition: 0.3s;
+    }
+
+    /* Hero section (professional women focus) */
+    .hero-reiki {
+      background: linear-gradient(135deg, rgba(90,24,154,0.02) 0%, rgba(128,0,32,0.02) 100%);
+      padding: 3.5rem 0 2.5rem;
+    }
+    .hero-container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 24px;
+      text-align: center;
+    }
+    .hero-reiki h2 {
+      font-size: 3.2rem;
+      font-weight: 600;
+      color: var(--royal-purple);
+      margin-bottom: 1rem;
+      letter-spacing: -0.5px;
+    }
+    .hero-reiki p {
+      font-size: 1.2rem;
+      max-width: 720px;
+      margin: 0 auto 2rem;
+      color: #4a3b32;
+    }
+    .hero-imgs {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      flex-wrap: wrap;
+      margin-top: 32px;
+    }
+    .hero-imgs img {
+      width: 260px;
+      height: 190px;
+      object-fit: cover;
+      border-radius: 28px;
+      box-shadow: var(--shadow-md);
+      transition: transform 0.3s ease;
+      border: 2px solid rgba(90,24,154,0.2);
+    }
+    .hero-imgs img:hover {
+      transform: scale(1.02);
+    }
+
+    /* Filter Buttons */
+    .filter-section {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin: 3rem 0 2rem;
+    }
+    .filter-btn {
+      background: transparent;
+      border: 1.5px solid rgba(90,24,154,0.3);
+      padding: 0.6rem 1.8rem;
+      border-radius: 40px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      cursor: pointer;
+      transition: 0.2s;
+      color: #3c2a2a;
+      font-family: 'Inter', sans-serif;
+    }
+    .filter-btn.active, .filter-btn:hover {
+      background: var(--burgundy);
+      border-color: var(--burgundy);
+      color: white;
+      box-shadow: 0 6px 14px rgba(128,0,32,0.25);
+    }
+
+    /* Course Cards */
+    .courses-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+      gap: 2rem;
+      margin: 2rem 0 3rem;
+    }
+    .course-card {
+      background: var(--pure-white);
+      border-radius: 32px;
+      overflow: hidden;
+      transition: var(--transition);
+      box-shadow: var(--shadow-sm);
+      border: 1px solid #f0e4da;
+    }
+    .course-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-md);
+      border-color: rgba(90,24,154,0.2);
+    }
+    .card-img {
+      height: 210px;
+      overflow: hidden;
+    }
+    .card-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+    .course-card:hover .card-img img {
+      transform: scale(1.05);
+    }
+    .card-content {
+      padding: 1.6rem 1.6rem 2rem;
+    }
+    .course-title {
+      font-size: 1.6rem;
+      font-weight: 600;
+      color: var(--royal-purple);
+      margin-bottom: 0.5rem;
+    }
+    .price {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: var(--burgundy);
+      margin: 0.5rem 0 0.25rem;
+    }
+    .prereq {
+      display: inline-block;
+      background: rgba(216,140,154,0.15);
+      padding: 0.2rem 0.9rem;
+      border-radius: 30px;
+      font-size: 0.7rem;
+      font-weight: 600;
+      color: var(--burgundy);
+      margin: 0.5rem 0 0.8rem;
+    }
+    .desc {
+      font-size: 0.9rem;
+      color: #4e443c;
+      margin-bottom: 1.2rem;
+      line-height: 1.45;
+    }
+    .card-buttons {
+      display: flex;
+      gap: 12px;
+      margin-top: 0.5rem;
+    }
+    .btn-book {
+      background: var(--burgundy);
+      border: none;
+      color: white;
+      padding: 0.7rem 1rem;
+      border-radius: 40px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.2s;
+      flex: 1;
+      font-size: 0.85rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+    .btn-book i {
+      font-size: 0.9rem;
+    }
+    .btn-book:hover {
+      background: #5e0018;
+      transform: scale(0.97);
+    }
+    .btn-details {
+      background: transparent;
+      border: 1px solid rgba(90,24,154,0.4);
+      border-radius: 40px;
+      padding: 0.7rem 1rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: 0.2s;
+      color: var(--royal-purple);
+    }
+    .btn-details:hover {
+      background: rgba(90,24,154,0.05);
+      border-color: var(--royal-purple);
+    }
+
+    /* Testimonial block — Dusty Rose accent (feminine & powerful) */
+    .testimonial-premium {
+      background: var(--dusty-rose);
+      border-radius: 48px;
+      padding: 3rem 2rem;
+      margin: 2.5rem 0 3rem;
+      text-align: center;
+      background: linear-gradient(125deg, #f9e3e8 0%, #f5d6de 100%);
+    }
+    .testimonial-premium h3 {
+      font-size: 2rem;
+      color: var(--royal-purple);
+      margin-bottom: 1rem;
+      font-weight: 600;
+    }
+    .testimonial-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    .testi-card {
+      background: white;
+      border-radius: 32px;
+      padding: 1.8rem;
+      max-width: 320px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+      text-align: left;
+      border-left: 5px solid var(--burgundy);
+    }
+    .testi-card i {
+      color: var(--burgundy);
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+    }
+    .testi-card p {
+      font-style: italic;
+      color: #2a241f;
+    }
+    .testi-card h4 {
+      margin-top: 1rem;
+      color: var(--royal-purple);
+      font-weight: 600;
+    }
+
+    /* CTA Section (Burgundy / Purple blend) */
+    .cta-leader {
+      background: linear-gradient(115deg, #5A189A 0%, #3b0764 100%);
+      border-radius: 48px;
+      margin: 2rem 0 3rem;
+      padding: 3rem 2.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+    }
+    .cta-leader h3 {
+      font-size: 2rem;
+      color: white;
+      font-weight: 500;
+    }
+    .cta-leader p {
+      color: #f5e5d5;
+      max-width: 480px;
+    }
+    .btn-cta-burgundy {
+      background: var(--burgundy);
+      border: none;
+      padding: 1rem 2.5rem;
+      border-radius: 60px;
+      font-weight: bold;
+      font-size: 1.1rem;
+      cursor: pointer;
+      font-family: 'Inter', sans-serif;
+      color: white;
+      transition: 0.2s;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+    .btn-cta-burgundy:hover {
+      background: #9e0028;
+      transform: translateY(-3px);
+    }
+    a.btn-cta-burgundy {
+      text-decoration: none;
+    }
+
+    /* Modal (booking) */
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(44, 42, 46, 0.8);
+      backdrop-filter: blur(5px);
+      justify-content: center;
+      align-items: center;
+      z-index: 2000;
+    }
+    .modal-content {
+      background: white;
+      max-width: 500px;
+      width: 90%;
+      border-radius: 48px;
+      padding: 2rem;
+      box-shadow: 0 35px 50px rgba(90,24,154,0.3);
+      position: relative;
+    }
+    .modal-content h3 {
+      color: var(--royal-purple);
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+    }
+    .modal-close {
+      position: absolute;
+      right: 24px;
+      top: 20px;
+      font-size: 28px;
+      cursor: pointer;
+      color: #6f5b4b;
+    }
+    .modal-content input, .modal-content select, .modal-content textarea {
+      width: 100%;
+      padding: 12px 16px;
+      margin: 10px 0;
+      border: 1px solid #e2cfbc;
+      border-radius: 40px;
+      background: #fefaf5;
+    }
+    .modal-submit {
+      background: var(--burgundy);
+      color: white;
+      border: none;
+      padding: 12px;
+      width: 100%;
+      border-radius: 40px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 12px;
+    }
+    /* Footer (exactly as index.html but brand colors) */
+    footer {
+      background: var(--royal-purple);
+      color: #fef7e6;
+      margin-top: 3rem;
+      padding: 2.5rem 0 1rem;
+    }
+    .footer-content {
+      max-width: 1280px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 2rem;
+      padding: 0 5%;
+    }
+    .footer-section h4 {
+      font-family: 'Playfair Display', serif;
+      margin-bottom: 1rem;
+      font-size: 1.2rem;
+      color: #ffefdd;
+    }
+    .footer-section ul {
+      list-style: none;
+    }
+    .footer-section li, .footer-section p {
+      margin: 0.5rem 0;
+      font-size: 0.9rem;
+    }
+    .footer-section a {
+      color: #f3e2cf;
+      text-decoration: none;
+    }
+    .footer-section a:hover {
+      color: var(--dusty-rose);
+    }
+    .copyright {
+      text-align: center;
+      padding-top: 2rem;
+      margin-top: 1.5rem;
+      border-top: 1px solid rgba(255,255,240,0.2);
+      font-size: 0.8rem;
+    }
+    @media (max-width: 780px) {
+      .nav-links { display: none; }
+      .burger { display: block; }
+      nav { flex-wrap: wrap; }
+      .hero-reiki h2 { font-size: 2.2rem; }
+      .cta-leader { flex-direction: column; text-align: center; }
+      .testimonial-grid { flex-direction: column; align-items: center; }
+      .courses-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ========== HEADER (identical structure as index.html) ========== -->
+<header>
+  <nav>
+    <div class="logo"><img src="img/Auraveda logo.png" width="50" height="50" alt="Auraveda Logo"></div>
+    <div class="logo">AURA<span>VEDA</span></div>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+		
+				<li><a href="about.html">About us</a></li>
+  <li><a href="services.html">Services</a></li>
+  <li><a href="classbox.html">Classes</a></li>
+  <li><a href="consultation.html">Consultation</a></li>
+  
+  <li><a href="Help.html">Help</a></li>
+   
+  <li><a href="payment.html">Payment</a></li>
+ 		
+		       
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="burger">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <!-- Hero Section — Professional Women Empowerment -->
+  <section class="hero-reiki">
+    <div class="hero-container">
+      <h2>Elevate Your Energy.<br>Lead with Inner Power.</h2>
+      <p>Designed for ambitious professional women: Golden Tera Mai™ Reiki, Seichem, and Akasha initiations. Clear energetic blocks, restore leadership presence, and embody holistic confidence.</p>
+      <div class="hero-imgs">
+        <img src="https://images.unsplash.com/photo-1545389336-cf090694435e?w=500&auto=format" alt="Woman meditating serene energy">
+        <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=500&auto=format" alt="Reiki healing hands with crystals">
+        <img src="https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?w=500&auto=format" alt="Peaceful healing space">
+      </div>
+    </div>
+  </section>
+
+  <div class="hero-container" id="courses">
+    <!-- filter bar -->
+    <div class="filter-section">
+      <button class="filter-btn active" data-filter="all">All Sacred Classes</button>
+      <button class="filter-btn" data-filter="reiki">Golden Tera Mai™ Reiki</button>
+      <button class="filter-btn" data-filter="seichem">Tera Mai™ Seichem</button>
+      <button class="filter-btn" data-filter="akasha">Akasha Seichem</button>
+    </div>
+    <div class="courses-grid" id="coursesGrid"></div>
+  </div>
+
+  <!-- Testimonials - Dusty Rose accent (Powerful Transformation for Women) -->
+  <div class="hero-container">
+    <div class="testimonial-premium">
+      <h3><i class="fas fa-crown" style="color: var(--burgundy); margin-right: 10px;"></i> Women Who Transformed</h3>
+      <div class="testimonial-grid">
+        <div class="testi-card">
+          <i class="fas fa-quote-left"></i>
+          <p>“After Mastership, I gained clarity to lead my corporate team with compassion and unshakable confidence. Auraveda changed my life.”</p>
+          <h4>- Radhika S., Senior Director</h4>
+        </div>
+        <div class="testi-card">
+          <i class="fas fa-quote-left"></i>
+          <p>“Seichem initiations opened my intuition and removed deep ancestral blocks. I feel powerful, feminine, and aligned.”</p>
+          <h4>- Meera K., Entrepreneur</h4>
+        </div>
+        <div class="testi-card">
+          <i class="fas fa-quote-left"></i>
+          <p>“Balancing work & spirituality felt impossible until Akasha Seichem. Now I radiate authentic leadership.”</p>
+          <h4>- Niharika J., HR Leader</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA section with Burgundy & Purple blend -->
+  <div class="hero-container">
+    <div class="cta-leader">
+      <div>
+        <h3>Step Into Your Sovereign Power</h3>
+        <p>One-on-one mentorship, sacred initiations & Reiki certification for high-achieving women. Claim your free discovery call.</p>
+      </div>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfviyQgwaYqVtQnGb0Yc7lCPD6ojnuetDd-pHLEU6DlM3Tynw/viewform" target="_blank" class="btn-cta-burgundy"><i class="fas fa-calendar-alt"></i> DM Now — Book Session</a>
+    </div>
+  </div>
+</main>
+
+<!-- ========== FOOTER (exactly matching index.html) ========== -->
+<footer>
+  <div class="footer-content">
+    <div class="footer-section">
+      <h4>Auraveda</h4>
+      <p>Let your aura shine brighter with holistic wellness.</p>
+    </div>
+    <div class="footer-section">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Contact</h4>
+      <ul>
+        <li><i class="fas fa-phone"></i> +91 98765 43210</li>
+        <li><i class="fas fa-envelope"></i> hello@auraveda.co.in</li>
+      </ul>
+    </div>
+  </div>
+  <div class="copyright">
+    &copy; 2026 Auraveda. All rights reserved. Empowering women through energy mastery.
+  </div>
+</footer>
+
+<!-- MODAL (booking with Burgundy theme) -->
+<div id="bookingModal" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" id="closeModalBtn">&times;</span>
+    <h3><i class="fas fa-spa" style="color: var(--burgundy);"></i> Book Your Initiation</h3>
+    <p style="margin-bottom: 12px;">Sacred class: <strong id="modalCourseName">Golden Tera Mai™ Reiki</strong></p>
+    <form id="bookingForm">
+      <input type="text" id="userName" placeholder="Full Name *" required>
+      <input type="email" id="userEmail" placeholder="Email Address">
+      <input type="tel" id="userPhone" placeholder="WhatsApp / Phone">
+      <select id="courseSelectModal">
+        <option value="Golden Tera Mai™ Reiki Level 1">Golden Tera Mai™ Reiki Level 1</option>
+        <option value="Golden Tera Mai™ Reiki Level 2">Golden Tera Mai™ Reiki Level 2</option>
+        <option value="Golden Tera Mai™ Mastership">Golden Tera Mai™ Mastership</option>
+        <option value="Tera Mai™ Seichem One">Tera Mai™ Seichem One</option>
+        <option value="Tera Mai™ Seichem Two">Tera Mai™ Seichem Two</option>
+        <option value="Seichem Three / Mastership">Seichem Mastership</option>
+        <option value="Tera Mai™ Akasha Seichem (Donation)">Akasha Seichem (Donation)</option>
+      </select>
+      <textarea rows="2" placeholder="Any question or intention..."></textarea>
+      <button type="submit" class="modal-submit"><i class="fas fa-gem"></i> Request Booking</button>
+    </form>
+    <p style="font-size: 0.7rem; margin-top: 12px;">We'll reach out within 24h to confirm your energy session.</p>
+  </div>
+</div>
+
+<script>
+  // COURSE DATA aligned with Golden Tera Mai™ offerings (Premium for working women)
+  const coursesData = [
+    { id: 1, name: "Golden Tera Mai™ Reiki Level 1", price: "₹10,999", category: "reiki", prerequisite: "No prerequisite", desc: "21-day self-healing cycle, removal of energetic blocks. Ideal for personal healing & hands-on foundation.", longDesc: "Perfect for working women to restore inner balance. Removes dark initiations, opens energy channels.", img: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=500&auto=format" },
+    { id: 2, name: "Golden Tera Mai™ Reiki Level 2", price: "₹14,999", category: "reiki", prerequisite: "Prerequisite: Level 1", desc: "Double Say Hey Key, absentee healing symbols, enhance intuition & remote healing abilities.", longDesc: "Deepen your practice: send distance healing, amplify career clarity and emotional mastery.", img: "https://images.unsplash.com/photo-1545389336-cf090694435e?w=500&auto=format" },
+    { id: 3, name: "Golden Tera Mai™ Mastership", price: "₹75,999", category: "reiki", prerequisite: "Reiki 1,2 & Seichem 1", desc: "Full teaching certification, attunement methods. Empower others with Tera Mai™ lineage.", longDesc: "Master level — become a certified healer, lead circles & teach women leadership through Reiki.", img: "https://images.unsplash.com/photo-1584036561566-baf8f5f1b144?w=500&auto=format" },
+    { id: 4, name: "Tera Mai™ Seichem One", price: "₹15,999", category: "seichem", prerequisite: "Golden Tera Mai™ Reiki One", desc: "Elemental earth + air, water & fire activation. Self-healing immersion.", longDesc: "Awaken the four elements within. For women seeking emotional fluidity and grounded power.", img: "https://images.unsplash.com/photo-1604426633861-11b2faead63c?w=500&auto=format" },
+    { id: 5, name: "Tera Mai™ Seichem Two", price: "₹21,999", category: "seichem", prerequisite: "Reiki Two + Seichem One", desc: "Absentee healing, psychic techniques & advanced elemental balancing.", longDesc: "Expand your intuitive gifts, refine etheric healing. Ideal for coaches & healers.", img: "https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?w=500&auto=format" },
+    { id: 6, name: "Seichem Three / Mastership", price: "₹81,999", category: "seichem", prerequisite: "Reiki 3 + Seichem Two", desc: "YOD initiation, Violet Flame & Melchizedek techniques.", longDesc: "Teach Seichem attunements, work with Violet Flame & advanced energy breath work.", img: "https://images.unsplash.com/photo-1512295767273-ac109ac3acfa?w=500&auto=format" },
+    { id: 7, name: "Tera Mai™ Akasha Seichem", price: "Donation-based", category: "akasha", prerequisite: "All four Seichem levels (recommended)", desc: "Ether, Violet Flame, Soul Star activation. NURHA energy weaves chakras.", longDesc: "Angelic initiation: donate what resonates. Sacred transmission by Marla Abraham lineage.", img: "https://images.unsplash.com/photo-1545205597-3d9d02c29597?w=500&auto=format" }
+  ];
+
+  let currentFilter = "all";
+  const coursesGrid = document.getElementById("coursesGrid");
+
+  function renderCards() {
+    if (!coursesGrid) return;
+    const filtered = coursesData.filter(c => currentFilter === "all" || c.category === currentFilter);
+    coursesGrid.innerHTML = "";
+    filtered.forEach(course => {
+      const card = document.createElement("div");
+      card.className = "course-card";
+      card.innerHTML = `
+        <div class="card-img"><img src="${course.img}" alt="${course.name} healing class for women" loading="lazy"></div>
+        <div class="card-content">
+          <h3 class="course-title">${course.name}</h3>
+          <div class="price">${course.price}</div>
+          <span class="prereq"><i class="fas fa-key"></i> ${course.prerequisite}</span>
+          <p class="desc">${course.desc}</p>
+          <div class="card-buttons">
+            <button class="btn-book" data-course='${JSON.stringify(course)}'><i class="fas fa-calendar-check"></i> Book Now</button>
+            <button class="btn-details" data-info='${JSON.stringify(course)}'><i class="fas fa-info-circle"></i> Details</button>
+          </div>
+        </div>
+      `;
+      coursesGrid.appendChild(card);
+    });
+    attachEvents();
+  }
+
+  function attachEvents() {
+    document.querySelectorAll(".btn-book").forEach(btn => {
+      btn.addEventListener("click", (e) => {
+        const course = JSON.parse(btn.getAttribute("data-course"));
+        openBookingModal(course.name);
+      });
+    });
+    document.querySelectorAll(".btn-details").forEach(btn => {
+      btn.addEventListener("click", () => {
+        const course = JSON.parse(btn.getAttribute("data-info"));
+        alert(`✨ ${course.name}\n\n${course.longDesc || course.desc}\n\n💎 ${course.price}\n📜 ${course.prerequisite}\n\nVisit Auraveda to book your sacred initiation.`);
+      });
+    });
+  }
+
+  // Filter listeners
+  document.querySelectorAll(".filter-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+      document.querySelectorAll(".filter-btn").forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+      currentFilter = btn.getAttribute("data-filter");
+      renderCards();
+    });
+  });
+
+  // Modal handling
+  const modal = document.getElementById("bookingModal");
+  const modalCourseSpan = document.getElementById("modalCourseName");
+  const closeModal = document.getElementById("closeModalBtn");
+  function openBookingModal(courseName) {
+    if (modalCourseSpan) modalCourseSpan.innerText = courseName;
+    const selectEl = document.getElementById("courseSelectModal");
+    if (selectEl) {
+      for(let i=0; i<selectEl.options.length; i++) {
+        if(selectEl.options[i].value.includes(courseName.split("(")[0].trim()) || courseName.includes(selectEl.options[i].value)) {
+          selectEl.selectedIndex = i;
+          break;
+        }
+      }
+    }
+    modal.style.display = "flex";
+  }
+  function closeModalFunc() { modal.style.display = "none"; }
+  if(closeModal) closeModal.addEventListener("click", closeModalFunc);
+  window.addEventListener("click", (e) => { if(e.target === modal) closeModalFunc(); });
+  document.getElementById("bookingForm")?.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const name = document.getElementById("userName")?.value;
+    if(!name) { alert("Please share your name to begin."); return; }
+    alert(`✨ Thank you ${name}, your booking request for ${document.getElementById("courseSelectModal")?.value} is received. Our energy guide will reply within 24h.`);
+    document.getElementById("bookingForm").reset();
+    closeModalFunc();
+  });
+
+  // Floating CTA and nav book (optional)
+  renderCards();
+
+  // Mobile burger compatibility (using existing scripts.js but fallback)
+  const burger = document.querySelector('.burger');
+  const navLinks = document.querySelector('.nav-links');
+  if(burger && navLinks) {
+    burger.addEventListener('click', () => { navLinks.classList.toggle('nav-active'); });
+  }
+</script>
+<script src="js/scripts.js"></script>
+</body>
+</html>

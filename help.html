@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Auraveda Help Center — Spiritual guidance, healing sessions, and transformation coaching for working professional women. Find answers about bookings, Reiki, NLP, Akashic Records, and more.">
+  <meta name="keywords" content="Auraveda, spiritual healing, Reiki, NLP, Akashic Records, women transformation coach, help page, holistic wellness">
+  <meta name="author" content="Auraveda">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Auraveda Help & Support | Empower Your Spiritual Journey">
+  <meta property="og:description" content="Premium guidance for working women. Get answers, book sessions, and transform with confidence.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://auraveda.co.in/og-image.jpg"> <!-- placeholder, but valid -->
+  <title>Auraveda | Help Center — Transformation for Working Women</title>
+  <!-- Google Fonts + Font Awesome -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #F8F9FA;  /* Soft White — 60% primary background */
+      color: #1E1A2F;
+      line-height: 1.5;
+      scroll-behavior: smooth;
+    }
+
+    /* Color System Variables */
+    :root {
+      --primary-purple: #5A189A;    /* Deep Royal Purple - 25% usage */
+      --soft-white: #F8F9FA;        /* Main background */
+      --burgundy: #800020;          /* CTA / Action buttons */
+      --dusty-rose: #D88C9A;        /* Accent (limited, 5%) */
+      --dark-text: #2D2A3E;
+      --gray-muted: #6C6A7A;
+      --shadow-sm: 0 12px 30px rgba(0, 0, 0, 0.04), 0 4px 8px rgba(0, 0, 0, 0.02);
+      --shadow-hover: 0 20px 35px -12px rgba(90, 24, 154, 0.12);
+    }
+
+    /* Container */
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 32px;
+    }
+
+    /* ========== TYPOGRAPHY & LINKS ========== */
+    h1, h2, h3, h4 {
+      font-weight: 600;
+      color: var(--primary-purple);
+      letter-spacing: -0.02em;
+    }
+
+    h1 {
+      font-size: 3rem;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      position: relative;
+      display: inline-block;
+    }
+    h2:after {
+      content: '';
+      position: absolute;
+      bottom: -8px;
+      left: 0;
+      width: 60px;
+      height: 3px;
+      background: var(--burgundy);
+      border-radius: 4px;
+    }
+
+    h3 {
+      font-size: 1.35rem;
+      font-weight: 600;
+      color: var(--primary-purple);
+    }
+
+    a {
+      text-decoration: none;
+      transition: all 0.25s ease;
+    }
+
+    /* Buttons & CTA */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 28px;
+      border-radius: 40px;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: 0.25s;
+      cursor: pointer;
+      border: none;
+      background: none;
+    }
+
+    .btn-primary {
+      background-color: var(--burgundy);
+      color: white;
+      box-shadow: 0 4px 10px rgba(128, 0, 32, 0.2);
+    }
+    .btn-primary:hover {
+      background-color: #5e0018;
+      transform: translateY(-2px);
+      box-shadow: 0 12px 20px rgba(128, 0, 32, 0.25);
+    }
+
+    .btn-outline-light {
+      border: 1.5px solid var(--primary-purple);
+      color: var(--primary-purple);
+      background: transparent;
+    }
+    .btn-outline-light:hover {
+      background: var(--primary-purple);
+      color: white;
+    }
+
+    /* Header & Navigation */
+    .navbar {
+      background: white;
+      box-shadow: 0 2px 15px rgba(0, 0, 0, 0.02);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(2px);
+      background-color: rgba(255,255,255,0.96);
+    }
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 32px;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+    .logo {
+      font-size: 1.8rem;
+      font-weight: 800;
+      color: var(--primary-purple);
+      letter-spacing: -0.5px;
+    }
+    .logo span {
+      font-weight: 400;
+      color: var(--burgundy);
+    }
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+    }
+    .nav-links a {
+      color: #2d2a3e;
+      font-weight: 500;
+      transition: 0.2s;
+    }
+    .nav-links a:hover, .nav-links a.active {
+      color: var(--primary-purple);
+      border-bottom: 2px solid var(--primary-purple);
+      padding-bottom: 4px;
+    }
+
+    /* Hero Section */
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 2rem;
+      padding: 3rem 0 2rem 0;
+    }
+    .hero-content {
+      flex: 1.2;
+    }
+    .hero-badge {
+      background: var(--dusty-rose);
+      display: inline-block;
+      padding: 6px 16px;
+      border-radius: 40px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: #2d1b36;
+      margin-bottom: 1.5rem;
+    }
+    .hero-image {
+      flex: 1;
+      border-radius: 28px;
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+    }
+    .hero-image img {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover;
+    }
+
+    /* FAQ Section Accordion */
+    .faq-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin: 2rem 0 2.5rem;
+    }
+    .faq-item {
+      background: white;
+      border-radius: 24px;
+      box-shadow: var(--shadow-sm);
+      transition: 0.2s;
+      border-left: 4px solid transparent;
+    }
+    .faq-item:hover {
+      box-shadow: var(--shadow-hover);
+      border-left-color: var(--dusty-rose);
+    }
+    .faq-question {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.3rem 1.8rem;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 1.1rem;
+      color: var(--primary-purple);
+    }
+    .faq-question i {
+      color: var(--burgundy);
+      font-size: 1.2rem;
+      transition: transform 0.3s;
+    }
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+      padding: 0 1.8rem;
+      color: var(--dark-text);
+      border-top: 0px solid #eee;
+    }
+    .faq-item.active .faq-answer {
+      max-height: 320px;
+      padding-bottom: 1.5rem;
+      border-top: 1px solid #f0eef5;
+    }
+    .faq-item.active .faq-question i {
+      transform: rotate(180deg);
+    }
+
+    /* Still Have Questions Section */
+    .contact-block {
+      background: linear-gradient(135deg, #FDF8F5 0%, #F8F9FA 100%);
+      border-radius: 40px;
+      padding: 2.5rem 2rem;
+      text-align: center;
+      margin: 3rem 0 2rem;
+      border: 1px solid rgba(216, 140, 154, 0.3);
+    }
+    .contact-icons {
+      display: flex;
+      justify-content: center;
+      gap: 2.5rem;
+      flex-wrap: wrap;
+      margin-top: 1.5rem;
+    }
+    .contact-card {
+      background: white;
+      padding: 1rem 2rem;
+      border-radius: 60px;
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 500;
+      box-shadow: var(--shadow-sm);
+    }
+    .contact-card i {
+      font-size: 1.4rem;
+      color: var(--burgundy);
+    }
+
+    /* CTA Banner (Burgundy) */
+    .cta-banner {
+      background: var(--burgundy);
+      border-radius: 32px;
+      padding: 2.5rem 2rem;
+      margin: 3rem 0 2rem;
+      text-align: center;
+      color: white;
+    }
+    .cta-banner h3 {
+      color: white;
+      font-size: 1.8rem;
+      margin-bottom: 0.75rem;
+    }
+    .cta-banner p {
+      opacity: 0.9;
+      margin-bottom: 1.5rem;
+    }
+    .btn-white {
+      background: white;
+      color: var(--burgundy);
+      box-shadow: none;
+    }
+    .btn-white:hover {
+      background: #f8e1e6;
+      transform: scale(0.98);
+    }
+
+    /* Footer */
+    footer {
+      background: #1E1A2F;
+      color: #e0dcee;
+      padding: 3rem 0 1.5rem;
+      margin-top: 4rem;
+      border-top: 4px solid var(--primary-purple);
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 2rem;
+      margin-bottom: 2rem;
+    }
+    .footer-brand p {
+      margin-top: 0.8rem;
+      color: #b9b3d4;
+      line-height: 1.5;
+    }
+    .footer-links h4, .footer-contact h4 {
+      color: var(--dusty-rose);
+      margin-bottom: 1rem;
+      font-weight: 600;
+    }
+    .footer-links ul {
+      list-style: none;
+    }
+    .footer-links li {
+      margin-bottom: 0.6rem;
+    }
+    .footer-links a {
+      color: #cfc9e6;
+    }
+    .footer-links a:hover {
+      color: var(--dusty-rose);
+      padding-left: 4px;
+    }
+    .footer-contact p {
+      margin-bottom: 0.6rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .footer-copyright {
+      text-align: center;
+      padding-top: 2rem;
+      border-top: 1px solid #3c345a;
+      font-size: 0.85rem;
+    }
+
+    /* responsive */
+    @media (max-width: 850px) {
+      .nav-container {
+        flex-direction: column;
+        gap: 1rem;
+      }
+      .nav-links {
+        gap: 1.5rem;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      h1 {
+        font-size: 2.2rem;
+      }
+      .hero {
+        flex-direction: column;
+      }
+      .container {
+        padding: 0 20px;
+      }
+    }
+    @media (max-width: 550px) {
+      .faq-question {
+        padding: 1rem 1.2rem;
+        font-size: 1rem;
+      }
+      .contact-card {
+        padding: 0.7rem 1.2rem;
+        font-size: 0.85rem;
+      }
+    }
+    img {
+      max-width: 100%;
+      border-radius: 24px;
+    }
+    .spacer {
+      height: 0.5rem;
+    }
+    .badge-cat {
+      background: var(--dusty-rose);
+      color: #2D1A36;
+      font-size: 0.7rem;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 40px;
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<header class="navbar">
+  <div class="nav-container">
+    <div class="logo">AURAVEDA<span>.</span></div>
+    <div class="nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+		
+				<li><a href="about.html">About us</a></li>
+  <li><a href="services.html">Services</a></li>
+  <li><a href="classbox.html">Classes</a></li>
+  <li><a href="consultation.html">Consultation</a></li>
+  
+  <li><a href="Help.html">Help</a></li>
+   
+  <li><a href="payment.html">Payment</a></li>
+ 		
+		       
+        <li><a href="contact.html">Contact</a></li>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+    <!-- Hero section with welcome message -->
+    <div class="hero">
+      <div class="hero-content">
+        <div class="hero-badge"><i class="fas fa-feather-alt"></i> Sacred Guidance</div>
+        <h1>Welcome to the <br> Auraveda Help Page</h1>
+        <p style="font-size: 1.15rem; color: #3c354e; margin: 1rem 0 1.2rem;">We're here to ensure your journey into the mystical is smooth, enlightening, and supported every step of the way. Whether you need assistance with bookings, understanding our services, or seeking spiritual guidance, you've come to the right place.</p>
+        <a href="#" class="btn btn-primary"><i class="fas fa-calendar-check"></i> Book a Counseling Session</a>
+      </div>
+      <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1587614382346-4ec70e388b28?q=80&w=2070&auto=format" alt="Professional woman meditating in serene environment" loading="lazy">
+      </div>
+    </div>
+
+    <!-- FAQ Section with accordion (Advanced JS) -->
+    <h2>Your Questions, Answered</h2>
+    <div class="faq-grid" id="faqAccordion">
+      <!-- FAQ items dynamically structured but built statically with exact content -->
+      <div class="faq-item">
+        <div class="faq-question"><span><span class="badge-cat">📘 Booking</span><br>How do I book a session or class?</span><i class="fas fa-chevron-down"></i></div>
+        <div class="faq-answer">Visit our Booking Page and select your desired service, date, and time. You'll receive a confirmation email with all details.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question"><span><span class="badge-cat">📅 Reschedule</span><br>Can I reschedule or cancel my appointment?</span><i class="fas fa-chevron-down"></i></div>
+        <div class="faq-answer">Yes, you can manage your bookings through your account or contact us directly for assistance. But you should inform before 8 days after that no refund.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question"><span><span class="badge-cat">✨ Services</span><br>I’m not sure which service is right for me. What should I do?</span><i class="fas fa-chevron-down"></i></div>
+        <div class="faq-answer">Book a Counseling Session for personalized guidance. Our experts help you choose Reiki, NLP, Akashic Records or other healing modalities.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question"><span><span class="badge-cat">🌐 Online</span><br>Do you offer online sessions?</span><i class="fas fa-chevron-down"></i></div>
+        <div class="faq-answer">Yes! Many of our services, including Reiki, NLP, and Akashic Records readings, are available online via Zoom — worldwide access.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question"><span><span class="badge-cat">💳 Payments</span><br>What payment methods do you accept?</span><i class="fas fa-chevron-down"></i></div>
+        <div class="faq-answer">We accept credit/debit cards, UPI, and digital wallets for easy and secure transactions. All payments are encrypted.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question"><span><span class="badge-cat">🏷️ Offers</span><br>Are there any packages or discounts available?</span><i class="fas fa-chevron-down"></i></div>
+        <div class="faq-answer">Yes, explore our Special Offers page for the latest packages and deals. Bundle sessions to deepen your transformation.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question"><span><span class="badge-cat">🧘 Prep</span><br>What should I do before my healing or spiritual session?</span><i class="fas fa-chevron-down"></i></div>
+        <div class="faq-answer">Arrive with an open mind and a relaxed state. We recommend avoiding heavy meals and staying hydrated.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question"><span><span class="badge-cat">🎒 Bring</span><br>Is there anything I need to bring?</span><i class="fas fa-chevron-down"></i></div>
+        <div class="faq-answer">Just yourself! For classes, we'll inform you if specific items (like notebooks or pendulums) are needed.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question"><span><span class="badge-cat">🌟 Session Flow</span><br>What can I expect during a session?</span><i class="fas fa-chevron-down"></i></div>
+        <div class="faq-answer">Each session is unique. Our practitioners will guide you, ensuring you feel safe and comfortable. Intuitive insights & gentle healing.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question"><span><span class="badge-cat">📝 Integration</span><br>How do I integrate what I’ve learned or experienced?</span><i class="fas fa-chevron-down"></i></div>
+        <div class="faq-answer">You may receive personalized practices, meditations, or journaling prompts to help process your experience and continue growth.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question"><span><span class="badge-cat">🔒 Privacy</span><br>Are my sessions private?</span><i class="fas fa-chevron-down"></i></div>
+        <div class="faq-answer">Absolutely! Your experiences and information are treated with the utmost confidentiality. Trust is our foundation.</div>
+      </div>
+    </div>
+
+    <!-- Still Have Questions -->
+    <div class="contact-block">
+      <i class="fas fa-headset" style="font-size: 2.2rem; color: var(--dusty-rose); margin-bottom: 0.5rem; display: inline-block;"></i>
+      <h3 style="color: var(--primary-purple);">Still Have Questions?</h3>
+      <div class="contact-icons">
+        <div class="contact-card"><i class="fas fa-phone-alt"></i> +91 93567-27238</div>
+        <div class="contact-card"><i class="fas fa-envelope"></i> auraveda05@gmail.com</div>
+      </div>
+      <p style="margin-top: 1.5rem; max-width: 500px; margin-left: auto; margin-right: auto;">Our support team is here for you, Mon–Sat, 10am – 7pm IST.</p>
+    </div>
+
+    <!-- Confidence message & final quote -->
+    <div style="background: rgba(216, 140, 154, 0.08); border-radius: 28px; padding: 2rem; margin: 2rem 0; text-align: center; border: 1px solid rgba(216,140,154,0.2);">
+      <h3 style="color: var(--burgundy);">Embark on Your Spiritual Journey with Confidence!</h3>
+      <p style="font-size: 1.05rem; margin-top: 0.8rem;">At Auraveda, your comfort, safety, and spiritual growth are our priorities. We are here to support you at every step. If you need more personalized help, don’t hesitate to reach out.</p>
+    </div>
+
+    <!-- CTA Banner (Burgundy dominant 10%) -->
+    <div class="cta-banner">
+      <h3><i class="fas fa-spa"></i> Begin your transformation today</h3>
+      
+    </div>
+  </div>
+</main>
+
+<!-- Footer as specified -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3 style="color: var(--dusty-rose); margin-bottom: 0.5rem;">Auraveda</h3>
+        <p>Awaken your inner knowing with ancient healing wisdom.</p>
+        <p style="margin-top: 0.8rem; font-size: 0.9rem;">✨ Dowsing is a powerful tool for energetic alignment.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p><i class="fas fa-phone-alt"></i> +91 98765 43210</p>
+        <p><i class="fas fa-envelope"></i> hello@auraveda.co.in</p>
+        <p><i class="fas fa-map-marker-alt"></i> Virtual sessions worldwide</p>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      © 2026 Auraveda — All rights reserved. Dowsing is a powerful tool for energetic alignment.
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Advanced JavaScript: Interactive FAQ Accordion
+  document.addEventListener('DOMContentLoaded', () => {
+    const faqItems = document.querySelectorAll('.faq-item');
+    faqItems.forEach(item => {
+      const questionDiv = item.querySelector('.faq-question');
+      questionDiv.addEventListener('click', () => {
+        // Toggle active class on clicked item
+        const isActive = item.classList.contains('active');
+        // Close all others (optional, but nice UX for clean view)
+        faqItems.forEach(otherItem => {
+          if (otherItem !== item && otherItem.classList.contains('active')) {
+            otherItem.classList.remove('active');
+          }
+        });
+        if (!isActive) {
+          item.classList.add('active');
+        } else {
+          item.classList.remove('active');
+        }
+      });
+    });
+    // Optional: open first FAQ by default for better guidance?
+    if (faqItems.length > 0) {
+      // first item open to show interaction (but not mandatory)
+      // faqItems[0].classList.add('active'); // subtle improvement
+    }
+  });
+
+  // Smooth scroll for anchor links (optional but professional)
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      const href = this.getAttribute('href');
+      if (href !== "#" && href !== "" && href !== "#0") {
+        const target = document.querySelector(href);
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }
+    });
+  });
+
+  // Additional: hover interactions & passive event
+  console.log("Auraveda Help Page — premium experience loaded");
+</script>
+</body>
+</html>

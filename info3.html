@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Rajyoga Meditation Class for working professionals — 7-day free course to master inner peace, stress relief, and soul connection. Learn mind training and experience spiritual empowerment.">
+  <meta name="keywords" content="Rajyoga Meditation, Free Meditation Class, Stress Relief for Women, Spiritual Growth, Brahma Kumaris, Inner Power, Soul Consciousness">
+  <meta name="author" content="Auraveda">
+  <meta property="og:title" content="Rajyoga Meditation Class | Auraveda — Spiritual Empowerment">
+  <meta property="og:description" content="Free 7-day Rajyoga course: understand the soul, connect with Supreme Consciousness, and transform your daily life with meditation.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=1200&auto=format">
+  <meta name="robots" content="index, follow">
+  <title>Rajyoga Meditation Class | Auraveda — Inner Power & Peace</title>
+  
+  <!-- Google Fonts + Font Awesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* ===== COLOR SYSTEM ===== */
+    :root {
+      --primary-purple: #5A189A;      /* headings, highlights, accents */
+      --soft-white: #F8F9FA;          /* main background */
+      --cta-burgundy: #800020;        /* buttons, CTA */
+      --accent-dusty-rose: #D88C9A;   /* testimonials, subtle highlights */
+      --dark-text: #2C2C2C;
+      --medium-text: #5A4A42;
+      --border-light: #EDE2DC;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--soft-white);
+      color: var(--dark-text);
+      line-height: 1.5;
+      scroll-behavior: smooth;
+    }
+
+    h1, h2, h3, .price-badge, .logo-text {
+      font-family: 'Playfair Display', serif;
+    }
+
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 28px;
+    }
+
+    /* ===== HEADER (premium, transparent+sticky) ===== */
+    .site-header {
+      background: rgba(248, 249, 250, 0.96);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 2px 12px rgba(90, 24, 154, 0.05);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 1px solid rgba(90, 24, 154, 0.15);
+    }
+
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 14px 0;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo-icon {
+      font-size: 2rem;
+      color: var(--primary-purple);
+    }
+
+    .logo-text {
+      font-size: 1.8rem;
+      font-weight: 600;
+      background: linear-gradient(135deg, var(--primary-purple), #8B3EC7);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      letter-spacing: -0.2px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      font-weight: 500;
+      color: #3E2A2A;
+      transition: 0.25s;
+      font-size: 0.95rem;
+    }
+
+    .nav-links a:hover {
+      color: var(--primary-purple);
+    }
+
+    .burger {
+      display: none;
+      cursor: pointer;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .burger div {
+      width: 28px;
+      height: 2.5px;
+      background: var(--primary-purple);
+      border-radius: 4px;
+      transition: 0.2s;
+    }
+
+    /* hero */
+    .hero {
+      background: linear-gradient(135deg, #FFFFFF, #FEF7F0);
+      padding: 48px 0 56px;
+      text-align: center;
+      border-bottom: 1px solid var(--border-light);
+    }
+
+    .hero-badge {
+      display: inline-block;
+      background: var(--accent-dusty-rose);
+      padding: 6px 24px;
+      border-radius: 60px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: #2C1A2C;
+      margin-bottom: 20px;
+      letter-spacing: 0.3px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+    }
+
+    .hero h1 {
+      font-size: 3.5rem;
+      font-weight: 600;
+      color: var(--primary-purple);
+      margin-bottom: 16px;
+    }
+
+    .hero p {
+      max-width: 700px;
+      margin: 0 auto;
+      font-size: 1.2rem;
+      color: #4F3E3A;
+    }
+
+    .hero-img-grid {
+      display: flex;
+      justify-content: center;
+      gap: 28px;
+      flex-wrap: wrap;
+      margin-top: 48px;
+    }
+
+    .hero-img-grid img {
+      width: 280px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 32px;
+      box-shadow: 0 20px 30px -12px rgba(90, 24, 154, 0.15);
+      transition: transform 0.3s ease, box-shadow 0.3s;
+      border: 1px solid rgba(90, 24, 154, 0.1);
+    }
+
+    .hero-img-grid img:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 28px 32px -14px rgba(90, 24, 154, 0.2);
+    }
+
+    /* features grid */
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      gap: 44px;
+      margin: 70px 0 60px;
+    }
+
+    .info-card {
+      background: white;
+      border-radius: 40px;
+      padding: 36px 32px;
+      box-shadow: 0 15px 35px -10px rgba(0, 0, 0, 0.04);
+      border: 1px solid var(--border-light);
+      transition: all 0.25s;
+    }
+
+    .info-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 25px 40px -12px rgba(90, 24, 154, 0.12);
+      border-color: rgba(90, 24, 154, 0.2);
+    }
+
+    .card-icon {
+      font-size: 2.3rem;
+      color: var(--primary-purple);
+      margin-bottom: 18px;
+    }
+
+    .info-card h3 {
+      font-size: 1.9rem;
+      font-weight: 600;
+      margin-bottom: 24px;
+      border-left: 5px solid var(--primary-purple);
+      padding-left: 20px;
+      color: #2C1F1A;
+    }
+
+    .info-list {
+      list-style: none;
+    }
+
+    .info-list li {
+      margin-bottom: 18px;
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+    }
+
+    .info-list li i {
+      color: var(--primary-purple);
+      font-size: 1.2rem;
+      margin-top: 3px;
+    }
+
+    /* session panel - clean premium */
+    .session-panel {
+      background: white;
+      border-radius: 48px;
+      padding: 44px 48px;
+      margin: 20px 0 64px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 32px;
+      box-shadow: 0 20px 40px -12px rgba(90, 24, 154, 0.08);
+      border: 1px solid var(--border-light);
+      transition: 0.2s;
+    }
+
+    .details-text h3 {
+      font-size: 2rem;
+      font-weight: 500;
+      margin-bottom: 20px;
+      color: var(--primary-purple);
+    }
+
+    .details-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      margin-top: 16px;
+    }
+
+    .detail-item {
+      background: #F3F0FE;
+      border-radius: 60px;
+      padding: 8px 22px;
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 500;
+      color: #35242E;
+      font-size: 0.9rem;
+    }
+
+    .bonus-badge {
+      background: var(--accent-dusty-rose);
+      color: #2C1A2C;
+      border-radius: 60px;
+      padding: 8px 26px;
+      font-weight: 700;
+      font-size: 0.9rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .cta-large {
+      background: var(--cta-burgundy);
+      border: none;
+      padding: 14px 38px;
+      border-radius: 60px;
+      font-weight: 700;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: 0.25s;
+      font-family: inherit;
+      color: white;
+      box-shadow: 0 8px 18px rgba(128, 0, 32, 0.2);
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .cta-large:hover {
+      background: #5E0018;
+      transform: scale(1.02);
+      box-shadow: 0 12px 22px rgba(128, 0, 32, 0.3);
+    }
+
+    .booking-banner {
+      text-align: center;
+      margin: 30px 0 70px;
+      background: #FEFAF5;
+      border-radius: 56px;
+      padding: 52px 28px;
+      border: 1px solid rgba(216, 140, 154, 0.25);
+    }
+
+    .booking-banner h3 {
+      font-size: 2rem;
+      font-weight: 500;
+      color: var(--primary-purple);
+    }
+
+    .btn-book-primary {
+      background: var(--cta-burgundy);
+      color: white;
+      border: none;
+      padding: 14px 48px;
+      border-radius: 60px;
+      font-weight: 700;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: all 0.25s;
+      margin-top: 24px;
+      display: inline-flex;
+      gap: 12px;
+      box-shadow: 0 6px 14px rgba(128,0,32,0.2);
+    }
+
+    .btn-book-primary:hover {
+      background: #5E0018;
+      transform: translateY(-3px);
+      box-shadow: 0 14px 24px rgba(128,0,32,0.3);
+    }
+
+    /* testimonial (dusty rose accent) */
+    .testimonial-section {
+      background: rgba(216, 140, 154, 0.08);
+      border-radius: 40px;
+      padding: 36px 32px;
+      margin: 40px 0 60px;
+      text-align: center;
+      border-left: 6px solid var(--accent-dusty-rose);
+    }
+
+    .testimonial-text {
+      font-size: 1.2rem;
+      font-style: italic;
+      color: #3E2A2A;
+      max-width: 780px;
+      margin: 0 auto;
+      font-weight: 450;
+    }
+
+    .testimonial-author {
+      margin-top: 16px;
+      font-weight: 600;
+      color: var(--primary-purple);
+    }
+
+    footer {
+      background: #1E1916;
+      color: #F1EAE3;
+      padding: 3rem 5% 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .footer-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 2.5rem;
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+
+    .footer-section h4 {
+      margin-bottom: 1rem;
+      font-weight: 600;
+      color: var(--accent-dusty-rose);
+      letter-spacing: 0.5px;
+    }
+
+    .footer-section ul {
+      list-style: none;
+    }
+
+    .footer-section li {
+      margin-bottom: 0.5rem;
+    }
+
+    .footer-section a {
+      color: #EADBCE;
+      text-decoration: none;
+      transition: 0.2s;
+    }
+
+    .footer-section a:hover {
+      color: var(--accent-dusty-rose);
+    }
+
+    .copyright {
+      text-align: center;
+      margin-top: 2rem;
+      padding-top: 1rem;
+      border-top: 1px solid #493E36;
+      font-size: 0.8rem;
+    }
+
+    /* MODAL */
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      backdrop-filter: blur(8px);
+      justify-content: center;
+      align-items: center;
+      z-index: 2000;
+    }
+
+    .modal-card {
+      background: #ffffff;
+      max-width: 540px;
+      width: 90%;
+      border-radius: 48px;
+      padding: 36px 32px;
+      position: relative;
+      box-shadow: 0 40px 55px rgba(0, 0, 0, 0.25);
+      animation: fadeUp 0.28s ease;
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .modal-card h3 {
+      font-size: 1.9rem;
+      margin-bottom: 8px;
+      color: var(--primary-purple);
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 22px;
+      right: 28px;
+      font-size: 30px;
+      cursor: pointer;
+      color: var(--primary-purple);
+      transition: 0.2s;
+    }
+
+    .modal-close:hover {
+      color: var(--cta-burgundy);
+    }
+
+    .modal-card input,
+    .modal-card select,
+    .modal-card textarea {
+      width: 100%;
+      padding: 12px 18px;
+      margin: 10px 0;
+      border: 1px solid #E0CFC2;
+      border-radius: 40px;
+      background: #FEFAF7;
+      font-family: inherit;
+      font-size: 0.95rem;
+    }
+
+    .modal-card button[type="submit"] {
+      background: var(--cta-burgundy);
+      color: white;
+      border: none;
+      padding: 12px;
+      width: 100%;
+      border-radius: 40px;
+      font-weight: bold;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.2s;
+      margin-top: 12px;
+    }
+
+    .form-note {
+      font-size: 0.7rem;
+      text-align: center;
+      margin-top: 12px;
+      color: var(--primary-purple);
+    }
+
+    @media (max-width: 800px) {
+      .navbar {
+        flex-direction: row;
+      }
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: var(--soft-white);
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem 0;
+        gap: 1.5rem;
+        box-shadow: 0 15px 25px rgba(0,0,0,0.05);
+        border-bottom: 1px solid var(--border-light);
+      }
+      .nav-links.active {
+        display: flex;
+      }
+      .burger {
+        display: flex;
+      }
+      .hero h1 {
+        font-size: 2.4rem;
+      }
+      .session-panel {
+        flex-direction: column;
+        text-align: center;
+        padding: 32px 24px;
+      }
+      .details-grid {
+        justify-content: center;
+      }
+      .features-grid {
+        gap: 28px;
+      }
+    }
+
+    @media (max-width: 550px) {
+      .hero-img-grid img {
+        width: 100%;
+        max-width: 260px;
+      }
+      .info-card {
+        padding: 28px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <nav class="navbar">
+      <div class="logo">
+        <i class="fas fa-spa logo-icon"></i>
+        <div class="logo-text">Auraveda</div>
+      </div>
+      <ul class="nav-links" id="navLinks">
+         <li><a href="index.html" class="active">Home</a></li>
+		
+				<li><a href="about.html">About us</a></li>
+  <li><a href="services.html">Services</a></li>
+  <li><a href="classbox.html">Classes</a></li>
+  <li><a href="consultation.html">Consultation</a></li>
+  
+  <li><a href="Help.html">Help</a></li>
+   
+  <li><a href="payment.html">Payment</a></li>
+ 		
+		       
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="burger" id="burgerMenu">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container">
+      <span class="hero-badge"><i class="fas fa-lotus"></i> Free 7-Day Spiritual Journey</span>
+      <h1>Rajyoga Meditation Class</h1>
+      <p>Awaken your inner power, find clarity, and elevate your life through ancient soul-conscious meditation.</p>
+      <div class="hero-img-grid">
+        <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=600&auto=format" alt="Woman meditating peacefully" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1545205597-3d9d02c29597?w=600&auto=format" alt="Lotus flower and calm water" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=600&auto=format" alt="Serene meditation pose with sunrise" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <!-- two column grid: What You Will Learn + Ideal For -->
+    <div class="features-grid">
+      <div class="info-card">
+        <div class="card-icon"><i class="fas fa-brain"></i></div>
+        <h3>What You Will Learn</h3>
+        <ul class="info-list">
+          <li><i class="fas fa-user-astronaut"></i> Understanding the self and the soul</li>
+          <li><i class="fas fa-hand-sparkles"></i> Connection with the Supreme Soul (God)</li>
+          <li><i class="fas fa-microchip"></i> Mind and intellect training for inner power</li>
+          <li><i class="fas fa-sun"></i> Daily practice of soul-conscious living</li>
+          <li><i class="fas fa-dove"></i> Methods to experience peace, purity, and inner strength</li>
+          <li><i class="fas fa-chalkboard-user"></i> Incorporating Rajyoga into daily life and karma</li>
+        </ul>
+      </div>
+
+      <div class="info-card">
+        <div class="card-icon"><i class="fas fa-heart"></i></div>
+        <h3>Ideal For</h3>
+        <ul class="info-list">
+          <li><i class="fas fa-feather-alt"></i> Anyone seeking spiritual awakening and inner calm</li>
+          <li><i class="fas fa-cloud-moon"></i> People struggling with stress, anxiety, or overthinking</li>
+          <li><i class="fas fa-chart-line"></i> Those interested in connecting with higher consciousness</li>
+          <li><i class="fas fa-briefcase"></i> Working professionals desiring work-life balance & clarity</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Session Details Panel -->
+    <div class="session-panel">
+      <div class="details-text">
+        <h3><i class="fas fa-calendar-alt"></i> Session Details</h3>
+        <div class="details-grid">
+          <span class="detail-item"><i class="far fa-clock"></i> Duration: 7-day class, 1 hour each session</span>
+          <span class="detail-item"><i class="fas fa-globe"></i> Format: In-person or Online (Brahma Kumaris Center)</span>
+          <span class="detail-item"><i class="fas fa-gift"></i> Fee: <strong>Free of Cost</strong></span>
+          <span class="bonus-badge"><i class="fas fa-book-open"></i> Bonus: Practical guide for daily Rajyoga meditation</span>
+        </div>
+      </div>
+      <button class="cta-large" id="heroBookBtn"><i class="fas fa-calendar-check"></i> Reserve Your Free Seat</button>
+    </div>
+
+    <!-- Testimonial - Dusty Rose accent -->
+    <div class="testimonial-section">
+      <p class="testimonial-text">“The Rajyoga meditation transformed my chaotic mind into a sanctuary of calm. As a working mother, I finally found balance and clarity. Forever grateful.”</p>
+      <p class="testimonial-author">— Priya S., Senior Consultant</p>
+    </div>
+
+    <!-- Extra CTA banner -->
+    <div class="booking-banner">
+      <h3><i class="fas fa-hand-peace"></i> Begin your journey to inner power</h3>
+      <p style="margin-top: 14px; color:#4F3E3A;">Join a supportive community & learn life-changing meditation techniques — completely free.</p>
+      <button class="btn-book-primary" id="mainBookBtn"><i class="fas fa-arrow-right"></i> Book Your Session Now</button>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-content">
+    <div class="footer-section">
+      <h4>Auraveda</h4>
+      <p>Awaken your inner knowing with ancient healing wisdom.</p>
+    </div>
+    <div class="footer-section">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Contact</h4>
+      <ul>
+        <li><i class="fas fa-phone-alt"></i> +91 98765 43210</li>
+        <li><i class="fas fa-envelope"></i> hello@auraveda.co.in</li>
+      </ul>
+    </div>
+  </div>
+  <div class="copyright">
+    © 2026 Auraveda — All rights reserved. Dowsing is a powerful tool for energetic alignment.
+  </div>
+</footer>
+
+<!-- MODAL -->
+<div id="bookingModal" class="modal">
+  <div class="modal-card">
+    <span class="modal-close" id="closeModalBtn">&times;</span>
+    <h3><i class="fas fa-chalkboard-user"></i> Register for Rajyoga Class</h3>
+    <p style="margin-bottom: 16px; color: #5A4A42;">Free 7-day course | Soul empowerment</p>
+    <form id="bookingForm">
+      <input type="text" id="userName" placeholder="Full name *" required>
+      <input type="email" id="userEmail" placeholder="Email address *" required>
+      <input type="tel" id="userPhone" placeholder="Phone number (optional)">
+      <select id="sessionMode">
+        <option value="Online (Zoom)">Online (Zoom)</option>
+        <option value="In-person (Brahma Kumaris Center)">In-person (Center)</option>
+      </select>
+      <textarea rows="2" placeholder="Any question or preferred batch timing? (optional)"></textarea>
+      <div class="form-note">✨ You'll receive confirmation & meditation prep guide within 24h.</div>
+      <button type="submit"><i class="fas fa-lotus"></i> Register Now – Free</button>
+    </form>
+  </div>
+</div>
+
+<script>
+  // MOBILE BURGER MENU
+  const burger = document.getElementById('burgerMenu');
+  const navLinks = document.getElementById('navLinks');
+  if (burger) {
+    burger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  }
+
+  // MODAL LOGIC
+  const modal = document.getElementById('bookingModal');
+  const closeModalBtn = document.getElementById('closeModalBtn');
+  const bookingForm = document.getElementById('bookingForm');
+  const heroBtn = document.getElementById('heroBookBtn');
+  const mainCtaBtn = document.getElementById('mainBookBtn');
+
+  function openModalFunc(e) {
+    if(e) e.preventDefault();
+    modal.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeModalFunc() {
+    modal.style.display = 'none';
+    document.body.style.overflow = '';
+  }
+
+  if(heroBtn) heroBtn.addEventListener('click', openModalFunc);
+  if(mainCtaBtn) mainCtaBtn.addEventListener('click', openModalFunc);
+  if(closeModalBtn) closeModalBtn.addEventListener('click', closeModalFunc);
+  window.addEventListener('click', (e) => {
+    if (e.target === modal) closeModalFunc();
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modal.style.display === 'flex') closeModalFunc();
+  });
+
+  // FORM SUBMIT (validation + free registration simulation)
+  if(bookingForm) {
+    bookingForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const name = document.getElementById('userName')?.value.trim();
+      const email = document.getElementById('userEmail')?.value.trim();
+      if (!name) {
+        alert("✨ Please enter your name to reserve your free seat.");
+        return;
+      }
+      if (!email || !email.includes('@')) {
+        alert("Please provide a valid email address for confirmation.");
+        return;
+      }
+      const modeSelect = document.getElementById('sessionMode');
+      const mode = modeSelect ? modeSelect.value : 'Online';
+      alert(`🙏 Thank you ${name}, you've successfully registered for the 7-day Rajyoga Meditation Class (${mode}).\n\nYou'll receive an email with session schedule & meditation resources within 24 hours. We look forward to guiding you to inner peace!`);
+      bookingForm.reset();
+      closeModalFunc();
+    });
+  }
+
+  // Smooth anchor links (any hash link)
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      const hash = this.getAttribute('href');
+      if (hash !== "#" && hash !== "#" && hash !== "#booking") {
+        const targetEl = document.querySelector(hash);
+        if (targetEl) {
+          e.preventDefault();
+          targetEl.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+    });
+  });
+
+  // subtle hover inputs effect
+  const allInputs = document.querySelectorAll('.modal-card input, .modal-card select, .modal-card textarea');
+  allInputs.forEach(inp => {
+    inp.addEventListener('focus', () => inp.style.borderColor = '#5A189A');
+    inp.addEventListener('blur', () => inp.style.borderColor = '#E0CFC2');
+  });
+</script>
+</body>
+</html>
