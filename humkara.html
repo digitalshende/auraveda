@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Auraveda | Transformational coaching for professional women using the Haleem Humkara Method™ — ancient wisdom, dowsing, and energetic alignment for career breakthroughs and inner power.">
+  <meta name="keywords" content="transformation coach, working women, Haleem Humkara, energy alignment, dowsing, women leadership coaching, Auraveda">
+  <meta name="author" content="Auraveda">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Auraveda | Haleem Humkara Method™ for Professional Women">
+  <meta property="og:description" content="Awaken your inner knowing with ancient healing wisdom and modern coaching. Designed for ambitious working women.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="#">
+  <title>Auraveda | Haleem Humkara Method™ — Transformation for Working Women</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #F8F9FA;  /* Soft White — 60% ratio */
+      font-family: 'Inter', sans-serif;
+      color: #1e1a2f;
+      line-height: 1.5;
+      scroll-behavior: smooth;
+    }
+
+    /* Color System Variables (strict palette) */
+    :root {
+      --royal-purple: #5A189A;
+      --soft-white: #F8F9FA;
+      --burgundy: #800020;
+      --dusty-rose: #D88C9A;
+      --dark-text: #2c243b;
+      --pure-white: #ffffff;
+      --purple-light: #7b2cbf1a;
+    }
+
+    h1, h2, h3, h4, .logo, .nav-links a, .section-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 600;
+      color: var(--royal-purple);
+    }
+
+    h1 {
+      font-size: 3.2rem;
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+    }
+
+    h2 {
+      font-size: 2.4rem;
+      margin-bottom: 1rem;
+      border-left: 4px solid var(--burgundy);
+      padding-left: 1rem;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 2.5rem;
+      border-left: none;
+      position: relative;
+      display: inline-block;
+      width: auto;
+    }
+
+    .section-title:after {
+      content: '';
+      position: absolute;
+      bottom: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 70px;
+      height: 3px;
+      background: var(--burgundy);
+    }
+
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 32px;
+    }
+
+   header {
+      background-color: var(--white);
+      box-shadow: var(--shadow);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.2rem 5%;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      font-weight: 500;
+    }
+
+    .logo span {
+      color: var(--purple);
+      font-style: italic;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2.5rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--text-dark);
+      font-weight: 400;
+      font-size: 1rem;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: var(--purple);
+    }
+
+    .burger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+
+    .burger div {
+      width: 25px;
+      height: 2px;
+      background-color: var(--text-dark);
+      margin: 3px 0;
+      transition: 0.3s;
+    }
+    /* Buttons */
+    .btn-primary {
+      display: inline-block;
+      background: var(--burgundy);
+      color: white;
+      font-weight: 600;
+      padding: 0.9rem 2rem;
+      border-radius: 40px;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+      box-shadow: 0 4px 8px rgba(128,0,32,0.15);
+    }
+    .btn-primary:hover {
+      background: #5e0018;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(128,0,32,0.2);
+    }
+    .btn-outline {
+      background: transparent;
+      border: 1.5px solid var(--royal-purple);
+      color: var(--royal-purple);
+      padding: 0.8rem 1.8rem;
+      border-radius: 40px;
+      font-weight: 600;
+      transition: 0.2s;
+    }
+    .btn-outline:hover {
+      background: var(--royal-purple);
+      color: white;
+    }
+
+    /* Hero section */
+    .hero {
+      padding: 5rem 0 5rem;
+      background: var(--soft-white);
+    }
+    .hero-grid {
+      display: flex;
+      align-items: center;
+      gap: 3rem;
+      flex-wrap: wrap;
+    }
+    .hero-content {
+      flex: 1.2;
+    }
+    .hero-content p {
+      font-size: 1.2rem;
+      margin: 1.5rem 0 2rem;
+      color: #3a3452;
+    }
+    .hero-badge {
+      background: var(--dusty-rose);
+      color: #3b1e2a;
+      display: inline-block;
+      padding: 0.3rem 1rem;
+      border-radius: 30px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+    .hero-stats {
+      display: flex;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    .stat-item h3 {
+      font-size: 1.8rem;
+      color: var(--royal-purple);
+    }
+    .hero-image {
+      flex: 0.8;
+      background: linear-gradient(135deg, var(--purple-light), #f1e6fc);
+      border-radius: 32px;
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0 20px 35px -12px rgba(90,24,154,0.1);
+    }
+    .hero-image i {
+      font-size: 5rem;
+      color: var(--royal-purple);
+    }
+
+    /* Section spacing */
+    section {
+      padding: 5rem 0;
+    }
+    .bg-dusty {
+      background-color: var(--dusty-rose);
+      background-blend-mode: overlay;
+    }
+    .bg-white-card {
+      background: white;
+      border-radius: 28px;
+      padding: 2rem;
+      box-shadow: 0 10px 25px -12px rgba(0,0,0,0.05);
+      transition: 0.2s;
+    }
+
+    /* Haleem Humkara class section */
+    .class-grid {
+      display: flex;
+      gap: 2.5rem;
+      flex-wrap: wrap;
+      margin-top: 1.5rem;
+    }
+    .class-detail {
+      flex: 1;
+      background: white;
+      border-radius: 28px;
+      padding: 2rem;
+      box-shadow: 0 15px 30px rgba(90,24,154,0.05);
+    }
+    .class-features {
+      list-style: none;
+      margin-top: 1.5rem;
+    }
+    .class-features li {
+      margin-bottom: 0.9rem;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .class-features i {
+      color: var(--burgundy);
+      width: 24px;
+    }
+    .highlight-purple {
+      color: var(--royal-purple);
+      font-weight: 700;
+    }
+
+    /* Cards for services */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      margin-top: 1rem;
+    }
+    .service-card {
+      background: white;
+      border-radius: 28px;
+      padding: 2rem;
+      transition: 0.2s;
+      border-bottom: 3px solid transparent;
+    }
+    .service-card:hover {
+      border-bottom-color: var(--burgundy);
+      transform: translateY(-5px);
+    }
+    .service-icon {
+      font-size: 2.5rem;
+      color: var(--royal-purple);
+      margin-bottom: 1rem;
+    }
+
+    /* Testimonials slider (dusty rose bg) */
+    .testimonials-section {
+      background: var(--dusty-rose);
+    }
+    .testimonial-slider {
+      position: relative;
+      max-width: 800px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 32px;
+      padding: 2rem 2rem 3rem;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+    }
+    .testimonial-text {
+      font-size: 1.2rem;
+      font-style: italic;
+      text-align: center;
+      margin: 1rem 0;
+      color: #2c243b;
+    }
+    .client-name {
+      font-weight: 700;
+      color: var(--royal-purple);
+      margin-top: 1rem;
+    }
+    .slider-controls {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 1.8rem;
+    }
+    .slider-controls button {
+      background: var(--burgundy);
+      border: none;
+      color: white;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+    .slider-controls button:hover {
+      background: #5e0018;
+    }
+
+    /* CTA Banner */
+    .cta-banner {
+      background: linear-gradient(120deg, #F8F9FA 0%, #f1eef7 100%);
+      border-radius: 40px;
+      text-align: center;
+      padding: 3rem;
+      margin-top: 2rem;
+    }
+
+    /* Footer (exactly as provided) */
+    footer {
+      background: #2a2a2a;
+      color: #f8f9fa;
+      padding: 3rem 0 2rem;
+      margin-top: 1rem;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 2rem;
+    }
+    .footer-brand p {
+      margin-top: 0.8rem;
+      line-height: 1.5;
+      opacity: 0.9;
+    }
+    .footer-links h4, .footer-contact h4 {
+      color: white;
+      margin-bottom: 1rem;
+      font-weight: 600;
+    }
+    .footer-links ul {
+      list-style: none;
+    }
+    .footer-links li a {
+      color: #e0d6ff;
+      text-decoration: none;
+      transition: 0.2s;
+    }
+    .footer-links li a:hover {
+      color: white;
+    }
+    .footer-contact p {
+      margin: 0.5rem 0;
+    }
+    .copyright {
+      text-align: center;
+      padding-top: 2rem;
+      margin-top: 2rem;
+      border-top: 1px solid rgba(255,255,255,0.2);
+      font-size: 0.85rem;
+    }
+
+    /* Modal Styles */
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.6);
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+    }
+    .modal-content {
+      background: var(--soft-white);
+      max-width: 500px;
+      width: 90%;
+      border-radius: 32px;
+      padding: 2rem;
+      position: relative;
+    }
+    .close-modal {
+      position: absolute;
+      right: 1.5rem;
+      top: 1rem;
+      font-size: 1.8rem;
+      cursor: pointer;
+      color: var(--royal-purple);
+    }
+    .modal-content input, .modal-content textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 0.6rem 0 1rem;
+      border: 1px solid #ddd;
+      border-radius: 20px;
+      font-family: 'Inter', sans-serif;
+    }
+    .form-message {
+      margin-top: 1rem;
+      color: var(--burgundy);
+      font-weight: 500;
+    }
+    @media (max-width: 768px) {
+      .nav-container {
+        flex-direction: column;
+        gap: 1rem;
+      }
+      .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      h1 {
+        font-size: 2.3rem;
+      }
+      .hero-grid {
+        flex-direction: column;
+      }
+      .container {
+        padding: 0 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+<header>
+    <nav>
+      <div class="logo"><img src="img/Auraveda logo.png" width="50" height="50" alt="Auraveda Logo"></div>
+      <div class="logo">AURA<span>VEDA</span></div>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+		
+				<li><a href="about.html">About us</a></li>
+  <li><a href="services.html">Services</a></li>
+  <li><a href="classbox.html">Classes</a></li>
+  
+  
+  <li><a href="Help.html">Help</a></li>
+   
+ 
+ 		
+		       
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="burger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </nav>
+  </header>
+
+<main>
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-badge"><i class="fas fa-feather-alt"></i> Haleem Humkara™ Method</div>
+        <h1>Awaken your inner knowing.<br>Lead with <span style="color:var(--burgundy)">feminine power</span>.</h1>
+        <p>Transformational coaching for high-achieving working women. Dowsing, ancient wisdom, and modern strategy to break through burnout and reclaim confidence.</p>
+        <div class="hero-buttons">
+          <a href="#" class="btn-primary" id="openModalHeroBtn"><i class="fas fa-spa"></i> Book Discovery Call</a>
+          <a href="#haleem-class" class="btn-outline">Explore Haleem Humkara <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item"><h3>98%</h3><p>clarity & alignment</p></div>
+          <div class="stat-item"><h3>500+</h3><p>women transformed</p></div>
+        </div>
+      </div>
+      <div class="hero-image">
+         
+        <p style="margin-top:1rem; font-weight:500;">Dowsing • Humkara • Inner Resonance</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <div style="text-align: center;"><h2 class="section-title">Sacred wisdom meets strategy</h2></div>
+      <div class="bg-white-card" style="background:white; max-width: 900px; margin: 0 auto;">
+        <p style="font-size:1.1rem">Auraveda is a powerful transformation space for professional women who crave alignment without the hustle. Our unique Haleem Humkara method blends ancient dowsing, humming resonance (Humkara), and intuitive coaching to release subconscious blocks. Designed for corporate leaders, entrepreneurs, and changemakers seeking inner harmony and outer results.</p>
+        <div style="display: flex; gap: 1.5rem; margin-top: 1.5rem; flex-wrap:wrap; justify-content:center">
+          <span style="background:var(--dusty-rose); padding:0.3rem 1rem; border-radius:40px;">🌿 Energetic Alignment</span>
+          <span style="background:var(--dusty-rose); padding:0.3rem 1rem; border-radius:40px;">🎧 Humkara Breathwork</span>
+          <span style="background:var(--dusty-rose); padding:0.3rem 1rem; border-radius:40px;">💎 Dowsing Sessions</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Haleem with Humkara Class (Featured) -->
+  <section id="haleem-class">
+    <div class="container">
+      <h2 class="section-title">The Haleem Humkara Method™ Signature Class</h2>
+      <div class="class-grid">
+        <div class="class-detail">
+           
+          <h3 style="margin: 1rem 0 0.5rem;">Haleem — Steadfast Wisdom</h3>
+          <p>Drawing from ancient patience & compassion practice, Haleem cultivates emotional mastery & resilience for demanding careers.</p>
+        </div>
+        <div class="class-detail">
+           
+          <h3 style="margin: 1rem 0 0.5rem;">Humkara — Vibrational Release</h3>
+          <p>Humming bee breath (Bhramari) combined with dowsing frequencies to clear subconscious blocks, reduce anxiety, and amplify intuitive decision-making.</p>
+        </div>
+        <div class="class-detail" style="background: var(--pure-white);">
+           
+          <h3 style="margin: 1rem 0 0.5rem;">8-Week Immersive Journey</h3>
+          <p>Live weekly sessions, dowsing maps, private community & 1:1 energetic audit. Exclusively for working professional women.</p>
+          <a href="#" class="btn-primary" style="margin-top: 1rem; display: inline-block;" id="openModalClassBtn">Register for Class →</a>
+        </div>
+      </div>
+      <ul class="class-features" style="display: flex; flex-wrap: wrap; justify-content: space-between; gap:1rem; margin-top: 2rem;">
+        <li><i class="fas fa-check-circle"></i> Dowsing Certification Basics</li>
+        <li><i class="fas fa-check-circle"></i> Humkara Daily Rituals</li>
+        <li><i class="fas fa-check-circle"></i> Inner Knowing Activation</li>
+        <li><i class="fas fa-check-circle"></i> Corporate Women Focus</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Services Section (Powerful Offerings) -->
+  <section id="services">
+    <div class="container">
+      <h2 class="section-title">Transformational Offerings</h2>
+      <div class="services-grid">
+        <div class="service-card"><div class="service-icon"><i class="fas fa-chalkboard-user"></i></div><h3>1:1 Power Coaching</h3><p>Bespoke 3-month container: deep dowsing, subconscious reprogramming & career strategy for executive women.</p><a href="#" class="openModalAny" style="color: var(--burgundy); font-weight: 500;">Book now →</a></div>
+        <div class="service-card"><div class="service-icon"><i class="fas fa-users"></i></div><h3>Haleem Humkara Circles</h3><p>Group class (6-8 women) leveraging humming, dowsing & sisterhood to elevate leadership energy.</p><a href="#" class="openModalAny" style="color: var(--burgundy); font-weight: 500;">Join waitlist →</a></div>
+        <div class="service-card"><div class="service-icon"><i class="fas fa-building"></i></div><h3>Corporate Wellness</h3><p>Workshops for women leaders: stress resilience, Humkara for focus, dowsing for clarity. On-site/virtual.</p><a href="#" class="openModalAny" style="color: var(--burgundy); font-weight: 500;">Inquire →</a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section (Dusty Rose background) -->
+  <section class="testimonials-section" id="testimonials">
+    <div class="container">
+      <h2 class="section-title" style="color: #4b2e3a;">Voices of Transformation</h2>
+      <div class="testimonial-slider" id="testimonialSlider">
+        <div id="testimonialContent" class="testimonial-text">
+          “Auraveda's Haleem Humkara class shifted something deep within me. As a finance director, I was burnt out. Now I lead with calm authority and intuition.”
+        </div>
+        <div class="client-name" id="clientName">— Meera S., Senior Director</div>
+        <div class="slider-controls">
+          <button id="prevTesti"><i class="fas fa-chevron-left"></i></button>
+          <button id="nextTesti"><i class="fas fa-chevron-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action Banner -->
+  <section>
+    <div class="container">
+      <div class="cta-banner">
+        <h3 style="color: var(--royal-purple);">Ready to reclaim your inner alignment?</h3>
+        <p style="margin: 1rem 0 1.8rem;">Limited seats for Haleem Humkara Method™ — Book your complimentary discovery session now.</p>
+        <a href="#" class="btn-primary" id="openModalFinalCTA" style="background: var(--burgundy);"><i class="fas fa-calendar-check"></i> Claim Your Session</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- Footer exactly as per requirement -->
+<footer id="contact-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3 style="color:white; font-size: 1.8rem;">Auraveda</h3>
+        <p>Awaken your inner knowing with ancient healing wisdom.</p>
+        <p style="margin-top:1rem;"><i class="fas fa-hand-sparkles"></i> Dowsing is a powerful tool for energetic alignment.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+         <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p><i class="fas fa-phone-alt"></i> +91 98765 43210</p>
+        <p><i class="fas fa-envelope"></i> hello@auraveda.co.in</p>
+      </div>
+    </div>
+    <div class="copyright">
+      © 2026 Auraveda — All rights reserved. Dowsing is a powerful tool for energetic alignment.
+    </div>
+  </div>
+</footer>
+
+<!-- Modal Booking Structure -->
+<div id="bookingModal" class="modal">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+    <h3 style="color:var(--royal-purple);">Schedule Your Alignment Call</h3>
+    <p>Experience the Haleem Humkara Method™ — complimentary 30-min discovery.</p>
+    <form id="bookingForm">
+      <input type="text" id="fullName" placeholder="Full name" required>
+      <input type="email" id="emailId" placeholder="Work email" required>
+      <input type="tel" id="phoneNum" placeholder="Phone number">
+      <textarea rows="2" placeholder="What brings you here? (optional)"></textarea>
+      <button type="submit" class="btn-primary" style="width:100%;">Request Callback</button>
+      <div id="formFeedback" class="form-message"></div>
+    </form>
+  </div>
+</div>
+
+<script>
+  // ----- ADVANCED JAVASCRIPT: Testimonial Slider + Modal Form Validation + Dynamic Year -----
+  (function() {
+    // Testimonials data (Haleem Humkara success stories for professional women)
+    const testimonials = [
+      { text: "After completing the Haleem Humkara class, I finally broke the glass ceiling in my mind. My team notices a calmer, more decisive leader.", name: "— Anjali R., Tech Lead" },
+      { text: "The combination of dowsing and Humkara was revolutionary. I got promoted within 6 weeks and feel energetically aligned with my purpose.", name: "— Neha V., VP Marketing" },
+      { text: "Auraveda’s approach is mature, feminine yet fierce. As a working mother, I reclaimed my time and energy. Highly recommend the signature method.", name: "— Priyanka M., Strategy Consultant" }
+    ];
+    let currentTestimonialIndex = 0;
+    const testimonialTextEl = document.getElementById('testimonialContent');
+    const clientNameEl = document.getElementById('clientName');
+    
+    function updateTestimonial() {
+      testimonialTextEl.innerText = `“${testimonials[currentTestimonialIndex].text}”`;
+      clientNameEl.innerText = testimonials[currentTestimonialIndex].name;
+    }
+    function nextTestimonial() { currentTestimonialIndex = (currentTestimonialIndex + 1) % testimonials.length; updateTestimonial(); }
+    function prevTestimonial() { currentTestimonialIndex = (currentTestimonialIndex - 1 + testimonials.length) % testimonials.length; updateTestimonial(); }
+    document.getElementById('nextTesti').addEventListener('click', nextTestimonial);
+    document.getElementById('prevTesti').addEventListener('click', prevTestimonial);
+    setInterval(() => { nextTestimonial(); }, 6000);
+    updateTestimonial();
+
+    // Modal handling
+    const modal = document.getElementById('bookingModal');
+    const closeModalBtn = document.querySelector('.close-modal');
+    const openModalBtns = document.querySelectorAll('#openModalHeroBtn, #openModalNavBtn, #openModalClassBtn, #openModalFinalCTA, .openModalAny');
+    
+    function openModal() { modal.style.display = 'flex'; document.body.style.overflow = 'hidden'; }
+    function closeModalFunc() { modal.style.display = 'none'; document.body.style.overflow = 'auto'; }
+    
+    openModalBtns.forEach(btn => { if(btn) btn.addEventListener('click', (e) => { e.preventDefault(); openModal(); }); });
+    if(closeModalBtn) closeModalBtn.addEventListener('click', closeModalFunc);
+    window.addEventListener('click', (e) => { if(e.target === modal) closeModalFunc(); });
+    
+    // Form validation & submission (advanced JS)
+    const form = document.getElementById('bookingForm');
+    const feedbackDiv = document.getElementById('formFeedback');
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const name = document.getElementById('fullName').value.trim();
+      const email = document.getElementById('emailId').value.trim();
+      const phone = document.getElementById('phoneNum').value.trim();
+      const emailRegex = /^[^\s@]+@([^\s@.,]+\.)+[^\s@.,]{2,}$/;
+      if(name === "") { feedbackDiv.innerText = "Please share your full name."; return; }
+      if(!emailRegex.test(email)) { feedbackDiv.innerText = "Valid email required (professional)."; return; }
+      if(phone && phone.length < 8) { feedbackDiv.innerText = "Phone number optional but must be valid."; return; }
+      feedbackDiv.style.color = "#800020";
+      feedbackDiv.innerText = "✨ Thank you! Auraveda team will reach out within 24h to align your Haleem Humkara journey.";
+      form.reset();
+      setTimeout(() => { closeModalFunc(); feedbackDiv.innerText = ""; }, 2800);
+    });
+    
+    // Smooth scroll for nav links + dynamic year in footer (already 2026 but ensure)
+    const yearSpan = document.querySelector('.copyright');
+    if(yearSpan && !yearSpan.innerHTML.includes('2026')) {
+      // already fine
+    }
+    document.querySelectorAll('.nav-links a[href^="#"], .footer-links a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        const hash = this.getAttribute('href');
+        if(hash === "#" || hash === "") return;
+        const targetElem = document.querySelector(hash);
+        if(targetElem) {
+          e.preventDefault();
+          targetElem.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+    // Additional CTA open modal for any card links
+    document.querySelectorAll('.openModalAny').forEach(el => {
+      el.addEventListener('click', (e) => { e.preventDefault(); openModal(); });
+    });
+  })();
+  
+   
+    // Burger menu
+    const burger = document.querySelector('.burger');
+    const navLinks = document.querySelector('.nav-links');
+    if (burger) {
+      burger.addEventListener('click', () => {
+        navLinks.classList.toggle('nav-active');
+        burger.children[0].classList.toggle('toggle');
+        burger.children[1].classList.toggle('toggle');
+        burger.children[2].classList.toggle('toggle');
+      });
+    }
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => navLinks.classList.remove('nav-active'));
+    });
+
+    // Fade-in on scroll
+    const faders = document.querySelectorAll('.fade-in');
+    const appearOptions = { threshold: 0.2, rootMargin: '0px 0px -50px 0px' };
+    const appearOnScroll = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          appearOnScroll.unobserve(entry.target);
+        }
+      });
+    }, appearOptions);
+    faders.forEach(fader => appearOnScroll.observe(fader));
+  </script>
+</body>
+</html>
